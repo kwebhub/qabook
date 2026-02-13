@@ -1,0 +1,163 @@
+
+<h2>Software Development Life Cycle (SDLC) & Software Test Life Cycle (STLC)</h2>
+<details>
+  <summary>Idea</summary>
+  <p>Product Owner (PO) - Владелец продукта озвучивает идею</p>
+  <p>QC проверяет:</p>
+  <ul>
+    <li>Сможем ли мы это протестировать?</li>
+    <li>Зачем это нужно?</li>
+    <li>Существует ли более простая альтернатива?</li>
+  </ul>
+  <p>STLC: Учим английский</p>
+</details>
+<details>
+  <summary>Analysis</summary>
+  <p>Business Analyst (BA) or System Analyst (SA) - Бизнес аналитик формирует бизнес требования:</p>
+  <ul>
+    <li>Software Requirements Specification (SRS)</li>
+    <li>Software Requirements Document (SRD)</li>
+    <li>Business Requirements Document (BRD)</li>
+    <li>User story</li>
+  </ul>
+  <p>QC create:</p>
+  <ul>
+    <li>Все ли варианты развития событий учтены?</li>
+    <li>Test Plan.</li>
+    <li>Acceptance plan.</li>
+    <li>Acceptance criteria.</li>
+  </ul>
+  <p>STLC: Этап планирования</p>
+  <ul>
+    <li>Определить список действий (активностей), которые нужно сделать, чтобы проверить максимально все возможные варианты работы продукта исходя из имеющихся времени и средств.</li>
+    <li>Каждое действие имеет свою цель, задачи, методы, ограничения.</li>
+    <li>Для каждого действия указывается время выполнения в общем графике тестирования.</li>
+  </ul>
+</details>
+<details>
+  <summary>Architecture & Design</summary>
+  <p>Activity:</p>
+  <ul>
+    <li>Архитектор составляет технические требования на основании бизнес требований: Technical Design Document (TDD).</li>
+    <li>Дизайнер создаёт дизайн: UI/UX, Figma.</li>
+    <li>Верстальщик верстает прототип: Layout (markdown, html, css, pug, scss, js, ts).</li>
+    <li>SEO специалист разрабатывает план Search Engine Optimization (SEO).</li>
+    <li>DevOps обеспечивает среду для разработки, тестирование и релиза, CI/CD: Environment, Net, API.</li>
+  </ul>
+  <ul>
+    <li><a href="https://w3techs.com/">Рейтинг технологий</a>
+    </li>
+    <li><a href="https://caniuse.com/">Возможность применения технологий</a>
+    </li>
+    <li><a href="https://refactoring.guru/ru/design-patterns/catalog">Pattern</a>
+    </li>
+  </ul>
+  <p>QC create:</p>
+  <ul>
+    <li>Defect</li>
+    <li>Traceability matrix</li>
+  </ul>
+  <p>
+    STLC: Этап анализа:</br>
+    Указать чему должны быть равны результаты тестов, т.е. что мы ожидаем получить от каждого теста.
+    
+  </p>
+</details>
+<details>
+  <summary>Development</summary>
+  <p>Developers - Разработчики разрабатывают продукт (Build):</p>
+  <ul>
+    <li>Typescript</li>
+    <li>React</li>
+    <li>Redux</li>
+    <li>SQL</li>
+    <li>PHP</li>
+    <li>WordPress</li>
+    <li>Laravel</li>
+    <li>Rust</li>
+    <li>Leptos</li>
+    <li>Polkadot</li>
+  </ul>
+  <p>QC create:</p>
+  <ul>
+    <li>Check lists</li>
+    <li>Test Data</li>
+    <li>Test Cases</li>
+    <li>Test Suites</li>
+  </ul>
+  <p>STLC: Этап реализации</p>
+  <ul>
+    <li>Описать шаги и ожидаемый результат по каждому тесту и сгруппировать их по общим начальным условиям или одинаковым шагам выполнения.</li>
+    <li>Создать и/или подготовить необходимое тестовое обеспечение для выполнения тестов.</li>
+  </ul>
+</details>
+<details>
+  <summary>Testing</summary>
+  <p>Выполнение тестов и исправление багов:</p>
+  <ul>
+    <li>Разработчики исправляют баги</li>
+    <li>Тестировщики проверяют снова и снова</li>
+    <li>DevOps: Release candidate build</li>
+    <li>Acceptance Testing: Владелец продукта тестирует продукт</li>
+  </ul>
+  <p>Testers execute:</p>
+  <ul>
+    <li>Check lists</li>
+    <li>Test Cases</li>
+    <li>Defect</li>
+    <li>Reviews</li>
+    <li>Issue reports</li>
+    <li>Bug Reports</li>
+    <li>Acceptance testing</li>
+  </ul>
+  <p>STLC: Этап выполнения</p>
+  <ul>
+    <li>Запустить выполнение тестов по расписанию.</li>
+    <li>В чек-листах отметить выполнение шагов и полученный результат.</li>
+    <li>В Дефекте по каждому тесту напротив ожидаемого результата указать полученный и отметить выполнен тест или провален.</li>
+  </ul>
+</details>
+<details>
+  <summary>Release</summary>
+  <p>DevOps deploy release build</p>
+  <p>QC create:</p>
+  <ul>
+    <li>Test Summary Report</li>
+    <li>Change Requests</li>
+  </ul>
+  <p>STLC: Этап завершения</p>
+  <ul>
+    <li>Описать в итоговом отчёте условия и ход выполнения действий из плана тестирования с комментариями и пояснениями.</li>
+    <li>В запросе на улучшение указать что лучше добавить или переделать в продукте с точки зрения удобства пользования.</li>
+  </ul>
+</details>
+<details>
+  <summary>Support</summary>
+  <p>Feedback from customers:</p>
+  <ul>
+    <li>Успокоить пользователя</li>
+    <li>Исправить или передать проблему разработчикам</li>
+    <li>Агрегировать и систематизировать пожелания потребителей</li>
+  </ul>
+  <p>Уровни поддержки:</p>
+  <ul>
+    <li>Успокоить пользователя</li>
+    <li>Исправить или передать проблему разработчикам</li>
+    <li>Агрегировать и систематизировать пожелания потребителей</li>
+  </ul>
+  <p>QA create:</p>
+  <ul>
+    <li>Test Progress Report</li>
+    <li>Test Summary Report</li>
+  </ul>
+  <p>STLC: Этап мониторинга и контроля</p>
+  <ul>
+    <li>Мониторинг тестирования - это непрерывное сравнение фактического хода работы с планом тестирования.</li>
+    <li>Контроль тестирования - это принятие мер, для достижения целей плана тестирования.</li>
+    <li>План тестирования может быть обновлен.</li>
+  </ul>
+</details>
+<details>
+  <summary>Death</summary>
+  <p>Close project.</p>
+</details>
