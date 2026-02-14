@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+export function initUI() {
     const body = document.body;
     const selectors = {
         '#dropup': 'show-dropup',
@@ -15,21 +15,25 @@ document.addEventListener("DOMContentLoaded", () => {
         searchForm.classList.toggle('is-dirty', isDirty);
     };
     Object.entries(selectors).forEach(([id, className]) => {
-        document.querySelector(id)?.addEventListener('click', () => {
+        const btn = document.querySelector(id);
+        btn?.addEventListener('click', () => {
             body.className = className;
         });
     });
     const closeAll = () => body.className = '';
     document.querySelector('.close')?.addEventListener('click', closeAll);
-    window.onclick = (e) => {
+    window.addEventListener('click', (e) => {
         const target = e.target;
-        if (target.classList.contains(body.className.replace('show-', ''))) {
+        const currentClass = body.className.replace('show-', '');
+        if (currentClass && target.classList.contains(currentClass)) {
             closeAll();
         }
-    };
+    });
     searchInput?.addEventListener('input', updateState);
     searchForm?.addEventListener('reset', () => {
         setTimeout(updateState, 0);
     });
-});
-export {};
+    document.querySelector('#home')?.addEventListener('click', () => {
+        window.location.href = '/';
+    });
+}

@@ -9,12 +9,12 @@
     <meta name="robots" content="none">
     <meta name="robots" content="noimageindex, nofollow">
     <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
-    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/style.css">
     <title>qados</title>
-    <script defer type="module" src="./main.js"></script>
+    <script defer type="module" src="./assets/js/main.js"></script>
   </head>
-  <body class="container">
-    <button class="close"><img src="./assets/img/settings.png" alt="" loading="lazy"/>
+  <body>
+    <button class="close"><img src="./assets/img/close.svg" alt="" loading="lazy"/>
     </button>
     <nav class="dropup"><a href="./process.html">Process</a><a href="#!">Docs</a><a href="#!">Langs</a><a href="#!">Project</a><a href="#!">Job</a>
     </nav>
@@ -31,24 +31,24 @@
     <div class="search">
       <form class="search__content">
         <input type="text" placeholder="search...">
-        <button class="search-btn" type="submit"><img src="./assets/img/search.png" alt="" loading="lazy"/>
+        <button class="search-btn" type="submit"><img src="./assets/img/search.svg" alt="" loading="lazy"/>
         </button>
-        <button class="search-reset" type="reset"><img src="./assets/img/settings.png" alt="" loading="lazy"/>
+        <button class="search-reset" type="reset"><img src="./assets/img/close.svg" alt="" loading="lazy"/>
         </button>
       </form>
     </div>
-    <header>
-      <p>header</p>
-    </header>
-    <p>index</p>
-    <footer>
+    <div class="container">
+      <header class="header"><nav class="breadcrumbs" id="breadcrumbs-container"></nav></header>
+      <main class="index">
+        <p>index</p>
+      </main>
       <menu class="menu">
-        <button id="settings"><img src="./assets/img/settings.png" alt="settings" loading="lazy"/></button>
-        <button id="search"><img src="./assets/img/search.png" alt="search" loading="lazy"/></button>
-        <button id="home"><img src="./assets/img/home.png" alt="home" loading="lazy"/></button>
-        <button id="dropup"><img src="./assets/img/dropup.png" alt="menu" loading="lazy"/></button>
-        <button id="user"><img src="./assets/img/user.png" alt="user" loading="lazy"/></button>
+        <button id="settings"><img src="./assets/img/settings.svg" alt="settings" loading="lazy"/></button>
+        <button id="search"><img src="./assets/img/search.svg" alt="search" loading="lazy"/></button>
+        <button id="home"><img src="./assets/img/q.svg" alt="home" loading="lazy"/></button>
+        <button id="dropup"><img src="./assets/img/menu.svg" alt="menu" loading="lazy"/></button>
+        <button id="user"><img src="./assets/img/user.svg" alt="user" loading="lazy"/></button>
       </menu>
-    </footer>
+    </div>
   </body>
 </html>
