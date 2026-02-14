@@ -34,6 +34,6 @@ export function initUI() {
         setTimeout(updateState, 0);
     });
     document.querySelector('#home')?.addEventListener('click', () => {
-        window.location.href = '/qabook';
+        window.location.href = '/qabook/';
     });
 }
