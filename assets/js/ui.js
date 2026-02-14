@@ -1,39 +1,37 @@
 export function initUI() {
-    const body = document.body;
-    const selectors = {
-        '#dropup': 'show-dropup',
-        '#settings': 'show-settings',
-        '#user': 'show-user',
-        '#search': 'show-search'
-    };
-    const searchForm = document.querySelector('.search__content');
-    const searchInput = searchForm?.querySelector('input');
-    const updateState = () => {
-        if (!searchInput || !searchForm)
-            return;
-        const isDirty = searchInput.value.trim().length > 0;
-        searchForm.classList.toggle('is-dirty', isDirty);
-    };
-    Object.entries(selectors).forEach(([id, className]) => {
-        const btn = document.querySelector(id);
-        btn?.addEventListener('click', () => {
-            body.className = className;
-        });
-    });
-    const closeAll = () => body.className = '';
-    document.querySelector('.close')?.addEventListener('click', closeAll);
-    window.addEventListener('click', (e) => {
-        const target = e.target;
-        const currentClass = body.className.replace('show-', '');
-        if (currentClass && target.classList.contains(currentClass)) {
-            closeAll();
-        }
-    });
-    searchInput?.addEventListener('input', updateState);
-    searchForm?.addEventListener('reset', () => {
-        setTimeout(updateState, 0);
-    });
-    document.querySelector('#home')?.addEventListener('click', () => {
-        window.location.href = '/qabook/';
-    });
+  const body = document.body;
+  const REPO_NAME = "/qabook";
+  const menuMap = {
+    dropup: "show-dropup",
+    settings: "show-settings",
+    user: "show-user",
+    search: "show-search",
+    home: "home-redirect",
+  };
+  const closeAll = () => (body.className = "");
+  document.addEventListener("click", (e) => {
+    const target = e.target;
+    const btn = target.closest("[id]");
+    if (!btn) return;
+    const action = menuMap[btn.id];
+    if (action === "home-redirect") {
+      window.location.href = REPO_NAME;
+    } else if (action) {
+      body.className = action;
+    }
+    if (target.classList.contains("close")) closeAll();
+  });
+  window.addEventListener("click", ({ target }) => {
+    const activeClass = body.className.replace("show-", "");
+    if (activeClass && target.classList.contains(activeClass)) {
+      closeAll();
+    }
+  });
+  const searchForm = document.querySelector(".search__content");
+  const searchInput = searchForm?.querySelector("input");
+  const updateSearchState = () => {
+    searchForm?.classList.toggle("is-dirty", !!searchInput?.value.trim());
+  };
+  searchInput?.addEventListener("input", updateSearchState);
+  searchForm?.addEventListener("reset", () => setTimeout(updateSearchState, 0));
 }
