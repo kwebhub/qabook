@@ -378,6 +378,10 @@ body[class^=show-] .menu {
   fill: #ababab;
 }
 
+.doclink {
+  color: #ff9;
+}
+
 .dropup {
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -394,7 +398,7 @@ body[class^=show-] .menu {
   overflow: hidden;
 }
 .dropup a {
-  line-height: 20vh;
+  line-height: 16.6666666667vh;
   border: 1px solid black;
   width: 100vw;
   text-align: center;
@@ -514,8 +518,6 @@ body[class^=show-] .menu {
 
 .process {
   padding-top: 3.6rem;
-}
-.process details {
   margin: 1rem 20vw;
 }
 .process summary {
@@ -527,14 +529,56 @@ body[class^=show-] .menu {
   text-align: center;
   font-size: 2rem;
 }
-.process p {
-  margin-top: 2rem;
-}
 .process ul,
 .process p {
   line-height: 2rem;
+  margin: 0.5rem;
 }
 .process li {
   margin-left: 3rem;
   line-height: 1.5rem;
+}
+.process img {
+  display: block;
+  width: 100%;
+}
+
+.docs {
+  padding-top: 3.6rem;
+  margin: 1rem 20vw;
+}
+.docs summary {
+  cursor: pointer;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+.docs h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+.docs ul,
+.docs p,
+.docs a,
+.docs h4,
+.docs table {
+  line-height: 2rem;
+  margin: 0.5rem;
+}
+.docs li {
+  margin-left: 3rem;
+  line-height: 1.5rem;
+}
+.docs img {
+  display: block;
+  width: 100%;
+}
+.docs i {
+  display: block;
+  text-align: center;
+}
+.docs table {
+  width: 100%;
+}
+.docs td {
+  text-align: center;
 }

@@ -1,39 +1,34 @@
-const REPO_NAME = "/qabook";
-const SCHEMA_ID = "breadcrumb-schema";
+const REPO_NAME = '/qabook';
+const SCHEMA_ID = 'breadcrumb-schema';
 const formatName = (segment) => {
-  const decoded = decodeURIComponent(
-    segment.replace(".html", "").replace(/-/g, " "),
-  );
-  return decoded.charAt(0).toUpperCase() + decoded.slice(1);
+    const decoded = decodeURIComponent(segment.replace('.html', '').replace(/-/g, ' '));
+    return decoded.charAt(0).toUpperCase() + decoded.slice(1);
 };
 export function initBreadcrumbs() {
-  const container = document.getElementById("breadcrumbs-container");
-  if (!container) return;
-  const { pathname, origin } = window.location;
-  const segments = pathname
-    .split("/")
-    .filter((s) => s && s !== "index.html" && s !== REPO_NAME.replace("/", ""));
-  if (segments.length === 0) {
-    container.style.display = "none";
-    container.innerHTML = "";
-    return;
-  }
-  container.style.display = "block";
-  const breadcrumbList = [{ name: "Home", item: `${origin}${REPO_NAME}/` }];
-  let currentPath = REPO_NAME;
-  const itemsHtml = segments.map((segment, index) => {
-    const isLast = index === segments.length - 1;
-    currentPath += `/${segment}`;
-    const name = formatName(segment);
-    breadcrumbList.push({
-      name,
-      item: origin + (isLast ? pathname : currentPath),
-    });
-    return `<li class="breadcrumbs__item">
+    const container = document.getElementById('breadcrumbs-container');
+    if (!container)
+        return;
+    const { pathname, origin } = window.location;
+    const segments = pathname.split('/')
+        .filter(s => s && s !== 'index.html' && s !== REPO_NAME.replace('/', ''));
+    if (segments.length === 0) {
+        container.style.display = 'none';
+        container.innerHTML = '';
+        return;
+    }
+    container.style.display = 'block';
+    const breadcrumbList = [{ name: 'Home', item: `${origin}${REPO_NAME}/` }];
+    let currentPath = REPO_NAME;
+    const itemsHtml = segments.map((segment, index) => {
+        const isLast = index === segments.length - 1;
+        currentPath += `/${segment}`;
+        const name = formatName(segment);
+        breadcrumbList.push({ name, item: origin + (isLast ? pathname : currentPath) });
+        return `<li class="breadcrumbs__item">
       ${isLast ? name : `<a href="${currentPath}">${name}</a>`}
     </li>`;
-  });
-  container.innerHTML = `
+    });
+    container.innerHTML = `
     <ul class="breadcrumbs__list">
       <li class="breadcrumbs__item">
         <a href="${REPO_NAME}/">
@@ -42,25 +37,25 @@ export function initBreadcrumbs() {
           </svg>
         </a>
       </li>
-      ${itemsHtml.join("")}
+      ${itemsHtml.join('')}
     </ul>`;
-  generateSchema(breadcrumbList);
+    generateSchema(breadcrumbList);
 }
 function generateSchema(items) {
-  document.getElementById(SCHEMA_ID)?.remove();
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: items.map((item, index) => ({
-      "@type": "ListItem",
-      position: index + 1,
-      name: item.name,
-      item: item.item,
-    })),
-  };
-  const script = document.createElement("script");
-  script.id = SCHEMA_ID;
-  script.type = "application/ld+json";
-  script.textContent = JSON.stringify(schema);
-  document.head.appendChild(script);
+    document.getElementById(SCHEMA_ID)?.remove();
+    const schema = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": items.map((item, index) => ({
+            "@type": "ListItem",
+            "position": index + 1,
+            "name": item.name,
+            "item": item.item
+        }))
+    };
+    const script = document.createElement('script');
+    script.id = SCHEMA_ID;
+    script.type = 'application/ld+json';
+    script.textContent = JSON.stringify(schema);
+    document.head.appendChild(script);
 }
