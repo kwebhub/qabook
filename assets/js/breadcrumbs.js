@@ -1,4 +1,4 @@
-const REPO_NAME = '/qabook';
+const REPO_NAME = '';
 const SCHEMA_ID = 'breadcrumb-schema';
 const formatName = (segment) => {
     const decoded = decodeURIComponent(segment.replace('.html', '').replace(/-/g, ' '));

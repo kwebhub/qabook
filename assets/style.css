@@ -252,7 +252,7 @@ img {
   font-weight: 800;
   font-style: normal;
 }
-.search, .search__content, .user, .settings, .dropup, .menu {
+.search, .search__content, .dropup, .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -268,7 +268,7 @@ img {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.search, .user, .settings {
+.search {
   position: fixed;
   z-index: 1;
   left: 0;
@@ -295,53 +295,38 @@ html {
   padding-bottom: 6rem;
 }
 
-/* Кнопка закрытия */
 .close {
-  opacity: 0;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 110;
+  width: 64px;
   visibility: hidden;
+  opacity: 0;
   transition: opacity 0.2s ease;
 }
 
-.close {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  z-index: 10;
-  width: 64px;
-}
-
-/* Базовое состояние панелей */
-.dropup,
-.settings,
-.user,
-.search {
-  position: fixed; /* или absolute, в зависимости от верстки */
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(10px); /* панель чуть ниже */
-  transition: all 0.3s ease-out; /* скорость анимации */
-}
-
-/* Активное состояние (когда у body есть класс) */
-body.show-dropup .dropup,
-body.show-settings .settings,
-body.show-user .user,
-body.show-search .search {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0); /* возвращаем на место */
-}
-
-/* Состояние меню и кнопки закрытия */
 body[class^=show-] .close {
   opacity: 1;
   visibility: visible;
 }
 
-body[class^=show-] .menu {
+.dropup,
+.search {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
   opacity: 0;
   visibility: hidden;
-  pointer-events: none; /* чтобы нельзя было кликнуть на скрытое меню */
+  transform: translateY(100%);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body.show-dropup .dropup,
+body.show-search .search {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 
 .menu {
@@ -358,17 +343,14 @@ body[class^=show-] .menu {
   list-style: none;
 }
 .menu button:first-child img, .menu button:last-child img {
-  width: 2.4rem;
+  width: 3rem;
 }
-.menu button:nth-child(even) {
-  width: 4.8rem;
+.menu button:nth-child(2) {
+  width: 6rem;
   margin: 0 2rem;
 }
-.menu button:nth-child(3) {
-  width: 6rem;
-}
 
-.header {
+header {
   position: fixed;
 }
 
@@ -376,6 +358,63 @@ body[class^=show-] .menu {
   width: 18px;
   height: 18px;
   fill: #ababab;
+}
+
+main {
+  padding-top: 3.6rem;
+  margin: 1rem 20vw;
+}
+main summary {
+  cursor: pointer;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+main h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+main ul,
+main p,
+main a,
+main h4,
+main table {
+  line-height: 2rem;
+  margin: 0.5rem;
+}
+main li {
+  margin-left: 3rem;
+  line-height: 1.5rem;
+}
+main img {
+  display: block;
+  width: 100%;
+}
+main a {
+  color: #ff9;
+}
+main i {
+  display: block;
+  text-align: center;
+}
+main table {
+  width: 100%;
+}
+main td {
+  padding: 1rem;
+}
+main [colspan] {
+  text-align: center;
+  font-size: 1.5rem;
+}
+main caption {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+main pre {
+  margin: 2rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .doclink {
@@ -390,11 +429,9 @@ body[class^=show-] .menu {
   -ms-flex-pack: space-around;
   justify-content: space-around;
   flex-direction: column;
-  position: absolute;
   width: 100vw;
   height: 100vh;
   background-color: #262c37;
-  z-index: 1;
   overflow: hidden;
 }
 .dropup a {
@@ -402,44 +439,12 @@ body[class^=show-] .menu {
   border: 1px solid black;
   width: 100vw;
   text-align: center;
-  font-size: 5rem;
+  font-size: 3rem;
 }
 .dropup a:hover {
-  font-size: 7rem;
+  font-size: 4rem;
   color: #cccccc;
   background-color: grey;
-}
-
-.settings {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: space-around;
-  -ms-flex-pack: space-around;
-  justify-content: space-around;
-}
-.settings__content {
-  background-color: #262c37;
-  margin: 15% auto;
-  padding: 20px;
-  width: 50%;
-  border-radius: 1rem;
-}
-
-.user {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: space-around;
-  -ms-flex-pack: space-around;
-  justify-content: space-around;
-}
-.user__content {
-  background-color: #262c37;
-  margin: 15% auto;
-  padding: 20px;
-  width: 50%;
-  border-radius: 1rem;
 }
 
 .search {
@@ -514,71 +519,4 @@ body[class^=show-] .menu {
 .breadcrumbs__item:last-child {
   color: #ff9;
   font-weight: bold;
-}
-
-.process {
-  padding-top: 3.6rem;
-  margin: 1rem 20vw;
-}
-.process summary {
-  cursor: pointer;
-  padding: 1rem;
-  font-size: 1.5rem;
-}
-.process h2 {
-  text-align: center;
-  font-size: 2rem;
-}
-.process ul,
-.process p {
-  line-height: 2rem;
-  margin: 0.5rem;
-}
-.process li {
-  margin-left: 3rem;
-  line-height: 1.5rem;
-}
-.process img {
-  display: block;
-  width: 100%;
-}
-
-.docs {
-  padding-top: 3.6rem;
-  margin: 1rem 20vw;
-}
-.docs summary {
-  cursor: pointer;
-  padding: 1rem;
-  font-size: 1.5rem;
-}
-.docs h2 {
-  text-align: center;
-  font-size: 2rem;
-}
-.docs ul,
-.docs p,
-.docs a,
-.docs h4,
-.docs table {
-  line-height: 2rem;
-  margin: 0.5rem;
-}
-.docs li {
-  margin-left: 3rem;
-  line-height: 1.5rem;
-}
-.docs img {
-  display: block;
-  width: 100%;
-}
-.docs i {
-  display: block;
-  text-align: center;
-}
-.docs table {
-  width: 100%;
-}
-.docs td {
-  text-align: center;
 }

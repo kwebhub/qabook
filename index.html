@@ -14,20 +14,8 @@
     <script defer type="module" src="./assets/js/main.js"></script>
   </head>
   <body>
-    <button class="close"><img src="./assets/img/close.svg" alt="" loading="lazy"/>
-    </button>
-    <nav class="dropup"><a href="./process.html">Process</a><a href="docs.html">Docs</a><a href="direction.html">Direction</a><a href="langs.html">Langs</a><a href="#!">Project</a><a href="job.html">Job</a>
+    <nav class="dropup"><a href="./process.html">Process</a><a href="./docs.html">Docs</a><a href="./layout.html">Layout</a><a href="./web.html">Web</a><a href="./langs.html">Langs</a><a href="#!">Project</a><a href="./job.html">Job</a>
     </nav>
-    <div class="settings">
-      <div class="settings__content">
-        <p>settings</p>
-      </div>
-    </div>
-    <div class="user">
-      <div class="user__content">
-        <p>user</p>
-      </div>
-    </div>
     <div class="search">
       <form class="search__content">
         <input type="text" placeholder="search...">
@@ -37,17 +25,318 @@
         </button>
       </form>
     </div>
+    <button class="close"><img src="./assets/img/close.svg" alt="" loading="lazy"/>
+    </button>
     <div class="container">
-      <header class="header"><nav class="breadcrumbs" id="breadcrumbs-container"></nav></header>
-      <main class="index">
-        <p>index</p>
+      <header><nav class="breadcrumbs" id="breadcrumbs-container"></nav>
+      </header>
+      <main>
+        <h2>Roadmap</h2>
+        <ul>
+          <li><a href="http://testbirds.com">Test birds</a>
+          </li>
+          <li><a href="http://utest.com">uTest</a>
+          </li>
+          <li><a href="#!">Портнов</a>
+          </li>
+          <li><a href="#!">Шпаргалка</a>
+          </li>
+          <li><a href="#!">English</a>
+          </li>
+        </ul>
+        <details>
+          <summary>GUI</summary>
+          <ul>
+            <li><a href="https://www.nngroup.com/articles/ten-usability-heuristics/">10 principle of design</a>
+            </li>
+            <li><a href="https://digital.gov/guides">Digital.gov Guide</a>
+            </li>
+            <li><a href="https://developer.apple.com/design/human-interface-guidelines">Human Interface Guidelines</a>
+            </li>
+            <li><a href="https://developers.facebook.com/tools/debug/sharing">Facebook</a>
+            </li>
+            <li><a href="https://cards-dev.twitter.com/validator">twitterValidator</a>
+            </li>
+            <li><a href="https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started">twitter</a>
+            </li>
+          </ul>
+          <h2>Инструменты тестирования:</h2>
+          <ul>
+            <li><a href="https://www.browserstack.com/">Кроссбраузерность</a>
+            </li>
+            <li><a href="https://validator.w3.org/">Валидатор HTML</a>
+            </li>
+            <li><a href="#!">PageSpeed Insights от Google, GTMetrix</a>
+            </li>
+          </ul>
+          <ul>
+            <li><a href="https://colorscheme.ru/">Цветовой круг он-лайн</a>
+            </li>
+            <li><a href="https://chromewebstore.google.com/detail/page-ruler/jcbmcnpepaddcedmjdcmhbekjhbfnlff">Page Ruler</a>
+            </li>
+            <li><a href="https://www.welldonecode.com/perfectpixel/">PerfectPixel</a>
+            </li>
+            <li><a href="https://stacksorted.com/">Stacksorted - Коллекция бесплатных и платных инструментов для веб-дизайна.</a>
+            </li>
+          </ul>
+          <h2>Check-list</h2>
+          <h3>GUI</h3>
+          <ul>
+            <li>Соответствие макету.</li>
+            <li>Расположение элементов, кнопки, слайдеры работают.</li>
+            <li>Кроссбраузерность. Открыть в разных браузерах.</li>
+            <li>Валидность. html и css проверить в валидаторах, js - проверить в консоли браузера.</li>
+            <li>Адаптивность. Нормально отображаются на смартфоне, планшете и т.д.</li>
+            <li>Оптимизация. Сжать картинки, файлы и т.д. для ускорения загрузки.</li>
+            <li>Сборка Gulp, Webpack, Vite.</li>
+            <li>Минимальная вложенность css.</li>
+            <li>Проверить переполняемостью контента текст и картинки (отсутствие, меньше, больше).</li>
+            <li>SVG, Webp, Avif, через тег picture, lazy load.</li>
+            <li>Объединенные в спрайты иконки.</li>
+            <li>Семантика и доступность.</li>
+            <li>Методология (БЭМ).</li>
+            <li>Теги alt у картинок, фавикон, title.</li>
+            <li>Закомментированный код удалить.</li>
+            <li>У текстового поля убрать ресайз. Стилизовать ввод текста.</li>
+            <li>Отступы между элементами марджином.</li>
+            <li>форматы шрифтов — WOFF 2.0 и WOFF.</li>
+            <li>link rel='preload' для ускорения загрузки шрифтов браузером.</li>
+            <li>Измерение размеров элемента.</li>
+            <li>Цвета интерфейса.</li>
+            <li>Контент.</li>
+            <li>Курсор.</li>
+            <li>Масштабируемость.</li>
+            <li>Фавикон.</li>
+            <li>Заголовки, title.</li>
+            <li>Браузерные расширения.</li>
+            <li>Back button.</li>
+            <li>Scroll.</li>
+            <li>Стандарты HTML/CSS.</li>
+            <li>Кодировка.</li>
+            <li>Правильность перевода.</li>
+            <li>Длина переведенных слов.</li>
+            <li>Сокращения/аббревиатуры.</li>
+            <li>Валюта.</li>
+            <li>Шрифты.</li>
+            <li>Дата/время, разделители чисел.</li>
+            <li>Поиск.</li>
+            <li>RTL (right to left languages).</li>
+          </ul>
+          <h3>Functional</h3>
+          <p>Проверить работоспособность и взаимодействие элементов</p>
+          <h4>Label (метка):</h4>
+          <ul>
+            <li>Один уровень с полями</li>
+            <li>Выровнены по отношению к друг другу</li>
+            <li>Длинные строки</li>
+          </ul>
+          <h4>Placeholder:</h4>
+          <ul>
+            <li>Цвет шрифта</li>
+            <li>Отступ</li>
+            <li>Пропадает при вводе значения/фокусе</li>
+            <li>Появляется при очистке</li>
+            <li>Нельзя скопировать</li>
+          </ul>
+          <h4>Text field:</h4>
+          <ul>
+            <li>Цвет шрифта, отступы</li>
+            <li>Граничные значения</li>
+            <li>Классы эквивалентности</li>
+            <li>Длинные строки</li>
+            <li>Маска паролей</li>
+            <li>Trim</li>
+            <li>Работа с текстом</li>
+          </ul>
+          <h4>Text area:</h4>
+          <ul>
+            <li>Длина</li>
+            <li>Перенос слов</li>
+            <li>Масштабирование</li>
+            <li>Скролы</li>
+            <li>Enter (Ctrl-Enter)</li>
+          </ul>
+          <h4>Checkbox:</h4>
+          <ul>
+            <li>Все состояния</li>
+            <li>Неактивный</li>
+            <li>Неактивный включенный</li>
+            <li>Взаимное расположение</li>
+          </ul>
+          <h4>Radiobutton:</h4>
+          <ul>
+            <li>Значение по умолчанию</li>
+            <li>Неактивный</li>
+            <li>Неактивный включенный</li>
+            <li>Взаимное расположение</li>
+            <li>Отображение группы</li>
+          </ul>
+          <h4>Switcher:</h4>
+          <ul>
+            <li>Значение по умолчанию</li>
+            <li>Неактивный</li>
+            <li>Неактивный включенный</li>
+            <li>Стили</li>
+          </ul>
+          <h4>Dropdown list:</h4>
+          <ul>
+            <li>Значение по умолчанию</li>
+            <li>Длина опций</li>
+            <li>Длина списка</li>
+            <li>Выпадение вверх</li>
+            <li>Подсветка выделенной опции</li>
+            <li>Скрол</li>
+            <li>Поиск</li>
+            <li>Каскадные списки</li>
+          </ul>
+          <h4>Combo box:</h4>
+          <ul>
+            <li>Значение по умолчанию/placeholder</li>
+            <li>Раскрытие списка</li>
+            <li>Длина опций</li>
+            <li>Подсветка выделенной опции</li>
+            <li>Поиск</li>
+            <li>Количество опций</li>
+            <li>Выпадение вверх</li>
+            <li>Скрол</li>
+            <li>Multiselection</li>
+            <li>Добавление/удаление вариантов</li>
+          </ul>
+          <h4>Button:</h4>
+          <ul>
+            <li>Размер и положение</li>
+            <li>Enabled/Disabled</li>
+            <li>Enter (Ctrl-Enter)</li>
+            <li>Hover/Click эффекты</li>
+            <li>Длина текста</li>
+            <li>Текст с заглавной</li>
+          </ul>
+          <h4>Slider:</h4>
+          <ul>
+            <li>Диапазон</li>
+            <li>Шкала</li>
+            <li>Метки</li>
+            <li>Связанное поле</li>
+            <li>Изменение клавиатурой</li>
+          </ul>
+          <h4>Date picker:</h4>
+          <ul>
+            <li>Выбор даты</li>
+            <li>Ввод даты вручную</li>
+            <li>Формат даты</li>
+            <li>Граничные значения</li>
+            <li>Некорректная дата</li>
+            <li>29 февраля</li>
+          </ul>
+          <h4>Time picker:</h4>
+          <ul>
+            <li>Выбор времени</li>
+            <li>Ввод времени вручную</li>
+            <li>Некорректное время</li>
+            <li>Время сервера</li>
+            <li>Временные зоны</li>
+          </ul>
+          <h4>Tabs:</h4>
+          <ul>
+            <li>С заглавной буквы</li>
+            <li>Активная/Не активные</li>
+            <li>Hover эффект</li>
+          </ul>
+          <h4>Validation message:</h4>
+          <ul>
+            <li>Текст отражает суть</li>
+            <li>Нет серверных ошибок</li>
+            <li>Красный цвет</li>
+            <li>Не должно ломать верстку</li>
+            <li>Исчезновение при исправлении</li>
+          </ul>
+          <h4>Popup:</h4>
+          <ul>
+            <li>Расположение по центру</li>
+            <li>Закрытие по ESC</li>
+            <li>Закрытие по клику</li>
+            <li>Кнопка закрытия</li>
+          </ul>
+          <h4>Дополнительно:</h4>
+          <ul>
+            <li>Разрыв соединения</li>
+            <li>Работа в нескольких вкладках</li>
+            <li>Проверка консоли и логов</li>
+            <li>Отключение Javascript</li>
+          </ul>
+          <h3>Usability</h3>
+          <p>от этого зависит, будет ли востребован продукт вообще:</p>
+          <ul>
+            <li>Соответствует ли приложение ожиданиям конечного пользователя.</li>
+            <li>Логичность интерфейса.</li>
+            <li>Самое нужное «сверху».</li>
+            <li>Продуманная навигация.</li>
+            <li>Минимизация действий.</li>
+            <li>Локализация.</li>
+            <li>Совместимость с другим софтом (соцсети) и железом.</li>
+            <li>Скорость работы приложения.</li>
+            <li>Информативность (сообщения/обязательные поля).</li>
+            <li>Возможность отмены действий пользователя.</li>
+            <li>Подсказки и подтверждения.</li>
+            <li>Help — должна быть инструкция, как работать с приложением.</li>
+          </ul>
+          <h3>Configuration</h3>
+          <p>Кроссбраузерность</p>
+        </details>
+        <details>
+          <summary>Web</summary>
+          <p>Сниферы, понятие, виды и опыт работы, перехватить пакет и проанализировать трафик:</p>
+          <ul>
+            <li><a href="https://www.telerik.com/fiddler">Fiddler</a>
+            </li>
+            <li><a href="https://www.charlesproxy.com/">Charles Proxy</a>
+            </li>
+            <li><a href="https://www.wireshark.org/">Wireshark</a>
+            </li>
+          </ul>
+          <p>Стандарты:</p>
+          <ul>
+            <li><a href="https://standards.ieee.org/">IEEE</a>
+            </li>
+            <li><a href="https://www.ietf.org/">IETF (RFC)</a>
+            </li>
+            <li><a href="https://www.iana.org/">IANA</a>
+            </li>
+            <li><a href="https://www.icann.org">ICANN</a>
+            </li>
+            <li><a href="https://www.itu.int/en/Pages/default.aspx">ITU</a>
+            </li>
+            <li><a href="https://tiaonline.org/">TIA</a>
+            </li>
+          </ul>
+          <h2>API (Application programming interface)</h2>
+          <ul>
+            <li><a href="https://www.postman.com/">Postman</a>
+            </li>
+          </ul>
+          <h2>Performance</h2>
+          <ul>
+            <li>Несколько сессий</li>
+            <li>Длительные сессии</li>
+            <li>Большое количество действий</li>
+            <li>Большие файлы</li>
+            <li>Сложные запросы</li>
+            <li>Низкая скорость интернета</li>
+            <li>Throttling</li>
+          </ul>
+          <h2>Security</h2>
+          <ul>
+            <li>Матрица ролей</li>
+            <li>SQL – инъекции</li>
+            <li>XSS</li>
+            <li>HTML tags</li>
+          </ul>
+        </details>
       </main>
       <menu class="menu">
-        <button id="settings"><img src="./assets/img/settings.svg" alt="settings" loading="lazy"/></button>
         <button id="search"><img src="./assets/img/search.svg" alt="search" loading="lazy"/></button>
         <button id="home"><img src="./assets/img/q.svg" alt="home" loading="lazy"/></button>
         <button id="dropup"><img src="./assets/img/menu.svg" alt="menu" loading="lazy"/></button>
-        <button id="user"><img src="./assets/img/user.svg" alt="user" loading="lazy"/></button>
       </menu>
     </div>
   </body>

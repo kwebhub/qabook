@@ -14,20 +14,8 @@
     <script defer type="module" src="./assets/js/main.js"></script>
   </head>
   <body>
-    <button class="close"><img src="./assets/img/close.svg" alt="" loading="lazy"/>
-    </button>
-    <nav class="dropup"><a href="./process.html">Process</a><a href="docs.html">Docs</a><a href="direction.html">Direction</a><a href="langs.html">Langs</a><a href="#!">Project</a><a href="job.html">Job</a>
+    <nav class="dropup"><a href="./process.html">Process</a><a href="./docs.html">Docs</a><a href="./layout.html">Layout</a><a href="./web.html">Web</a><a href="./langs.html">Langs</a><a href="#!">Project</a><a href="./job.html">Job</a>
     </nav>
-    <div class="settings">
-      <div class="settings__content">
-        <p>settings</p>
-      </div>
-    </div>
-    <div class="user">
-      <div class="user__content">
-        <p>user</p>
-      </div>
-    </div>
     <div class="search">
       <form class="search__content">
         <input type="text" placeholder="search...">
@@ -37,9 +25,12 @@
         </button>
       </form>
     </div>
+    <button class="close"><img src="./assets/img/close.svg" alt="" loading="lazy"/>
+    </button>
     <div class="container">
-      <header class="header"><nav class="breadcrumbs" id="breadcrumbs-container"></nav></header>
-      <main class="docs">
+      <header><nav class="breadcrumbs" id="breadcrumbs-container"></nav>
+      </header>
+      <main>
         <h2>Внешняя документация</h2>
         <details>
           <summary>Requirements (Требования)</summary>
@@ -648,11 +639,9 @@
         <p>Документация пишется на английском языке в passive voice.</p>
       </main>
       <menu class="menu">
-        <button id="settings"><img src="./assets/img/settings.svg" alt="settings" loading="lazy"/></button>
         <button id="search"><img src="./assets/img/search.svg" alt="search" loading="lazy"/></button>
         <button id="home"><img src="./assets/img/q.svg" alt="home" loading="lazy"/></button>
         <button id="dropup"><img src="./assets/img/menu.svg" alt="menu" loading="lazy"/></button>
-        <button id="user"><img src="./assets/img/user.svg" alt="user" loading="lazy"/></button>
       </menu>
     </div>
   </body>

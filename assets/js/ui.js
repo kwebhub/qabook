@@ -1,40 +1,48 @@
 export function initUI() {
     const body = document.body;
-    const REPO_NAME = '/qabook';
+    const REPO_NAME = '/';
     const menuMap = {
         'dropup': 'show-dropup',
-        'settings': 'show-settings',
-        'user': 'show-user',
         'search': 'show-search',
         'home': 'home-redirect'
     };
-    const closeAll = () => body.className = '';
+    const closeAll = () => {
+        body.className = '';
+        body.style.overflow = '';
+    };
     document.addEventListener('click', (e) => {
         const target = e.target;
+        if (target.closest('.close') ||
+            target.classList.contains('search') ||
+            target.classList.contains('dropup')) {
+            closeAll();
+            return;
+        }
         const btn = target.closest('[id]');
         if (!btn)
             return;
         const action = menuMap[btn.id];
         if (action === 'home-redirect') {
             window.location.href = REPO_NAME;
+            return;
         }
-        else if (action) {
+        if (action) {
             body.className = action;
-        }
-        if (target.classList.contains('close'))
-            closeAll();
-    });
-    window.addEventListener('click', ({ target }) => {
-        const activeClass = body.className.replace('show-', '');
-        if (activeClass && target.classList.contains(activeClass)) {
-            closeAll();
+            body.style.overflow = 'hidden';
+            if (action === 'show-dropup') {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
         }
     });
     const searchForm = document.querySelector('.search__content');
-    const searchInput = searchForm?.querySelector('input');
-    const updateSearchState = () => {
-        searchForm?.classList.toggle('is-dirty', !!searchInput?.value.trim());
-    };
-    searchInput?.addEventListener('input', updateSearchState);
-    searchForm?.addEventListener('reset', () => setTimeout(updateSearchState, 0));
+    if (searchForm) {
+        const searchInput = searchForm.querySelector('input');
+        const updateSearchState = () => {
+            searchForm.classList.toggle('is-dirty', !!searchInput?.value.trim());
+        };
+        searchInput?.addEventListener('input', updateSearchState);
+        searchForm.addEventListener('reset', () => {
+            setTimeout(updateSearchState, 0);
+        });
+    }
 }
