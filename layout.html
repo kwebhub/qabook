@@ -14,7 +14,7 @@
     <script defer type="module" src="./assets/js/main.js"></script>
   </head>
   <body>
-    <nav class="dropup"><a href="./process.html">Process</a><a href="./docs.html">Docs</a><a href="./layout.html">Layout</a><a href="./web.html">Web</a><a href="./langs.html">Langs</a><a href="#!">Project</a><a href="./job.html">Job</a>
+    <nav class="dropup"><a href="./process.html">Process</a><a href="./docs.html">Docs</a><a href="./web.html">Web</a><a href="#!">Project</a><a href="./job.html">Job</a>
     </nav>
     <div class="search">
       <form class="search__content">
@@ -1186,309 +1186,6 @@
           </table>
         </details>
         <details> 
-          <summary>Pug</summary>
-          <pre><code>#!/bin/bash
-npm install -g pug pug-cli sass typescript terser
-
-// dev
-sass -w --no-source-map ./src/style.scss:./public/style.css & tsc -w & pug -w ./src/*.pug -o ./public -P & cp -r ./src/assets ./public/assets
-
-// build
-sass --no-source-map --style=compressed ./src/style.scss:./dist/style.css & terser ./public/*.js -o ./dist/main.js & pug ./src/*.pug -o ./dist
-</code></pre>
-          <ul>
-            <li><a href="https://pugjs.org/">Официальная документация Pug</a>
-            </li>
-          </ul>
-          <p>Pug - это препроцессор HTML и шаблонизатор, который был написан на JavaScript для Node.js.  </p>
-          <table>
-            <caption>pug -w . -o ./ -P -E php</caption>
-            <tbody> 
-              <tr>
-                <td>pug</td>
-                <td>компилировать файлы с расширением .pug</td>
-              </tr>
-              <tr>
-                <td>-w</td>
-                <td>watcher - следить за изменениями в файлах</td>
-              </tr>
-              <tr>
-                <td>.</td>
-                <td>текущий каталог (каталог слежения)</td>
-              </tr>
-              <tr>
-                <td>-o</td>
-                <td>output - вывод скомпилированных файлов</td>
-              </tr>
-              <tr>
-                <td>./</td>
-                <td>каталог вывода</td>
-              </tr>
-              <tr>
-                <td>-P</td>
-                <td>pretty - удобочитаемый вид</td>
-              </tr>
-              <tr>
-                <td>-E php</td>
-                <td>компилировать с расширением php</td>
-              </tr>
-            </tbody>
-          </table>
-          <p>В Pug нет закрывающих тегов, вместо этого он использует строгую табуляцию (отступы) для определения вложенности тегов. Для закрытия тегов в конце необходимо добавить символ `/`: `foo(bar='baz')/`</p>
-          <pre><code>ul
-  li Item A
-  li Item B
-  li Item C
-</code></pre>
-          <p>Теги внутри строки</p>
-          <pre><code>p This is plain < span>old</ span> text content.</code></pre>
-          <table>
-            <caption>Комментарии</caption>
-            <tbody>
-              <tr>
-                <td>//-</td>
-                <td>не отобразится после компиляции, многострочный комментарий</td>
-              </tr>
-              <tr>
-                <td>//</td>
-                <td>отобразится после компиляции, многострочный комментарий</td>
-              </tr>
-            </tbody>
-          </table>
-          <p>Перенос текста на несколько строк</p>
-          <pre><code>| The
-| multiline
-| text
-
-// либо
-p.
-  The
-  multiline
-  text
-</code></pre>
-          <p>Синтаксис</p>
-          <pre><code>a(class='button' href='google.com') Google
-
-input(type='checkbox' name='agreement' checked)
-
-- var url = 'pug-test.html';
-a(href='/' + url) Link
-
-- url = 'https://example.com/'
-a(href=url) Another link
-
-- var classes = ['foo', 'bar', 'baz']
-a(class=classes)
-
-a.bang(class=classes class=['bing']) - объединение классов
-</code></pre>
-          <p>Многострочный ассоциативный массив</p>
-          <pre><code>-
-  var priceItem = [
-    {include: filterInc, parameter : "Розовый фильтр"},
-    {include: smileInc, parameter : "Смайлики"},
-    {include: commentInc, parameter : "Комментарии"}
-  ]
-</code></pre>
-          <p>Условия</p>
-          <pre><code>- var user = { description: 'foo bar baz' }
-- var authorized = false
-            
-// user
-if user.description
-  h2.green Description
-  p.description= user.description
-else if authorized
-  h2.blue Description
-  p.description.
-  User has no description,
-  why not add one...
-else
-  h2.red Description
-  p.description User has no description
-
-- var authenticated = true
-body(class=authenticated ? 'authed' : 'anon')
-</code></pre>
-          <p>Конструкция Switch Case</p>
-          <pre><code>- var friends = 10
-case friends
-  when 0
-  p you have no friends
-  when 1
-  p you have a friend
-  default
-  p you have # {friends} friends
-</code></pre>
-          <p>Циклы</p>
-          <pre><code>ul                                            
-  each val, index in ['zero', 'one', 'two']
-  li= index + ': ' + val
-
-- var values = [];
-ul
-  each val in values
-  li= val
-  else
-  li There are no values
-
-- var n = 0;
-ul
-  while n < 4
-  li= n++
-</code></pre>
-          <p>Вставка JavaScript</p>
-          <pre><code>не буферизированный код начинается с символа `-`
-- for (var x = 0; x < 3; x++)
-  li item
-
-буферизированный код начинается с символа `=`
-
-- let firstName = "Bob"
-p= firstName
-- let lastName = "Joe"
-.full-name= firstName + " " + lastName
-.full-name= `First name: ${firstName} Last name: ${lastName}`
-
-- const names = ['Bob Joe', 'John Doe', 'Billy Bob', 'John Week']
-ol
-  each name in names
-  li= name
-
--
-  const friendsList = [
-    {
-      "firstName":"Bob",
-      "lastName":"Joe",
-      "mobile":"123456789"
-    },
-    {
-      "firstName":"John",
-      "lastName":"Doe",
-      "mobile":"123456789"
-    },
-    {
-      "firstName":"Billy",
-      "lastName":"Bob",
-      "mobile":"123456789"
-    }
-  ]
-
-// friendsList
-  each friend in friendsList
-  .friend
-    .first-name= friend.firstName
-    .last-name= friend.lastName
-    .mobile= friend.mobile
-
--
-  const friendsList2 = []
-
-// friendsList2
-  each friend in friendsList
-  .friend
-    .first-name # {friend.firstName}
-    .last-name # {friend.lastName}
-    .mobile # {friend.mobile}
-  else
-  .oh-no You have no friends!
-
-mixin friendCard(friend)
-  .friend
-  .first-name # {friend.firstName}
-  .last-name # {friend.lastName}
-  .mobile # {friend.mobile}
-
-// friends
-  each friend in friendsList
-    +friendCard(friend)
-</code></pre>
-          <p>PHP, вывод данных полученных из формы, код вместе с html в php файле.</p>
-          <pre><code>.friend.
-  < ? php
-    echo $_POST['username'];
-    echo "br";
-    echo $_POST['username'];
-    echo "br";
-    echo $_POST['username'];
-  ? >
-
-.friend. - точка вначале обозначает класс (friend), точка в конце означает, что далее многостраничный текст
-</code></pre>
-          <p>Интерполяция переменных</p>
-          <pre><code>- var title = "On Dogs: Man's Best Friend";
-- var author = "Elnora";
-- var theGreat = "< span>escape!</ span>";
-h1= title
-p Written with love by # {author}
-p This will be safe: ! {theGreat}
-</code></pre>
-          <p>Инклюды (Includes) - вставки содержимого одного файла в другой файл Pug.</p>
-          <pre><code>doctype html - Тип документа
-html
-  head
-  style
-    include style.css
-  body
-  h1 My Site
-  p Welcome to my super lame site.
-  script
-    include script.js
-</code></pre>
-          <p>Наследование шаблонов - дочерний шаблон наследует extends родительский шаблон: блок дочернего шаблона заменит блок родительского с тем же именем</p>
-          <pre><code>// layout.pug
-html
-  head
-  title My Site
-  block scripts
-    script(src='/jquery.js')
-  body
-  block content
-  block foot
-    #footer
-    p some footer content
-
-// home.pug
-extends templates/layout
-- var title = 'Animals'
-- var pets = ['cat', 'dog']
-block content
-  h1= title // or h1 # {title}
-  each petName in pets
-  p= petName // or p # {petName}
-</code></pre>
-          <p>Миксины - позволяет создавать переиспользуемые блоки.</p>
-          <pre><code>// Declaration
-mixin pet(name)
-  li.pet= name
-
-// use
-ul
-  +pet('cat')
-  +pet('dog')
-  +pet('pig')
-
-mixin article(title)
-  .article
-  .article-wrapper
-    h1= title
-    if block
-      block
-    else
-      p No content provided
-+article('Hello world')
-+article('Hello world')
-  p This is my
-  p Amazing article
-
-mixin link(href, name)
-  attributes == {class: "btn"}
-    a(class!=attributes.class href=href)= name
-
-+link('/foo', 'foo')(class="btn")
-</code></pre>
-        </details>
-        <details> 
           <summary>CSS</summary>
           <p>
             Стилем или CSS (Cascading Style Sheets, каскадные таблицы стилей) - называется набор параметров форматирования, который применяется к элементам документа, чтобы изменить их внешний вид.<br />
@@ -2565,6 +2262,309 @@ transition: padding 1s ease 0s, color 2s ease-in 0.5s;
           <pre><code>< link rel="shortcut icon" href="favicon.ico" /></code></pre>
         </details>
         <details> 
+          <summary>Pug</summary>
+          <pre><code>#!/bin/bash
+npm install -g pug pug-cli sass typescript terser
+
+// dev
+sass -w --no-source-map ./src/style.scss:./public/style.css & tsc -w & pug -w ./src/*.pug -o ./public -P & cp -r ./src/assets ./public/assets
+
+// build
+sass --no-source-map --style=compressed ./src/style.scss:./dist/style.css & terser ./public/*.js -o ./dist/main.js & pug ./src/*.pug -o ./dist
+</code></pre>
+          <ul>
+            <li><a href="https://pugjs.org/">Официальная документация Pug</a>
+            </li>
+          </ul>
+          <p>Pug - это препроцессор HTML и шаблонизатор, который был написан на JavaScript для Node.js.  </p>
+          <table>
+            <caption>pug -w . -o ./ -P -E php</caption>
+            <tbody> 
+              <tr>
+                <td>pug</td>
+                <td>компилировать файлы с расширением .pug</td>
+              </tr>
+              <tr>
+                <td>-w</td>
+                <td>watcher - следить за изменениями в файлах</td>
+              </tr>
+              <tr>
+                <td>.</td>
+                <td>текущий каталог (каталог слежения)</td>
+              </tr>
+              <tr>
+                <td>-o</td>
+                <td>output - вывод скомпилированных файлов</td>
+              </tr>
+              <tr>
+                <td>./</td>
+                <td>каталог вывода</td>
+              </tr>
+              <tr>
+                <td>-P</td>
+                <td>pretty - удобочитаемый вид</td>
+              </tr>
+              <tr>
+                <td>-E php</td>
+                <td>компилировать с расширением php</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>В Pug нет закрывающих тегов, вместо этого он использует строгую табуляцию (отступы) для определения вложенности тегов. Для закрытия тегов в конце необходимо добавить символ `/`: `foo(bar='baz')/`</p>
+          <pre><code>ul
+  li Item A
+  li Item B
+  li Item C
+</code></pre>
+          <p>Теги внутри строки</p>
+          <pre><code>p This is plain < span>old</ span> text content.</code></pre>
+          <table>
+            <caption>Комментарии</caption>
+            <tbody>
+              <tr>
+                <td>//-</td>
+                <td>не отобразится после компиляции, многострочный комментарий</td>
+              </tr>
+              <tr>
+                <td>//</td>
+                <td>отобразится после компиляции, многострочный комментарий</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>Перенос текста на несколько строк</p>
+          <pre><code>| The
+| multiline
+| text
+
+// либо
+p.
+  The
+  multiline
+  text
+</code></pre>
+          <p>Синтаксис</p>
+          <pre><code>a(class='button' href='google.com') Google
+
+input(type='checkbox' name='agreement' checked)
+
+- var url = 'pug-test.html';
+a(href='/' + url) Link
+
+- url = 'https://example.com/'
+a(href=url) Another link
+
+- var classes = ['foo', 'bar', 'baz']
+a(class=classes)
+
+a.bang(class=classes class=['bing']) - объединение классов
+</code></pre>
+          <p>Многострочный ассоциативный массив</p>
+          <pre><code>-
+  var priceItem = [
+    {include: filterInc, parameter : "Розовый фильтр"},
+    {include: smileInc, parameter : "Смайлики"},
+    {include: commentInc, parameter : "Комментарии"}
+  ]
+</code></pre>
+          <p>Условия</p>
+          <pre><code>- var user = { description: 'foo bar baz' }
+- var authorized = false
+            
+// user
+if user.description
+  h2.green Description
+  p.description= user.description
+else if authorized
+  h2.blue Description
+  p.description.
+  User has no description,
+  why not add one...
+else
+  h2.red Description
+  p.description User has no description
+
+- var authenticated = true
+body(class=authenticated ? 'authed' : 'anon')
+</code></pre>
+          <p>Конструкция Switch Case</p>
+          <pre><code>- var friends = 10
+case friends
+  when 0
+  p you have no friends
+  when 1
+  p you have a friend
+  default
+  p you have # {friends} friends
+</code></pre>
+          <p>Циклы</p>
+          <pre><code>ul                                            
+  each val, index in ['zero', 'one', 'two']
+  li= index + ': ' + val
+
+- var values = [];
+ul
+  each val in values
+  li= val
+  else
+  li There are no values
+
+- var n = 0;
+ul
+  while n < 4
+  li= n++
+</code></pre>
+          <p>Вставка JavaScript</p>
+          <pre><code>не буферизированный код начинается с символа `-`
+- for (var x = 0; x < 3; x++)
+  li item
+
+буферизированный код начинается с символа `=`
+
+- let firstName = "Bob"
+p= firstName
+- let lastName = "Joe"
+.full-name= firstName + " " + lastName
+.full-name= `First name: ${firstName} Last name: ${lastName}`
+
+- const names = ['Bob Joe', 'John Doe', 'Billy Bob', 'John Week']
+ol
+  each name in names
+  li= name
+
+-
+  const friendsList = [
+    {
+      "firstName":"Bob",
+      "lastName":"Joe",
+      "mobile":"123456789"
+    },
+    {
+      "firstName":"John",
+      "lastName":"Doe",
+      "mobile":"123456789"
+    },
+    {
+      "firstName":"Billy",
+      "lastName":"Bob",
+      "mobile":"123456789"
+    }
+  ]
+
+// friendsList
+  each friend in friendsList
+  .friend
+    .first-name= friend.firstName
+    .last-name= friend.lastName
+    .mobile= friend.mobile
+
+-
+  const friendsList2 = []
+
+// friendsList2
+  each friend in friendsList
+  .friend
+    .first-name # {friend.firstName}
+    .last-name # {friend.lastName}
+    .mobile # {friend.mobile}
+  else
+  .oh-no You have no friends!
+
+mixin friendCard(friend)
+  .friend
+  .first-name # {friend.firstName}
+  .last-name # {friend.lastName}
+  .mobile # {friend.mobile}
+
+// friends
+  each friend in friendsList
+    +friendCard(friend)
+</code></pre>
+          <p>PHP, вывод данных полученных из формы, код вместе с html в php файле.</p>
+          <pre><code>.friend.
+  < ? php
+    echo $_POST['username'];
+    echo "br";
+    echo $_POST['username'];
+    echo "br";
+    echo $_POST['username'];
+  ? >
+
+.friend. - точка вначале обозначает класс (friend), точка в конце означает, что далее многостраничный текст
+</code></pre>
+          <p>Интерполяция переменных</p>
+          <pre><code>- var title = "On Dogs: Man's Best Friend";
+- var author = "Elnora";
+- var theGreat = "< span>escape!</ span>";
+h1= title
+p Written with love by # {author}
+p This will be safe: ! {theGreat}
+</code></pre>
+          <p>Инклюды (Includes) - вставки содержимого одного файла в другой файл Pug.</p>
+          <pre><code>doctype html - Тип документа
+html
+  head
+  style
+    include style.css
+  body
+  h1 My Site
+  p Welcome to my super lame site.
+  script
+    include script.js
+</code></pre>
+          <p>Наследование шаблонов - дочерний шаблон наследует extends родительский шаблон: блок дочернего шаблона заменит блок родительского с тем же именем</p>
+          <pre><code>// layout.pug
+html
+  head
+  title My Site
+  block scripts
+    script(src='/jquery.js')
+  body
+  block content
+  block foot
+    #footer
+    p some footer content
+
+// home.pug
+extends templates/layout
+- var title = 'Animals'
+- var pets = ['cat', 'dog']
+block content
+  h1= title // or h1 # {title}
+  each petName in pets
+  p= petName // or p # {petName}
+</code></pre>
+          <p>Миксины - позволяет создавать переиспользуемые блоки.</p>
+          <pre><code>// Declaration
+mixin pet(name)
+  li.pet= name
+
+// use
+ul
+  +pet('cat')
+  +pet('dog')
+  +pet('pig')
+
+mixin article(title)
+  .article
+  .article-wrapper
+    h1= title
+    if block
+      block
+    else
+      p No content provided
++article('Hello world')
++article('Hello world')
+  p This is my
+  p Amazing article
+
+mixin link(href, name)
+  attributes == {class: "btn"}
+    a(class!=attributes.class href=href)= name
+
++link('/foo', 'foo')(class="btn")
+</code></pre>
+        </details>
+        <details> 
           <summary>SCSS</summary>
           <ul>
             <li><a href="https://sass-scss.ru/">SCSS</a>
@@ -3043,7 +3043,7 @@ export default function() {
     say.default();
   }                                               
 < /script>
-< button onclick = "load"> Нажми меня < /button></code></pre><img src="./assets/img/contimg/promise.png" alt="" loading="lazy"/>
+< button onclick = "load"> Нажми меня < /button></code></pre><img src="../assets/img/contimg/promise.png" alt="" loading="lazy"/>
           </details>
           <details> 
             <summary>Types</summary>
@@ -3109,7 +3109,7 @@ export default function() {
                 </tr>
               </tbody>
             </table>
-            <p>Object</p><img src="./assets/img/contimg/proto.png" alt="" loading="lazy"/>
+            <p>Object</p><img src="../assets/img/contimg/proto.png" alt="" loading="lazy"/>
             <pre><code>Object
 {
   property1: value1,
@@ -4334,7 +4334,7 @@ function hash (args) {
               <li>Выполнить старейшую задачу из очереди макрозадач: queuemicrotask(f) - добавляет в очередь новую микрозадачу.</li>
               <li>Отрисовать изменения страницы (если есть).</li>
               <li>Если очередь макрозадач пуста - подождать, когда появится макрозадача.</li>
-            </ul><img src="./assets/img/contimg/eventLoop.png" alt="" loading="lazy"/>
+            </ul><img src="../assets/img/contimg/eventLoop.png" alt="" loading="lazy"/>
             <p>Сразу после каждой макрозадачи: все микрозадачи -> события -> рендеринг -> макрозадача</p>
             <ul>
               <li>очередь - (queue) добавляем в конец, извлекаем с начала.</li>
@@ -5207,7 +5207,7 @@ let value = arr.reduce(
 );
 
 // так же как и reduce(), но справа на лево
-reduceRight()</code></pre><img src="./assets/img/contimg/methods.jpg" alt="" loading="lazy"/>
+reduceRight()</code></pre><img src="../assets/img/contimg/methods.jpg" alt="" loading="lazy"/>
             <p>Псевдомассив</p>
             <ul>
               <li>объекты, у которых есть индексы и свойство length.</li>

@@ -399,9 +399,22 @@ main i {
 }
 main table {
   width: 100%;
+  margin-bottom: 1.25rem;
 }
+main thead {
+  background-color: rgba(113, 152, 152, 0.4);
+}
+main tbody {
+  text-align: center;
+  font-size: 1rem;
+}
+main tr:nth-child(even) {
+  background-color: rgba(113, 152, 152, 0.4);
+}
+main th,
 main td {
-  padding: 1rem;
+  border: 1px solid rgba(113, 152, 152, 0.4);
+  border-collapse: collapse;
 }
 main [colspan] {
   text-align: center;
@@ -421,6 +434,37 @@ main pre {
   color: #ff9;
 }
 
+details {
+  margin: 1rem 0;
+}
+
+summary {
+  cursor: pointer;
+  display: flex;
+}
+
+em {
+  color: #ababab;
+}
+
+code {
+  color: #8dc5c5;
+  font-size: 1rem;
+}
+
+dfn {
+  color: #dac924;
+}
+
+b {
+  color: #3fc028;
+}
+
+small {
+  font-size: 0.875rem;
+  color: #8dc5c5;
+}
+
 .dropup {
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -435,7 +479,7 @@ main pre {
   overflow: hidden;
 }
 .dropup a {
-  line-height: 16.6666666667vh;
+  line-height: 20vh;
   border: 1px solid black;
   width: 100vw;
   text-align: center;

@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="robots" content="none">
+    <meta name="robots" content="noimageindex, nofollow">
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+    <link rel="stylesheet" type="text/css" href="./assets/style.css">
+    <title>qabook</title>
+    <script defer type="module" src="./assets/js/main.js"></script>
+  </head>
+  <body>
+    <nav class="dropup"><a href="./process.html">Process</a><a href="./docs.html">Docs</a><a href="./web.html">Web</a><a href="#!">Project</a><a href="./job.html">Job</a>
+    </nav>
+    <div class="search">
+      <form class="search__content">
+        <input type="text" placeholder="search...">
+        <button class="search-btn" type="submit"><img src="./assets/img/search.svg" alt="" loading="lazy"/>
+        </button>
+        <button class="search-reset" type="reset"><img src="./assets/img/close.svg" alt="" loading="lazy"/>
+        </button>
+      </form>
+    </div>
+    <button class="close"><img src="./assets/img/close.svg" alt="" loading="lazy"/>
+    </button>
+    <div class="container">
+      <header><nav class="breadcrumbs" id="breadcrumbs-container"></nav>
+      </header>
+      <main>
+        <p>Environment (dev, stage, prod)</p>
+        <p>CI/CD (Git_github, Docker, Devcontainer, Dockerfile, Kubernetes, Nginx)</p>
+        <h2>Git & GitHub</h2>
+        <p>
+          Version Control System, VCS или Revision Control System: система контроля (управления) версий — программное обеспечение для облегчения работы с изменяющейся информацией.<br />
+          Репозиторий, хранилище — место, где хранятся данные.
+        </p>
+        <table>
+          <tbody>
+            <tr>
+              <td colspan="2">Управление репозиторием</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>git init</td>
+              <td>инициализирует новый репозиторий Git в текущей директории</td>
+            </tr>
+            <tr> 
+              <td>git clone < url ></td>
+              <td>создает локальную копию удаленного репозитория</td>
+            </tr>
+            <tr> 
+              <td>git config</td>
+              <td>настройка параметров Git, таких как имя пользователя и email</td>
+            </tr>
+            <tr> 
+              <td>git status</td>
+              <td>отображает состояние файлов в рабочем каталоге и индексе</td>
+            </tr>
+            <tr> 
+              <td>git log</td>
+              <td>показывает историю коммитов</td>
+            </tr>
+            <tr> 
+              <td>git log --oneline</td>
+              <td>компактный вывод истории коммитов</td>
+            </tr>
+            <tr> 
+              <td>git log --graph</td>
+              <td>отображает историю коммитов в виде дерева</td>
+            </tr>
+            <tr> 
+              <td>git log --stat</td>
+              <td>показывает статистику изменений в каждом коммите</td>
+            </tr>
+            <tr> 
+              <td>git log --author="Имя"</td>
+              <td>фильтрует коммиты по автору</td>
+            </tr>
+            <tr> 
+              <td>git show < commit ></td>
+              <td>показывает содержимое конкретного коммита</td>
+            </tr>
+            <tr> 
+              <td>git remote</td>
+              <td>работа с удаленными репозиториями (добавление, удаление, переименование)</td>
+            </tr>
+            <tr> 
+              <td>git remote -v</td>
+              <td>отображение удаленных репозиториев и их URL</td>
+            </tr>
+            <tr> 
+              <td>git remote add < имя > < url ></td>
+              <td>добавляет удаленный репозиторий</td>
+            </tr>
+            <tr> 
+              <td>git remote remove < имя ></td>
+              <td>удаляет удаленный репозиторий</td>
+            </tr>
+            <tr> 
+              <td colspan="2">Отслеживание изменений</td>
+              <td></td>
+            </tr>
+            <tr> 
+              <td>git add < файл ></td>
+              <td>добавляет указанные файлы в индекс для подготовки к коммиту</td>
+            </tr>
+            <tr> 
+              <td>git add .</td>
+              <td>добавляет все измененные файлы в индекс</td>
+            </tr>
+            <tr> 
+              <td>git commit -m "Сообщение коммита"</td>
+              <td>создает новый коммит с указанным сообщением</td>
+            </tr>
+            <tr> 
+              <td>git commit --amend</td>
+              <td>редактирует последний коммит</td>
+            </tr>
+            <tr> 
+              <td>git diff</td>
+              <td>показывает различия между рабочим каталогом и индексом</td>
+            </tr>
+            <tr> 
+              <td>git diff --cached</td>
+              <td>показывает различия между индексом и последним коммитом</td>
+            </tr>
+            <tr> 
+              <td>git diff < коммит1 > < коммит2 ></td>
+              <td>показывает различия между двумя коммитами</td>
+            </tr>
+            <tr> 
+              <td>git stash</td>
+              <td>сохраняет незакоммиченные изменения в "стек"</td>
+            </tr>
+            <tr> 
+              <td>git stash pop</td>
+              <td>восстанавливает последние сохраненные изменения из стека</td>
+            </tr>
+            <tr> 
+              <td>git stash list</td>
+              <td>показывает список сохраненных изменений</td>
+            </tr>
+            <tr> 
+              <td>git stash drop</td>
+              <td>удаляет последнее сохранение</td>
+            </tr>
+            <tr> 
+              <td>git clean</td>
+              <td>удаляет не отслеживаемые файлы</td>
+            </tr>
+            <tr> 
+              <td>git rm < файл ></td>
+              <td>удаляет файл из индекса и рабочего каталога</td>
+            </tr>
+            <tr> 
+              <td colspan="2">Работа с ветками</td>
+              <td></td>
+            </tr>
+            <tr> 
+              <td>git branch</td>
+              <td>показывает список веток.</td>
+            </tr>
+            <tr> 
+              <td>git branch < имя_ветки ></td>
+              <td>создает новую ветку.</td>
+            </tr>
+            <tr> 
+              <td>git checkout < имя_ветки ></td>
+              <td>переключается на указанную ветку.</td>
+            </tr>
+            <tr> 
+              <td>git checkout -b < имя_ветки ></td>
+              <td>создает новую ветку и переключается на нее.</td>
+            </tr>
+            <tr> 
+              <td>git merge < имя_ветки ></td>
+              <td>сливает указанную ветку с текущей.</td>
+            </tr>
+            <tr> 
+              <td>git rebase < имя_ветки ></td>
+              <td>перемещает текущую ветку на вершину указанной.</td>
+            </tr>
+            <tr> 
+              <td>git revert < коммит ></td>
+              <td>создает новый коммит, отменяющий указанный коммит.</td>
+            </tr>
+            <tr> 
+              <td>git reset < коммит ></td>
+              <td>откатывает репозиторий к указанному коммиту.</td>
+            </tr>
+            <tr> 
+              <td colspan="2">Удаленный репозиторий:</td>
+              <td></td>
+            </tr>
+            <tr> 
+              <td>git fetch < удаленный_репозиторий ></td>
+              <td>загружает изменения из удаленного репозитория, но не сливает их.</td>
+            </tr>
+            <tr> 
+              <td>git pull < удаленный_репозиторий ></td>
+              <td>загружает изменения и сливает их с текущей веткой.</td>
+            </tr>
+            <tr> 
+              <td>git push < удаленный_репозиторий > < ветка ></td>
+              <td>отправляет локальные изменения в удаленный репозиторий.</td>
+            </tr>
+            <tr> 
+              <td>git push -u < удаленный_репозиторий > < ветка ></td>
+              <td>отправляет локальные изменения и настраивает отслеживание для ветки.</td>
+            </tr>
+            <tr> 
+              <td>git push --delete < удаленный_репозиторий > < ветка ></td>
+              <td>удаляет ветку на удаленном репозитории.</td>
+            </tr>
+            <tr> 
+              <td>git clone --branch < имя_ветки > < url ></td>
+              <td>клонирует конкретную ветку.</td>
+            </tr>
+            <tr> 
+              <td>git remote prune < удаленный_репозиторий ></td>
+              <td>удаляет ссылки на удаленные ветки, которые были удалены.</td>
+            </tr>
+          </tbody>
+        </table>
+        <h2>Docker</h2>
+        <h3>Install Docker</h3><a href="https://code.visualstudio.com/blogs/2020/03/02/docker-in-wsl2">vscode-wsl-docker</a>
+        <p>Для установки на windows нужно установить wsl, в powershell:</p>
+        <table>
+          <tbody>
+            <tr>
+              <td>wsl --install</td>
+              <td>установить wsl</td>
+            </tr>
+            <tr>
+              <td>shutdown -r -t 5</td>
+              <td>перезагрузить компьютер</td>
+            </tr>
+            <tr>
+              <td>wsl --status</td>
+              <td>версия wsl</td>
+            </tr>
+            <tr>
+              <td>wsl.exe -l -o</td>
+              <td>список доступных дистрибутивов</td>
+            </tr>
+            <tr>
+              <td>wsl.exe</td>
+              <td>запуск wsl</td>
+            </tr>
+            <tr>
+              <td>wsl.exe -l -v</td>
+              <td>режим работы wsl</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>Установить только движок</p><a href="http://docs.docker.com/engine">Docker engine</a>
+        <h3>Docker container</h3>
+        <ul>
+          <li>-it - объединяет две опции: -i (interactive) и -t (tty)</li>
+          <li>-i  - (--interactive)  означает, что контейнер будет получать стандартный поток ввода с хоста и направлять его в приложение, работающее в контейнере</li>
+          <li>-t  - (--tty) указывает докеру создать для запущенного приложения псевдотерминал, что позволит удобно работать с ним из вашего терминала</li>
+          <li>ubuntu — название образа, который мы запускаем Ubuntu</li>
+          <li>bash   — команда внутри контейнера ubuntu</li>
+        </ul>
+        <table>
+          <tbody>
+            <tr>
+              <td>docker run -it ubuntu bash</td>
+              <td>запустить контейнер</td>
+            </tr>
+            <tr>
+              <td>docker ps</td>
+              <td>список идентификаторов контейнеров</td>
+            </tr>
+            <tr>
+              <td>docker stop < container_id ></td>
+              <td>остановить контейнер</td>
+            </tr>
+            <tr>
+              <td>docker restart < container_id ></td>
+              <td>перезапустить контейнер</td>
+            </tr>
+            <tr>
+              <td>docker rm < container_id ></td>
+              <td>удалить контейнер</td>
+            </tr>
+            <tr>
+              <td>docker rm -f < container_id ></td>
+              <td>одновременно остановить и удалить контейнер</td>
+            </tr>
+            <tr>
+              <td>docker pull ubuntu</td>
+              <td>загрузка образа без запуска</td>
+            </tr>
+            <tr>
+              <td>docker pull ubuntu:20.04</td>
+              <td>указать конкретную версию образа</td>
+            </tr>
+            <tr>
+              <td>docker ../images</td>
+              <td>локально доступные образы</td>
+            </tr>
+            <tr>
+              <td>docker rmi < image_id ></td>
+              <td>удаление образа</td>
+            </tr>
+            <tr>
+              <td>docker ../images</td>
+              <td>идентификатор образа</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3>Dockerfile и Docker image</h3>
+        <ul>
+          <li>Образ Docker — это автономный и исполняемый пакет, включающий всё необходимое для запуска части программного обеспечения, включая код, среды выполнения, библиотеки и системные зависимости.</li>
+          <li>Образы Docker служат шаблоном для создания контейнеров.</li>
+          <li>Образы описываются с помощью Dockerfile.</li>
+        </ul>
+        <ul>
+          <li>Dockerfile — это текстовый файл с командами для сборки Docker-образа, которые описывают шаги установки зависимостей и конфигурацию приложения с учетом контекста приложения.</li>
+          <li>Контекст Dockerfile — это набор файлов, которые будут отправлены на Docker daemon для сборки образа, часто это директория, в которой находится сам Dockerfile и любые другие файлы, необходимые для сборки (в основном, код).</li>
+          <li>Пример Dockerfile для приложения на Node.js.</li>
+        </ul>
+        <table>
+          <tbody>
+            <tr>
+              <td>FROM node:14</td>
+              <td>указать базовый образ</td>
+            </tr>
+            <tr>
+              <td>WORKDIR /app</td>
+              <td>установить рабочую директорию внутри будущего контейнера</td>
+            </tr>
+            <tr>
+              <td>COPY package*.json ./</td>
+              <td>копировать package.json и package-lock.json в /app</td>
+            </tr>
+            <tr>
+              <td>RUN npm install</td>
+              <td>установить зависимости</td>
+            </tr>
+            <tr>
+              <td>COPY . .</td>
+              <td>копировать файлы приложения (с хоста (контекст) в образ (/app))</td>
+            </tr>
+            <tr>
+              <td>EXPOSE 3000</td>
+              <td>открыть порт</td>
+            </tr>
+            <tr>
+              <td>CMD ["node", "server.js"]</td>
+              <td>запустить приложение</td>
+            </tr>
+            <tr>
+              <td>docker build -t node-app:latest</td>
+              <td>собрать приложение -t - указывает docker собрать образ с тегом: node-app — название образа, latest — тег</td>
+            </tr>
+            <tr>
+              <td>docker run node-app</td>
+              <td>запустить приложение</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3>Multistage</h3>
+        <ul>
+          <li>Каждая команда создает свой собственный слой образа.</li>
+          <li>Из-за этого образы могут раздуваться до огромных размеров.</li>
+          <li>Для того, чтобы этого не происходило, существует поэтапная сборка.</li>
+          <li>Поэтапная (multistage) сборка - сборка позволяет уменьшить размер итоговых образов, используя несколько команд FROM.</li>
+        </ul>
+        <pre><code>BUILD STAGE
+FROM golang:1.16 AS build
+WORKDIR /go/src/app
+COPY . .
+RUN go build -o myapp
+
+RUN STAGE
+FROM alpine:latest
+WORKDIR /root/
+COPY --from=build /go/src/app/myapp .
+CMD ["./myapp"]
+В итоговый образ попадет только то, что было в образе alpine плюс исполняемый файл myapp.
+</code></pre>
+        <h3>Docker Hub — это репозиторий:</h3>
+        <ul>
+          <li>Искать и загружать публичные образы, предоставляемые сообществом;</li>
+          <li>Создавать и делиться собственными образами;</li>
+          <li>Управлять автоматическими сборками и интеграциями с системой контроля версий.</li>
+        </ul>
+        <table>
+          <tbody>
+            <tr>
+              <td>docker pull ubuntu:latest</td>
+              <td>скачать нужный образ на локальную машину</td>
+            </tr>
+            <tr>
+              <td>docker run -it ubuntu:latest /bin/bash</td>
+              <td>запустить контейнер</td>
+            </tr>
+            <tr>
+              <td>docker login</td>
+              <td>создать аккаунт на Docker Hub и авторизоваться в командной строке</td>
+            </tr>
+            <tr>
+              <td>
+                docker tag < image_id > your_dockerhub_username/repo_name:tag<br />
+                docker push your_dockerhub_username/repo_name:tag
+              </td>
+              <td>выгрузить собственный образ</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>Готовые образы</p>
+        <ul>
+          <li>Alpine Linux (alpine) — это крошечный дистрибутив Linux на основе BusyBox, его образ имеет размер всего 5 МБ;</li>
+          <li>PHP (php-cli, php-fpm) — образы для интерпретатора php, включает все необходимое для разработки под этот язык;</li>
+          <li>MySQL (mysql) — всем известная БД;</li>
+          <li>NGINX (nginx) — пригодится для создания обратного прокси-сервера;</li>
+          <li>Redis (redis) — высокопроизводительная in-memory база данных, используемая для кеширования и управления сессиями;</li>
+          <li>Node.js (node) — среда выполнения JavaScript, необходимая для запуска серверного кода на базе Node.js.</li>
+        </ul>
+        <p>
+          Почти у каждого популярного образа есть alpine- и slim-версии, базовый в виде alpine, slim-версии не включают в себя инструменты для сборки, а предназначены только для исполнения.<br />
+          Gitlab - хранилище, которое очень удобно использовать в связке с Gitlab CI.
+          
+        </p>
+        <h3>Сети docker</h3>
+        <p>Bridge - используется по умолчанию, создается виртуальный мост, который позволяет контейнерам общаться друг с другом и с хост-машиной.</p>
+        <pre><code>docker network create --driver bridge app_network
+docker run -d --network app_network --name app nginx
+</code></pre>
+        <p>Host</p>
+        <ul>
+          <li>В этом режиме контейнер использует сетевой стек хост-машины.</li>
+          <li>Это означает, что контейнер и хост имеют общий IP-адрес и порты.</li>
+          <li>Host-сеть полезна для уменьшения сетевой задержки, однако она уменьшает изоляцию между контейнером и хостом.</li>
+        </ul>
+        <pre><code>docker run -d --network host nginx</code></pre>
+        <p>Overlay</p>
+        <ul>
+          <li>Этот режим в основном используется в кластерных средах и Docker Swarm.</li>
+          <li>Overlay-сети позволяют контейнерам, работающим на разных физических или виртуальных машинах, общаться друг с другом так, будто они находятся на одной сети.</li>
+          <li>Это достигается путем создания распределенной сети поверх существующей физической инфраструктуры.</li>
+        </ul>
+        <pre><code>docker network create --driver overlay --subnet 10.0.9.0/24 my_overlay_network</code></pre>
+        <ul>
+          <li>Коммуникация между контейнерами является ключевым аспектом для микросервисной архитектуры и распределенных систем.</li>
+          <li>В Docker вы можете легко настроить взаимодействие между контейнерами, используя созданные вами сети.</li>
+          <li>Встроенный DNS-сервис Docker позволяет контейнерам общаться друг с другом по именам хоста: docker exec container2 ping container1.</li>
+        </ul>
+        <table>
+          <tbody>
+            <tr>
+              <td>docker network ls</td>
+              <td>список доступных сетей</td>
+            </tr>
+            <tr>
+              <td>docker network disconnect < network_name > < container_id ></td>
+              <td>отключение контейнера от сети</td>
+            </tr>
+            <tr>
+              <td>docker network rm < network_name ></td>
+              <td>удалить сеть</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3>Volumes и bind mounts</h3>
+        <ul>
+          <li>Volumes и bind mounts — два ключевых механизма для работы с данными в контейнерах.</li>
+          <li>Они необходимы, чтобы эффективно управлять данными, обеспечивать их сохранность и доступность.</li>
+          <li>Docker volumes - чтобы хранить данные отдельно от контейнера.</li>
+          <li>Даже в случае, если контейнер удалится, данные, хранящиеся в volume, останутся нетронутыми, что важно, когда проект уже развернут.</li>
+          <li>Bind Mounts немного отличаются от volumes. Этот подход представляет собой простое монтирование директорий с хоста в директории внутри контейнера.</li>
+          <li>Это позволяет контейнерам иметь прямой доступ к данным на хосте, что удобно для среды разработки и тестирования.</li>
+          <li>При bind mounts изменения, внесенные в файлы на хосте, будут немедленно отражаться внутри контейнера, и наоборот.</li>
+        </ul>
+        <pre><code>volume:
+type=volume,src=my_volume,target=/usr/local/data
+# либо
+docker volume create my_volume && docker run -d -v my_volume:/data my_image
+
+bind mount:
+type=bind,src=/path/to/data,target=/usr/local/data
+# либо
+docker run -d -v /path/on/host:/path/in/container my_image
+</code></pre>
+        <table>
+          <thead>
+            <tr>
+              <th> </th>
+              <th>Volumes</th>
+              <th>Bind mounts</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Путь на хосте</td>
+              <td>Выбирает Docker</td>
+              <td>Указывает разработчик</td>
+            </tr>
+            <tr>
+              <td>Новый volume</td>
+              <td>Создает</td>
+              <td>Не создает</td>
+            </tr>
+            <tr>
+              <td>Драйверы volumes</td>
+              <td>Поддерживает</td>
+              <td>Не поддерживает</td>
+            </tr>
+          </tbody>
+        </table>
+        <h2>Docker Compose</h2>
+        <p>Docker Compose —  позволяет описать и запустить сложные приложения, состоящие из нескольких контейнеров:</p>
+        <ul>
+          <li>Декларативное описание сервисов, volumes и networks в формате yaml.</li>
+          <li>Управление всеми службами, указанными в конфигурационном файле, при помощи единой утилиты docker compose.</li>
+          <li>Управление жизненным циклом контейнеров.</li>
+          <li>Веб-приложение, состоящее из веб-сервера и базы данных.</li>
+          <li>Docker Compose позволяет автоматизировать этот процесс, описав конфигурацию проекта в одном файле.</li>
+          <li>Для начала работы с Docker Compose необходимо создать файл docker-compose.yml, в котором будет описана конфигурация вашего приложения.</li>
+        </ul>
+        <pre><code>services:
+  web:
+    image: nginx:latest
+    ports:
+      - "8000:80"
+    networks:
+      - app-network
+  app: 
+    build:
+      args:
+        user: www-data
+        uid: 33
+        app_mode: development
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    image: app
+    container_name: app
+    working_dir: /var/www/
+    volumes:
+      -'./:/var/www'
+    networks:
+      - app-network
+  db:
+    image: mysql:latest
+    volumes:
+      -'app-db:/var/lib/mysql'
+    environment:
+      DB_PASSWORD: password
+    networks:
+      - app-network
+networks:
+  app-network:
+    name: app-network
+      driver: bridge
+volumes:
+  app-db:
+    driver: local
+</code></pre>
+        <p>Структура docker-compose.yml:</p>
+        <pre><code>services:
+  web:
+    image: nginx:latest
+    ports:
+      - "8000:80"
+    networks:
+      - app-network
+  app: 
+    build:
+      args:
+        user: www-data
+        uid: 33
+        app_mode: development
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    image: app
+    container_name: app
+    working_dir: /var/www/
+    volumes:
+      -'./:/var/www'
+    networks:
+      - app-network
+  db:
+    image: mysql:latest
+    volumes:
+      -'app-db:/var/lib/mysql'
+    environment:
+      DB_PASSWORD: password
+    networks:
+      - app-network
+networks:
+  app-network:
+    name: app-network
+      driver: bridge
+volumes:
+  app-db:
+    driver: local
+</code></pre>
+        <p>Dockefile to build Docker Image of Apache WebServer running on Ubuntu</p>
+        <pre><code>FROM ubuntu:16.04
+
+RUN apt-get -y update
+RUN apt-get -y install apache2
+
+RUN echo 'Hello World from Docker!' > /var/www/html/index.html
+
+CMD ["/usr/sbin/apache2ctl", "-D","FOREGROUND"]
+EXPOSE 80
+
+docker run -it --name node-octo alpine sh
+apk add nodejs
+node --version
+docker commit node-octo vamalevany/node-octo:12.14 - скомител свой образ node-octo для DockerHub под учеткой vamalevany с тэгом 12.14
+docker ../images
+docker login
+Username: vamalevany
+Password:
+docker push vamalevany/node-octo        - отправляем образ в репозиторий на DockerHub под учеткой vamalevany
+docker rmi vamalevany/node-octo:12.14   - удаляем созданный образ
+docker pull vamalevany/node-octo:12.14  - скачиваем образ из DockerHub под учеткой vamalevany
+</code></pre>
+        <p>Dockefile to build Docker Image of alpine linux Nodejs npm http-server</p>
+        <table>
+          <tbody>
+            <tr>
+              <td>FROM alpine</td>
+              <td>за основу берем образ alpine linux</td>
+            </tr>
+            <tr>
+              <td>RUN apk add npm && i -g http-server</td>
+              <td>каждая строка RUN это новый слой в docker, пакетный менеджер alpine apk устанавливает nodejs со своим пакетным менеджером и устанавливает (i - install) глобально (-g) http-server</td>
+            </tr>
+            <tr>
+              <td>VOLUME /home/server/</td>
+              <td>папка для хранения</td>
+            </tr>
+            <tr>
+              <td>WORKDIR /home/server/</td>
+              <td>рабочая папка</td>
+            </tr>
+            <tr>
+              <td>COPY ./ /home/server/</td>
+              <td>скопировать содержимое из текущей директории (где собирается образ из Dockerfile) в /home/server образа</td>
+            </tr>
+            <tr>
+              <td>EXPOSE 8080</td>
+              <td>указываем порт на котором будет работать контейнер</td>
+            </tr>
+            <tr>
+              <td>CMD http-server</td>
+              <td>запуск http-server при старте контейнера</td>
+            </tr>
+            <tr>
+              <td>docker build -t vamalevany/node:v1 .</td>
+              <td>строим образ из Dockerfile с именем (-t) vamalevany/node:v1, точка указывает, что место сборки текущая директория</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>Создание Dockerfile для внешней сборки приложений</p>
+        <pre><code>FROM node
+RUN npm i -g yarn
+VOLUME /opt/server/
+WORKDIR /opt/server/
+COPY ./ /opt/server/
+EXPOSE 3000
+CMD yarn start
+docker build -t vamalevany/web-server-external:v1 -f Dockerfile .
+</code></pre>
+        <p>Создание Dockerfile для внутренней сборки приложений</p>
+        <table>
+          <tbody>
+            <tr>
+              <td>FROM alpine</td>
+            </tr>
+            <tr>
+              <td>RUN apk add git \</td>
+              <td>будем использовать файлы с git, \ - экранирует перевод строки</td>
+            </tr>
+            <tr>
+              <td>&& apk add yarn \</td>
+              <td>устанавливаем yarn</td>
+            </tr>
+            <tr>
+              <td>&& git clone https://github.com/vamalevany/cont.git \</td>
+              <td>копируем папку проекта с git</td>
+            </tr>
+            <tr>
+              <td>&& cd cont \</td>
+              <td>переходим в папку проекта на сервере</td>
+            </tr>
+            <tr>
+              <td>&& yarn</td>
+              <td>запускаем yarn для обновления зависимостей</td>
+            </tr>
+            <tr>
+              <td>VOLUME ./cont</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>WORKDIR ./cont</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>EXPOSE 3000</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>CMD yarn start</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>docker build -t vamalevany/web-server-internal:v1 -f Dockerfile .</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <ul>
+          <li>В учетке DockerHub можно настроить автосборку и автообновление образов на самом DockerHub из файлов на GitHub.</li>
+          <li>При обновлении файлов на GitHub будет обновляться образ на DockerHub, созданный из этих файлов.</li>
+          <li>Docker Compose - позволяет запускать образы в связке друг с другом.</li>
+          <li>Docker-compose install: - в примере версия 1.25.4</li>
+        </ul>
+        <pre><code>sudo curl -L "https://github.com/docker/compose/releases/download/1.25.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+docker-compose --version
+# (если не найдет, нужно сделать ссылку на другую директорию, например sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose)
+</code></pre>
+        <p>
+          nano docker-compose.yml<br />
+          docker-compose файл
+        </p>
+        <table>
+          <tbody>
+            <tr>
+              <td colspan="2">version: '3'</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td colspan="2">services:</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td colspan="2"></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td colspan="2">db:</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>image: postgres:11.4-alpine</td>
+              <td>образ берем с DockerHub</td>
+            </tr>
+            <tr>
+              <td>container_name: postgres</td>
+              <td>имя можем придумать мы либо сформирует автоматически</td>
+            </tr>
+            <tr>
+              <td>ports: - 5432:5432</td>
+              <td>проброс портов из образа на сервер</td>
+            </tr>
+            <tr>
+              <td>volumes: - ./pg_data:/var/lib/postgresql/data/pgdata</td>
+              <td>сохраняет базу данных вне контейнера в директории ./pg_data</td>
+            </tr>
+            <tr>
+              <td colspan="2"></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td colspan="2">environment:</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>POSTGRES_PASSWORD: 123</td>
+              <td>пароль к базе данных, пользователь по умолчанию postgres</td>
+            </tr>
+            <tr>
+              <td>POSTGRES_DB: docker_test</td>
+              <td>название базы данных</td>
+            </tr>
+            <tr>
+              <td>PGDATA: /var/lib/postgresql/data/pgdata</td>
+              <td>расположение базы данных</td>
+            </tr>
+            <tr>
+              <td>restart: always</td>
+              <td>в случае остановки приложения db без команды docker-compose будет его перезапускать</td>
+            </tr>
+            <tr>
+              <td colspan="2"></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td colspan="2">app:</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>image: vamalevany/web-server                            </td>
+              <td>собираем контейнер на собственном образе, который хранится на DockerHub</td>
+            </tr>
+            <tr>
+              <td>container_name: application                             </td>
+              <td>имя придумываем сами</td>
+            </tr>
+            <tr>
+              <td>ports: - 3000:3000                                      </td>
+              <td>внутренний порт в контейнере выставляем наружу такой же</td>
+            </tr>
+            <tr>
+              <td colspan="2"></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td colspan="2">environment:</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>POSTGRES_HOST: db                                       </td>
+              <td>переменная POSTGRES_HOST заданна в образе для подключения базы данных</td>
+            </tr>
+            <tr>
+              <td colspan="2">restart: always</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>links: - db                                             </td>
+              <td>указываем зависимости, т.е. перед запуском контейнера app должен быть запущен контейнер db</td>
+            </tr>
+            <tr>
+              <td colspan="2">nginx:</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td colspan="2">image: nginx:1.17.2-alpine - образ с DockerHub</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>container_name: nginx                                   </td>
+              <td>имя придумываем</td>
+            </tr>
+            <tr>
+              <td>volumes: - ./default.conf:/etc/nginx/conf.d/default.conf</td>
+              <td>пробрасываем настройки в контейнер с локального компьютера</td>
+            </tr>
+            <tr>
+              <td>links: - app                                            </td>
+              <td>зависимости запуска</td>
+            </tr>
+            <tr>
+              <td>ports: - 8989:8989                                      </td>
+              <td>пробрасываем порт из контейнера наружу</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          nano default.conf<br />
+          Настройка прокси-сервера nginx
+        </p>
+        <pre><code>server {
+  listen 8989;
+  server_name localhost;
+  location {
+    < span>указываем где находится контейнер приложения< /span>
+    proxy_pass http://app:3000;
+    proxy_set_header Host $host;
+    proxy_set_header X-Real_IP $remote_addr;
+  }
+}
+</code></pre>
+        <table>
+          <tbody>
+            <tr>
+              <td>docker-compose --help</td>
+              <td>помощь</td>
+            </tr>
+            <tr>
+              <td>docker-compose up</td>
+              <td>создает и запускает контейнеры</td>
+            </tr>
+            <tr>
+              <td>docker-compose start</td>
+              <td>запускает контейнеры</td>
+            </tr>
+            <tr>
+              <td>docker-compose ../images</td>
+              <td>список образов и в каких контейнерах они используются</td>
+            </tr>
+            <tr>
+              <td>docker-compose ps</td>
+              <td>список контейнеров</td>
+            </tr>
+            <tr>
+              <td>docker-compose logs</td>
+              <td>логи</td>
+            </tr>
+            <tr>
+              <td>docker-compose stop</td>
+              <td>остановка контейнеров</td>
+            </tr>
+            <tr>
+              <td>docker-compose down</td>
+              <td>останавливает и удаляет все контейнеры текущего docker-compose файла</td>
+            </tr>
+            <tr>
+              <td>docker-compose up --scale app=5</td>
+              <td>запустить контейнер app в пять потоков</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          nano docker-compose.yml
+          docker-compose файл с вариантом запуска пяти контейнеров (каждый на своем порту)
+        </p>
+        <pre><code>version: '3'
+services:
+db:
+image: postgres:11.4-alpine
+container_name: postgres
+ports: - 5432:5432
+volumes: - ./pg_data:/var/lib/postgresql/data/pgdata
+environment:
+POSTGRES_PASSWORD: 123
+POSTGRES_DB: docker_test
+PGDATA: /var/lib/postgresql/data/pgdata
+restart: always
+app:
+image: vamalevany/web-server
+ports: - 3000-3005:3000 - задаем пул портов
+environment:
+POSTGRES_HOST: db
+restart: always
+links: - db
+nginx:
+image: nginx:1.17.2-alpine
+container_name: nginx
+volumes: - ./default.conf:/etc/nginx/conf.d/default.conf
+links: - app
+ports: - 8989:8989
+</code></pre>
+        <p>
+          nano default.conf<br />
+          Настройка прокси-сервера nginx при запуске пяти контейнеров<br />
+          аккумулирование прослушиваемых портов:
+        </p>
+        <pre><code>upstream application { 
+  server app:3000;
+  server app:3001;
+  server app:3002;
+  server app:3003;
+  server app:3004;
+  server app:3005;
+}
+
+server {
+  listen 8989;
+  server_name localhost;
+
+  # пул перебираемых портов
+  location {
+    proxy_pass http://application;
+    proxy_set_header Host $host;
+    proxy_set_header X-Real_IP $remote_addr;
+  }
+}
+</code></pre>
+        <h2>Nginx</h2>
+        <ul>
+          <li>Сервер в связке Nginx + NodeJs.</li>
+          <li>Nginx будет отдавать статические файлы самостоятельно, динамический контент передавать из NodeJS.</li>
+          <li>Установка и настройка Nginx.</li>
+          <li>Представим что у вас чистый сервер и ничего не установлено.</li>
+        </ul>
+        <p>Идем в папку /root и ставим Nginx:</p>
+        <pre><code>apt-get install -y nginx</code></pre>
+        <p>
+          После установки Nginx, в папке /var появилась папка /www, а в ней папка /html, а в ней файл index.html.<br />
+          Идем в папку /var и переименуем папку /html в папку /nginx:
+        </p>
+        <pre><code>mv /var/www/html /var/www/nginx</code></pre>
+        <p>Создаем доп.файл style.css (для теста):</p>
+        <pre><code>touch /var/www/nginx/style.css</code></pre>
+        <p>
+          В файле index.html пишем код, этот файл будет заглушкой: < h1 >Заглушка< h1 /><br />
+          В файле style.css пишем код:
+          
+        </p>
+        <pre><code>body {
+  background: #000;
+}
+</code></pre>
+        <p>создать папку для NodeJS:</p>
+        <pre><code>mkdir /var/www/nodejs</code></pre>
+        <p>Далее прописываем на всякий случай права для папок:</p>
+        <pre><code>chown www-data /var/www && chown www-data /var/www/nginx && chown www-data /var/www/nodejs</code></pre>
+        <p>Теперь самое интересное, настраиваем файл конфига Nginx, редактируем файл default:</p>
+        <pre><code>mcedit /etc/nginx/sites-available/default</code></pre>
+        <p>Очищаем весь файл и пишем:</p>
+        <table>
+          <caption>настройка сервера</caption>
+          <tbody>
+            <tr>
+              <td colspan="2">server {</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td colspan="2">default_server</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>listen 80 default_server;</td>
+              <td>Nginx слушает порт 80, указан в /etc/nginx/nginx.conf</td>
+            </tr>
+            <tr>
+              <td>root /var/www/nodejs;</td>
+              <td>Указываем "динамическую" папку NodeJS</td>
+            </tr>
+            <tr>
+              <td>index index.html; }</td>
+              <td>Указываем основной файл заглушки</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          Устанавливаем страницы ошибок.<br />
+          В папке /var/www/errors должны быть файлы 50x.html и 40x.html.
+        </p>
+        <pre><code>error_page 500 502 503 504 /50x.html;
+error_page 400 401 402 403 404 /40x.html;
+location = /50x.html { 
+  root /var/www/errors;
+}
+location = /40x.html { 
+  root /var/www/errors;
+}
+</code></pre>
+        <p>
+          Указываем IP адрес сервера server_name IP_адрес_сервера;<br />
+          Если мы обращаемся по любому УРЛ начиная с /, то сервер будет обрабатывать NodeJS.<br />
+          Тут указываем IP|Url и порт (8000) для NodeJS, поскольку Nginx будет висеть на 80 порту.
+        </p>
+        <pre><code>location / {
+  proxy_pass http://IPorURL_адрес_сервера:8000;
+  proxy_set_header Host $host;
+}
+</code></pre>
+        <p>Если мы обращаемся по УРЛ начинающийся с /nginx/, то мы будем подгружать "статичные" файлы хранящиеся в нем в соответствии с наличием этих файлов.</p>
+        <pre><code>location /nginx/ {
+  < span>Указываем корень< /span>
+  root /var/www/;
+  autoindex off;
+  < span>Итого путь для Nginx будет< /span>
+  /var/www/static/
+}
+</code></pre>
+        <p>Добавляем Nginx в автозагрузку и запускаем, что бы изменения применились, после проверяем статус:</p>
+        <pre><code>systemctl enable nginx && systemctl start nginx && systemctl status nginx</code></pre>
+        <p>
+          Установка и настройка NodeJS<br />
+          Идем в папку /root и под пользователем root устанавливаем cURL
+        </p>
+        <pre><code>apt-get install -y curl</code></pre>
+        <p>С помощью cURL скачиваем NodeJS, в моем случае верся 6:</p>
+        <pre><code>curl -sL https://deb.nodesource.com/setup_6.x -o nodesource_setup.sh</code></pre>
+        <p>Запускаем скаченный файл:</p>
+        <pre><code>bash nodesource_setup.sh</code></pre>
+        <p>Устанавливаем NodeJS</p>
+        <pre><code>apt-get install -y nodejs build-essential</code></pre>
+        <p>Готово! Можно протестировать:</p>
+        <pre><code>node
+console.log ('hello world')
+</code></pre>
+        <p>
+          Вместе с NodeJS установился и NPM (Node Package Manager), с помощью которого мы установим express и pm2:<br />
+          С помощью демона pm2 можно позабыть о проблемах с падением NodeJS (устанавливаем глобально):
+        </p>
+        <pre><code>npm install pm2 -g</code></pre>
+        <p>Инициализируем проект, создаем package.json в который будем фиксировать нужные пакеты</p>
+        <pre><code>npm init</code></pre>
+        <p>С помощью библиотеки express код будет писаться намного проще и быстрее (устанавлиаем локально):</p>
+        <pre><code>cd /var/www/nodejs/
+npm install express --save
+</code></pre>
+        <p>Создаем файл server.js для NodeJS, который будет основным (входным) файлом:</p>
+        <pre><code>touch /var/www/nodejs/server.js</code></pre>
+        <table>
+          <caption>Код файла server.js</caption>
+          <tbody>
+            <tr>
+              <td>const setup = {port:8000}           </td>
+              <td>настройки</td>
+            </tr>
+            <tr>
+              <td>const express = require ('express');</td>
+              <td>подключить express</td>
+            </tr>
+            <tr>
+              <td>const app = express ();             </td>
+              <td>создать приложение</td>
+            </tr>
+            <tr>
+              <td>app.get('/test', (req, res) => {res.send('Тест');});</td>
+              <td>маршрутизировать GET-запрос http://ваш_сайт/test</td>
+            </tr>
+            <tr>
+              <td>app.listen(setup.port, () => {console.log('Сервер: порт %s - старт!'});</td>
+              <td>слушать порт и при запуске сервера показать порт</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>Теперь можно добавить демону 1 процесс и запустить наш NodeJS сервер:</p>
+        <pre><code>pm2 start /var/www/nodejs/server.js</code></pre>
+        <p>
+          При этом у нас запущен сервер Nginx<br />
+          После перезагрузки ОС, pm2 сам себя не запустит и соответственно не запустит процессы.<br />
+          Выполняем команды:
+          
+        </p>
+        <pre><code>pm2 start server.js
+pm2 save
+pm2 startup
+</code></pre>
+        <p>
+          Сначала добавляем нужный процесс (в нашем случае скрипт NodeJS)<br />
+          Потом сохраняем конфигурацию<br />
+          После, добавляем PM2 в сервисы ОС<br />
+          Тестируем<br />
+        </p>
+        <ul>
+          <li>переходим на (http://IP_адрес_сайта:80/)                      - дожны увидеть фразу 'Тест'</li>
+          <li>переходим на (http://IP_адрес_сайта:80/nginx/style.css)       - дожны увидеть код стилей</li>
+          <li>переходим на (http://IP_адрес_сайта:80/nginx/)                - дожны увидеть заглушку</li>
+        </ul>
+      </main>
+      <menu class="menu">
+        <button id="search"><img src="./assets/img/search.svg" alt="search" loading="lazy"/></button>
+        <button id="home"><img src="./assets/img/q.svg" alt="home" loading="lazy"/></button>
+        <button id="dropup"><img src="./assets/img/menu.svg" alt="menu" loading="lazy"/></button>
+      </menu>
+    </div>
+  </body>
+</html>
