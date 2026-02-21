@@ -40,6 +40,48 @@
         </ul>
         <p>Всемирная паутина (World Wide Web) — распределённая система, предоставляющая доступ к связанным между собой документам, расположенным на различных компьютерах, подключённых к сети Интернет.</p>
         <p>Веб-служба, веб-сервис (web service) — идентифицируемая уникальным веб-адресом (URL-адресом) программная система со стандартизированными интерфейсами, а также HTML-документ сайта, отображаемый браузером пользователя.</p>
+        <details> 
+          <summary>Mobile</summary>
+          <h2>Native apps</h2>
+          <ul>
+            <li>Под нативным мы подразумеваем мобильное приложение, которое создается для определенной платформы и непосредственно устанавливается на устройство пользователя (занимая определенный объем памяти).</li>
+            <li>Такие приложения пользователь загружает через магазин приложений той или иной платформы, такой как Play Store для Google и Apple App Store для iOS.</li>
+            <li>Органично выглядят на телефоне.</li>
+            <li>Используют все функции программного обеспечения гаджета.</li>
+            <li>Имеют быстрый отклик и плавность анимаций интерфейса.</li>
+            <li>Надежнее (работают стабильнее).</li>
+            <li>Экономнее расходуют ресурсы телефона: батарею, память.</li>
+            <li>Дорого в разработке.</li>
+          </ul>
+          <h2>Web apps</h2>
+          <p>
+            Веб приложения работают через веб-браузер на устройстве пользователя.
+            Эти приложения по сути являются индивидуализированными вебсайтами, которые сделаны таким образом, чтобы выглядеть и использоваться как нативные приложения, но на самом деле они не находятся на устройстве пользователя.
+          </p>
+          <ul>
+            <li>Приложения на веб-основе легче поддерживаются и они могут функционировать на платформе с любой ОС.</li>
+            <li>Разработчики могут предлагать приложения без необходимости их утверждения какими-либо магазинами приложений.</li>
+            <li>Более быстрая разработка циклов с использованием CSS, HTML и JavaScript.</li>
+            <li>Нет доступа к устройству пользователя.</li>
+            <li>Пользователи должны использовать их через сеть, что значительно снижает контроль безопасности.</li>
+            <li>Поиск приложения может быть затруднительным, так как не существует магазина приложений с каталогом и функцией поиска в нем.</li>
+          </ul>
+          <h2>Hybrid apps</h2>
+          <p>
+            Гибридные приложения являются чем-то средним между нативными и веб-приложениями.<br />
+            Фактически они создаются так, чтобы выглядеть и использоваться как нативные приложения.<br />
+            Их также устанавливают на телефон пользователя и их можно найти в магазинах приложений.<br />
+            Различие заключается в том, что они обязательно должны размещаться в рамках нативного приложения и созданы, чтобы работать через WebView.
+          </p>
+          <ul>
+            <li>Запускается не из браузера, возможно независимое обновление.</li>
+            <li>Скорость разработки, а, следственно, и цена значительно ниже, чем нативные приложения.</li>
+            <li>Возможность распространяться через магазины приложений (в отличие от веб-приложений).</li>
+            <li>Скорость и стабильность работы оставляют желать лучшего.</li>
+            <li>Сложности в масштабировании и развитии проекта.</li>
+            <li>Сложности и нестабильность при использовании различных модулей/функций смартфона.</li>
+          </ul>
+        </details>
         <details>
           <summary>Браузер</summary>
           <h2>Браузер</h2>
@@ -5281,7 +5323,751 @@ unsafe impl Foo for i32 {
 
 // method implementations go here
 }
-fn main() {}</code></pre>
+fn main() {}
+</code></pre>
+        </details>
+        <details> 
+          <summary>SQL</summary>
+          <ul>
+            <li><a href="https://dbdiagram.io">DB Diagram</a>
+            </li>
+            <li><a href="https://drawsql.app/">Рисовать диаграмму БД онлайн</a>
+            </li>
+          </ul>
+          <h2>Определение (Definition)</h2>
+          <ul>
+            <li>SQL — применяется для создания, модификации и управления данными в реляционной базе данных, управляемой соответствующей системой управления базами данных.</li>
+            <li>В базовом варианте SQL является информационно-логическим языком, а не языком программирования.</li>
+            <li>Система управления базами данных (СУБД) — совокупность программных и лингвистических средств общего или специального назначения, обеспечивающих управление созданием и использованием баз данных.</li>
+            <li>База данных (БД) - под БД (БД) понимают хранилище структурированных данных, при этом данные должны быть непротиворечивы, минимально избыточны и целостны.</li>
+            <li>Реляционная база данных — база данных, основанная на реляционной модели данных.</li>
+            <li>Реляционные БД представляют связанную между собой совокупность таблиц-сущностей БД.</li>
+            <li>Каждая таблица БД представляется как совокупность строк и столбцов, где строки соответствуют экземпляру объекта, конкретному событию или явлению, а столбцы - атрибутам (признакам, характеристикам, параметрам) объекта, события, явления.</li>
+            <li>При практической разработке БД таблицы-сущности зовутся таблицами, строки-экземпляры - записями, столбцы-атрибуты - полями.</li>
+            <li>Преимущества SQL - наличие стандартов и независимость от конкретной СУБД.</li>
+            <li>Недостатки SQL - сложность.</li>
+          </ul>
+          <p>Классификация по модели данных:</p>
+          <ul>
+            <li>Иерархическая</li>
+            <li>Объектная и объектно-ориентированная</li>
+            <li>Объектно-реляционная</li>
+            <li>Реляционная</li>
+            <li>Сетевая</li>
+            <li>Функциональная</li>
+          </ul>
+          <p>Типы отношений:</p>
+          <ul>
+            <li>Один к одному (one-to-one)</li>
+            <li>Один ко многим (one-to-many)</li>
+            <li>Многие к одному (many-to-one)</li>
+            <li>Многие ко многим (many-to-many, реализуется через отдельную таблицу)</li>
+          </ul>
+          <h2>Операторы определения данных (Data Definition Language, DDL)</h2>
+          <h3>CREATE - создает объект БД (саму базу, таблицу, представление, пользователя и т. д.)</h3>
+          <pre><code>// создать новую базу данных SQL
+CREATE DATABASE database name;
+</code></pre>
+          <p>Создать таблицу table со столбцами id, field_1, field_2, field_3: по каждому столбцу заданы тип и количество символов.</p>
+          <pre><code>CREATE TABLE table(
+  id INT PRIMARY KEY,
+  field_1 VARCHAR(100),
+  field_2 VARCHAR(30),
+  field_3 INT
+);</code></pre>
+          <table>
+            <tbody>
+              <tr>
+                <td>DESCRIBE table</td>
+                <td>информация о таблице</td>
+              </tr>
+              <tr>
+                <td>PRIMARY KEY</td>
+                <td>уникальный идентификатор записей.</td>
+              </tr>
+              <tr>
+                <td>FOREIGN KEY</td>
+                <td>внешний ключ, значения идентификатора записей в связанной таблице.</td>
+              </tr>
+              <tr>
+                <td>SERIAL</td>
+                <td>автоинкремент идентификатора в PostgreSQL</td>
+              </tr>
+              <tr>
+                <td>AUTO_INCREMENT</td>
+                <td>автоинкремент идентификатора в MySQL</td>
+              </tr>
+            </tbody>
+          </table>
+          <pre><code>CREATE TABLE table(
+  id SERIAL PRIMARY KEY,
+  field_1 VARCHAR(100),
+  field_2 VARCHAR(30),
+  field_3 INT
+);
+
+// Скрипт создания таблицы
+DROP TABLE IF EXISTS table;
+CREATE TABLE table(
+  id SERIAL PRIMARY KEY,
+  field_1 VARCHAR(100),
+  field_2 VARCHAR(30),
+  field_3 INT
+);
+
+// BACKUP - резервное копирование
+BACKUP DATABASE testDB
+TO DISK = 'D:\backups\testDB.bak'; 
+
+</code></pre>
+          <h3>Ограничения на уровне таблицы</h3>
+          <ul>
+            <li>либо RESTRICT - запретить удалять id таблицы table_2</li>
+            <li>либо CASCADE  - при удалении id таблицы table_2, удалить соответствующие записи</li>
+          </ul>
+          <pre><code>CREATE TABLE table_1(
+  id PRIMARY KEY,
+
+  // Значения в столбцах id и field_1 уникальные и не пустые
+  field_1 VARCHAR(100) UNIQUE NOT NULL,
+  field_2 VARCHAR(30),
+  field_3 INT,
+
+  // Значения столбца field_table_2_id - ссылки на id таблицы table_2
+  field_table_2_id INT REFERENCES table_2(id)
+  ON DELETE RESTRICT
+
+  // Ограничение с именем positive_field
+  CONSTRAINT positive_field
+
+  // Значения в столбце field_3 должны быть положительными
+  CHECK (field_3 >= 0)
+);
+
+// Уникальный идентификатор состоит из двух столбцов
+CREATE TABLE table_1(
+  field_table_2_id INT REFERENCES table_2(id),
+  field_table_3_id INT REFERENCES table_3(id),
+  quantity INT,
+  PRIMARY KEY(field_table_2_id, field_table_3_id)
+);
+</code></pre>
+          <h3>ALTER - изменяет таблицу</h3>
+          <pre><code>// Изменить таблицу table, добавить столбец field_4 с типом BOOLEAN
+ALTER TABLE table 
+ADD COLUMN field_4 BOOLEAN;
+
+// Изменить таблицу table, удалить столбец field_4
+ALTER TABLE table 
+DROP COLUMN field_4;
+
+// Изменить таблицу table, переименовать столбец field_4 в field_5
+ALTER TABLE table 
+RENAME COLUMN field_4 TO field_5;
+
+// Изменить таблицу table, переименовать в another_table
+ALTER TABLE table 
+RENAME TO another_table;
+</code></pre>
+          <h3>DROP - удаляет таблицу</h3>
+          <pre><code>DROP TABLE table</code></pre>
+          <h2>Операторы манипуляции данными (Data Manipulation Language, DML)</h2>
+          <h3>SELECT</h3>
+          <p>SELECT - выбирает данные, удовлетворяющие заданным условиям</p>
+          <pre><code>SELECT * FROM table</code></pre>
+          <ul>
+            <li>Для примера используем таблицу table со столбцами field_1, field_2 и т.д.</li>
+            <li>У каждого столбца свои значения value_1, value_2, value_3 и т.д.</li>
+            <li>Выбираю столбец (field_1) и столбец (field_2) из таблицы (table)</li>
+          </ul>
+          <pre><code>SELECT field_1, field_2
+FROM table;
+</code></pre>
+          <p>Ключевое слово AS назначает псевдоним f1 столбцу field_1</p>
+          <pre><code>SELECT field_1 AS f1
+FROM table;
+</code></pre>
+          <p>Выбрать только уникальные значения столбца field_1</p>
+          <pre><code>SELECT DISTINCT(field_1)
+FROM table;
+</code></pre>
+          <p>Выбрать первых 10 уникальных значений столбца field_1</p>
+          <pre><code>SELECT DISTINCT(field_1)
+FROM table
+LIMIT 10;
+</code></pre>
+          <p>Выбрать из таблицы table все строки со значением value в столбце field_2</p>
+          <pre><code>SELECT *
+FROM table
+
+// WHERE и фильтр field_2 = 'value'
+WHERE field_2 = 'value';
+</code></pre>
+          <table>
+            <caption>Используем в WHERE:</caption>
+            <tbody>
+              <tr>
+                <td>/=</td>
+                <td>Равно</td>
+              </tr>
+              <tr>
+                <td><>, !=</td>
+                <td>Неравно</td>
+              </tr>
+              <tr>
+                <td>></td>
+                <td>Больше</td>
+              </tr>
+              <tr>
+                <td>>=</td>
+                <td>Больше или равно</td>
+              </tr>
+              <tr>
+                <td><</td>
+                <td>Меньше</td>
+              </tr>
+              <tr>
+                <td><=</td>
+                <td>Меньше или равно</td>
+              </tr>
+              <tr>
+                <td>BETWEEN</td>
+                <td>Значение в диапазоне</td>
+              </tr>
+              <tr>
+                <td>IN</td>
+                <td>Значение в списке</td>
+              </tr>
+              <tr>
+                <td>LIKE</td>
+                <td>Соответствие шаблону</td>
+              </tr>
+              <tr>
+                <td>AND</td>
+                <td>Логическое И</td>
+              </tr>
+              <tr>
+                <td>OR</td>
+                <td>Логическое ИЛИ</td>
+              </tr>
+              <tr>
+                <td>NOT</td>
+                <td>Логическое НЕ</td>
+              </tr>
+            </tbody>
+          </table>
+          <table>
+            <caption>Спец.символы в шаблонах LIKE:</caption>
+            <tbody>
+              <tr>
+                <td>%</td>
+                <td>любое количество символов (можно и без символов)</td>
+              </tr>
+              <tr>
+                <td>_</td>
+                <td>ровно один символ</td>
+              </tr>
+            </tbody>
+          </table>
+          <pre><code>// Return all customers starting with "a", "b", "c", "d", "e" or "f":
+SELECT * FROM Customers
+WHERE CustomerName LIKE '[a-f]%';
+
+// Return all customers starting with either "b", "s", or "p":
+SELECT * FROM Customers
+WHERE CustomerName LIKE '[bsp]%';
+
+// Return all customers starting with NOT either "b", "s", or "p":
+SELECT * FROM Customers
+WHERE City LIKE '[!bsp]%';
+
+// Выбрать из таблицы table все строки со значениями от value_1 по value_2 в столбце field_2
+SELECT *
+FROM table
+WHERE field_2
+BETWEEN value_1 AND value_2;
+
+// Выбрать из таблицы table все строки со значениями по списку IN из столбца field_2
+SELECT *
+FROM table
+WHERE field_2
+IN (value_1, value_2, value_3);
+
+// Выбрать из таблицы table все строки, у которых в столбе field_2 значение содержит value
+SELECT *
+FROM table
+WHERE field_2
+LIKE '%value%';
+
+// Выбрать из таблицы table все строки, у которых одновременно в столбе field_1 значение value_3 и в столбце field_2 значение value_2
+SELECT *
+FROM table
+WHERE field_1 = value_3
+AND field_2 = value_2;
+  
+// Выбрать из таблицы table все строки, у которых в столбце field_1 значение value_3 либо в столбце field_2 значение value_2
+SELECT *
+FROM table
+WHERE field_1 = value_3
+OR field_2 = value_2;
+
+// Выбрать из таблицы table все строки со значениями вне списка IN из столбца field_2
+SELECT *
+FROM table
+WHERE field_2
+NOT IN (value_1, value_2, value_3);
+</code></pre>
+          <table>
+            <caption>Порядок сортировки в ORDER BY:</caption>
+            <tbody>
+              <tr>
+                <td>ASC (ascending)</td>
+                <td>сортировка по возрастанию (по умолчанию)</td>
+              </tr>
+              <tr>
+                <td>DESC (descending)</td>
+                <td>сортировка по убыванию</td>
+              </tr>
+            </tbody>
+          </table>
+          <pre><code>// Выбрать из таблицы table все строки и отсортировать их по столбцу field_3
+// Сортировка данных по столбцу field_3, по умолчанию это ASC
+SELECT *
+FROM table
+ORDER BY field_3
+
+// Сортировка данных по столбцу field_3 по убыванию
+SELECT *
+FROM table
+ORDER BY field_3 DESC;
+  
+// Выбрать из таблицы table все строки, у которых в столбце field_1 значение value_3 и отсортировать по столбцу field_3 по убыванию
+SELECT *
+FROM table
+WHERE field_1 = value_3
+ORDER BY field_3 DESC;
+  
+// Выбрать из таблицы table все строки, у которых одновременно в столбе field_1 значение value_3 и в столбце field_2 значение value_2 и отсортировать по столбцу field_3 по убыванию и вывести первые пять строк
+SELECT *
+FROM table
+WHERE field_1 = value_3
+AND field_2 = value_2
+ORDER BY field_3 DESC
+LIMIT 5;
+  
+// Выбрать из таблицы table все строки и отсортировать по двум столбцам
+SELECT *
+FROM table
+ORDER BY field_3, field_2;
+  
+// Выбрать из таблицы table столбец field_1 строки в котором не имеют значений
+SELECT field_1
+FROM table
+WHERE field_1 IS NULL; 
+  
+// Выбрать из таблицы table столбец field_1 строки в котором имеют значения
+SELECT field_1
+FROM table
+WHERE field_1 IS NOT NULL;
+
+// Оператор EXISTS используется для проверки существования любой записи в подзапросе.
+// Оператор EXISTS возвращает TRUE, если подзапрос возвращает одну или несколько записей.
+SELECT field_1
+FROM table
+WHERE EXISTS
+(SELECT field_2
+FROM table
+WHERE condition); 
+
+// Вывести id строк, в которых значение temperature больше temperature предыдущего дня
+SELECT current_day.id
+FROM Weather AS current_day
+WHERE EXISTS (
+  SELECT 1
+  FROM Weather AS yesterday
+  WHERE current_day.temperature > yesterday.temperature
+  AND current_day.recordDate = yesterday.recordDate + 1
+);
+
+// ANY означает, что условие будет истинным, если операция истинна для любого из значений в диапазоне.
+SELECT field_1
+FROM table
+WHERE field_1 = ANY
+(SELECT field_1
+FROM table
+WHERE condition);
+  
+// ALL означает, что условие будет истинным только в том случае, если операция истинна для всех значений в диапазоне.
+SELECT ALL field_1
+FROM table
+WHERE condition;
+
+SELECT field_1
+FROM table
+WHERE field_1 = ALL
+(SELECT field_2 FROM table WHERE condition);
+  
+// Скопировать все столбцы в новую таблицу.
+SELECT *
+INTO newtable [IN externaldb]
+FROM oldtable
+WHERE condition;
+  
+// Следующий оператор SQL использует предложение IN для копирования таблицы в новую таблицу в другой базе данных.
+SELECT *
+INTO CustomersBackup2017
+IN 'Backup.mdb'
+FROM Customers;
+  
+// Следующий оператор SQL копирует только несколько столбцов в новую таблицу.
+SELECT CustomerName, ContactName
+INTO CustomersBackup2017
+FROM Customers;
+</code></pre>
+          <h3>Индексы</h3>
+          <p>
+            Индексы - повышают производительность выполнения запросов SELECT.<br />
+            СУБД применяют индексы при выполнении операторов автоматически.
+          </p>
+          <pre><code>// Создать индекс, название индекса table_field_idx, индекс создаётся для столбца field таблицы table
+CREATE INDEX table_field_idx
+ON table(field)
+
+// Удаление индекса
+DROP INDEX table_field_idx;
+</code></pre>
+          <h3>Агрегатные функции</h3>
+          <p>COUNT - считает количество записей в таблице table</p>
+          <pre><code>SELECT COUNT(*)
+FROM table
+
+// Считает количество записей в столбцe field_2 таблицы table
+SELECT COUNT(field_2)
+FROM table
+
+// Выбрать столбец field_2, сгруппировать в стобце field_2 значения по видам и посчитать сколько записей каждого вида
+SELECT field_2,
+COUNT(*)
+FROM table
+GROUP BY field_2
+  
+// Выбрать столбец field_2, сгруппировать в стобце field_2 значения по видам, посчитать сколько записей каждого вида в столбце field_3 и вывести в новом столбе field_3
+SELECT field_2,
+COUNT(field_2) AS field_3
+FROM table
+GROUP BY field_2
+</code></pre>
+          <p>
+            SUM - Возвращает сумму значений в указанном столбце.<br />
+            Выбрать столбец field_2, сгруппировать в столбце field_2 значения по видам, посчитать сколько записей каждого вида и суммировать значения в столбце field_3 соответствующих сгруппированным видам.
+          </p>
+          <pre><code>SELECT field_2,
+COUNT(*),
+SUM(field_3)
+FROM table
+GROUP BY field_2
+</code></pre>
+          <ul>
+            <li>AVG - Возвращает среднее значение в указанном столбце.</li>
+            <li>Выбрать столбец field_2, сгруппировать в столбце field_2 значения по видам, посчитать среднее значение по каждому виду в столбце field_3.</li>
+            <li>Среднее рассчитывается со знаками после запятой.</li>
+          </ul>
+          <pre><code>SELECT field_2,
+AVG(field_3) 
+FROM table
+GROUP BY field_2
+  
+// Посчитать среднее без знака после запятой
+SELECT field_2,
+SUM(field_3)/COUNT(*)
+AS average 
+FROM table
+GROUP BY field_2
+</code></pre>
+          <ul>
+            <li>MIN - Возвращает минимальное значение в указанном столбце.</li>
+            <li>Выбрать столбец field_2, сгруппировать в столбце field_2 значения по видам.</li>
+            <li>Определить минимальное и максимальное значение каждого вида в столбце field_3.</li>
+            <li>Вывести столбец field_2 с группированными значениями, столбец минимальных и столбец максимальных значений каждого вида, отсортировать по убыванию по столбцу максимальных значений.</li>
+          </ul>
+          <pre><code>SELECT field_2,
+MIN(field_3),
+MAX(field_3)
+FROM table
+GROUP BY field_2
+ORDER BY MAX(field_3) DESC</code></pre>
+          <p>
+            MAX - Возвращает максимальное значение в указанном столбце.<br />
+            Считает все функции в таблице table
+          </p>
+          <pre><code>SELECT COUNT(*),
+MIN(field_2),
+MAX(field_2),
+SUM(field_2),
+AVG(field_2)
+FROM table
+</code></pre>
+          <p>LENGTH() - возвращает длину строки</p>
+          <pre><code>SELECT field_1
+FROM table
+WHERE LENGTH(field_2) > 15;
+</code></pre>
+          <h3>Подзапросы (subqueries)</h3>
+          <ul>
+            <li>Сначала выполняются подзапросы.</li>
+            <li>Выбрать из таблицы table все строки со значением value_3 в столбце field_1, отсортировать по видам в столбце field_2, посчитать количество строк по каждому виду, отсортировать виды, у которых количество строк больше 10.</li>
+            <li>HAVING работает с результатами группировки.</li>
+          </ul>
+          <pre><code>SELECT field_2, COUNT(*)
+FROM table
+WHERE field_1 = value_3
+GROUP BY field_2
+HAVING COUNT(*) > 10
+
+// Выбрать столбцы field_2 и field_3 из таблицы table и выбрать максимальное значение столбца field_3 таблицы table
+SELECT field_2, field_3
+FROM table
+WHERE field_3 = (
+  SELECT MAX(field_3) 
+  FROM table)
+  
+// Выбрать столбцы field_2 и field_3 из таблицы table_1 и отобрать строки, id которых есть в столбце field_table_1_id таблицы table_2
+SELECT field_2, field_3
+FROM table_1
+WHERE id IN (
+  SELECT field_table_1_id 
+  FROM table_2)
+
+// Выбрать значения id таблицы table_1 у которых в столбце field_3 значение value_1, увеличить значения столбца field_2 на 500 в строках, у которых значение в столбце field_table_1_id равно значениям отобранных id
+UPDATE table_2
+SET field_2 = field_2 + 500
+WHERE field_table_1_id = (
+  SELECT id 
+  FROM table_1
+  WHERE field_3 = value_1)
+</code></pre>
+          <h3>Представления</h3>
+          <ul>
+            <li>Представление VIEW - псевдоним для запроса SELECT.</li>
+            <li>Данные в представлении не хранятся, представление ссылается на таблицу.</li>
+            <li>Представление можно создавать из нескольких таблиц.</li>
+            <li>Используется как обычная таблица.</li>
+            <li>Применяется для ограничения доступа к данным, сокрытия реализации БД, для избегания повторять выполнение сложных запросов и составных таблиц.</li>
+          </ul>
+          <pre><code>CREATE VIEW table_v field_1, field_2
+AS SELECT field_1, field_2
+FROM table
+
+// Удалить представление
+DROP VIEW</code></pre>
+          <ul>
+            <li>Материализованное представление MATERIALIZED VIEW - псевдоним для запроса SELECT.</li>
+            <li>Поддерживаются не всеми СУБД.</li>
+            <li>Данные хранятся в представлении.</li>
+            <li>Представление можно создавать из нескольких таблиц.</li>
+            <li>Используется как обычная таблица.</li>
+            <li>Применяется для часто используемых запросом с длительным выполнением.</li>
+            <li>В случае изменения данных в таблице, на которую ссылается материализованное представление, выполнить REFRESH MATERIALIZED VIEW table_v.</li>
+            <li>Удалить материализованное представление DROP MATERIALIZED VIEW.</li>
+          </ul>
+          <pre><code>CREATE MATERIALIZED VIEW table_v field_1, field_2
+AS SELECT field_1, field_2
+FROM table
+</code></pre>
+          <h3>CASE</h3>
+          <ul>
+            <li>Выражение CASE проходит через условия и возвращает значение, когда выполняется первое условие (как оператор if-then-else).</li>
+            <li>Таким образом, как только условие становится истинным, оно прекращает чтение и возвращает результат.</li>
+            <li>Если ни одно условие не является истинным, оно возвращает значение в предложении ELSE.</li>
+            <li>Если нет части ELSE и ни одно условие не является истинным, оно возвращает NULL.</li>
+          </ul>
+          <pre><code>CASE
+  WHEN condition1 THEN result1
+  WHEN condition2 THEN result2
+  WHEN conditionN THEN resultN
+  ELSE result
+END;
+</code></pre>
+          <h3>JOIN</h3>
+          <p>Внутреннее объединение INNER - это соединение строк из одной таблицы для которых есть соответствующие строки из другой таблицы.</p>
+          <h4>Неявное объединение</h4>
+          <p>Выбрать все столбцы из таблицы table_1 и table_2, строки сопоставить по значению в столбце id (PRIMARY KEY) table_1 равно значению столбца field_table_1_id (FOREIGN KEY) таблицы table_2</p>
+          <pre><code>SELECT *
+FROM table_1, table_2
+WHERE table_1.id = table_2.field_table_1_id
+
+// либо
+SELECT * FROM table_1 
+CROSS JOIN table_2 
+WHERE table_1.id = table_2.field_table_1_id
+</code></pre>
+          <h4>Явное объединение</h4>
+          <p>Выбрать столбец field.2 из таблицы table_1 и столбец field.3 из table_2, строки сопоставить по значению в столбце id (PRIMARY KEY) table_1 равно значению столбца field_table_1_id (FOREIGN KEY) таблицы table_2</p>
+          <pre><code>SELECT table_1.field.2, table_2.field_3
+FROM table_1 JOIN table_2 
+ON table_1.id = table_2.field_table_1_id
+</code></pre>
+          <h4>Псевдонимы</h4>
+          <pre><code>SELECT t1.field.2, t2.field_3
+FROM table_1 AS t1 
+JOIN table_2 AS t2
+ON t1.id = t2.field_table_1_id
+
+// либо
+SELECT t1.field.2, t2.field_3
+FROM table_1 t1 JOIN table_2 t2
+ON t1.id = t2.field_table_1_id
+</code></pre>
+          <ul>
+            <li>выбрать столбец field.2 из таблицы table_1 и столбец field.3 из table_2</li>
+            <li>строки сопоставить по значению в столбце id (PRIMARY KEY) table_1 равно значению столбца field_table_1_id (FOREIGN KEY) таблицы table_2</li>
+            <li>отобрать строки где значение в столбце field_2 таблицы table_1 равно value_1 и где значение в столбце field_3 таблицы table_2 равно value_4</li>
+            <li>отсортировать по столбцу field_2 таблицы table_2</li>
+          </ul>
+          <pre><code>SELECT t1.field.2, t2.field_3
+FROM table_1 AS t1 
+JOIN table_2 AS t2
+ON t1.id = t2.field_table_1_id
+WHERE t1.field_2 = value_1
+AND t2.field_3 = value_4
+ORDER BY t2.field_2 DESC
+</code></pre>
+          <ul>
+            <li>Внутреннее объединение - это соединение строк из одной таблицы для которых нет соответствующих строк из другой таблицы.</li>
+            <li>Внешнее объединение {[LEFT] | [RIGHT] | [FULL]} OUTER</li>
+          </ul>
+          <p>LEFT - все строки таблицы слева от ключевого слова JOIN</p>
+          <pre><code>SELECT t1.field.2, t2.field_3
+FROM table_1 AS t1 
+LEFT OUTER JOIN table_2 AS t2
+ON t1.id = t2.field_table_1_id
+</code></pre>
+          <p>RIGHT - все строки таблицы справа от ключевого слова JOIN</p>
+          <pre><code>SELECT t1.field.2, t2.field_3
+FROM table_1 AS t1
+RIGHT OUTER JOIN< table_2 AS t2
+ON t1.id = t2.field_table_1_id
+</code></pre>
+          <p>FULL - все строки обеих таблиц</p>
+          <pre><code>SELECT t1.field.2, t2.field_3
+FROM table_1 AS t1 
+FULL OUTER JOIN table_2 AS t2
+ON t1.id = t2.field_table_1_id
+</code></pre>
+          <p>Перекрёстное объединение CROSS - это соединение строк из обоих таблиц по принципу каждая с каждой.</p>
+          <pre><code>SELECT t1.field.2, t2.field_3
+FROM table_1 CROSS JOIN table_2
+</code></pre>
+          <h3>INSERT</h3>
+          <p>INSERT добавляет новые данные</p>
+          <pre><code>// Вставить в таблицу table значение value_2 в столбец field_1, value_4 в столбец field_2
+INSERT INTO table (field_1, field_2)
+VALUES (value_2, value_4);
+</code></pre>
+          <p>Copy all columns from one table to another table</p>
+          <pre><code>INSERT INTO table2
+SELECT * FROM table1
+WHERE condition;
+</code></pre>
+          <p>Copy only some columns from one table into another table</p>
+          <pre><code>INSERT
+INTO table2 (column1, column2, column3, ...)
+SELECT column1, column2, column3, ...
+FROM table1 WHERE condition;
+</code></pre>
+          <h3>UPDATE</h3>
+          <p>UPDATE изменяет существующие данные</p>
+          <pre><code>// Обновить значения value_3 в столбец field_2, value_2 в столбец field_3, в строке с id = 1
+UPDATE table
+SET field_2 = value_3, field_3 = value_2
+WHERE id = 1
+</code></pre>
+          <p>Обновить значения во всех строках где в столбце field_2 значение value_1, вставить в столбец field_3 значение value_2</p>
+          <pre><code>UPDATE table
+SET field_3 = value_2
+WHERE field_2 = value_1
+</code></pre>
+          <h3>DELETE</h3>
+          <table> 
+            <caption>DELETE удаляет данные</caption>
+            <tbody> 
+              <tr>
+                <td>DELETE FROM table WHERE id = 2</td>
+                <td>Удалить из таблицы table строку с id = 2</td>
+              </tr>
+              <tr>
+                <td>DELETE FROM table WHERE field_2 = value_1</td>
+                <td>Удалить из таблицы table строки со значением value_1 в столбце field_2</td>
+              </tr>
+              <tr>
+                <td>DELETE FROM table</td>
+                <td>Удалить из таблицы table все данные</td>
+              </tr>
+              <tr>
+                <td>TRUNCATE TABLE table;</td>
+                <td>to delete all data inside a table</td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>UNION - объединение</h3>
+          <p>
+            Применяется для объединения результатов двух SQL-запросов в единую таблицу, состоящую из схожих строк.<br />
+            Оба запроса должны возвращать одинаковое число столбцов и совместимые типы данных в соответствующих столбцах!!!
+          </p>
+          <pre><code>SELECT columns FROM table1
+UNION ALL
+SELECT columns FROM table2
+</code></pre>
+          <h3>INTERSECT - пересечение</h3>
+          <p>
+            Пересечение — множество, состоящее из элементов, которые одновременно принадлежат всем данным множествам.<br />
+            INTERSECT, также как и UNION обладает ограничением на результат запросов, которые должны быть совместимы по объединению.
+          </p>
+          <pre><code>SELECT columns FROM table1
+INTERSECT
+SELECT columns FROM table2
+</code></pre>
+          <h3>MINUS или EXCEPT - разность</h3>
+          <p>Разность двух множеств — это операция, результатом которой является множество, в которое входят все элементы первого множества, не входящие во второе множество</p>
+          <pre><code>SELECT columns FROM table1
+MINUS либо EXCEPT
+SELECT columns FROM table2
+</code></pre>
+          <h2>Операторы определения доступа к данным (Data Control Language, DCL)</h2>
+          <table> 
+            <tbody> 
+              <tr>
+                <td>GRANT</td>
+                <td>предоставляет пользователю (группе) разрешения на определенные операции с объектом</td>
+              </tr>
+              <tr>
+                <td>REVOKE</td>
+                <td>отзывает ранее выданные разрешения</td>
+              </tr>
+              <tr>
+                <td>DENY</td>
+                <td>задает запрет, имеющий приоритет над разрешением</td>
+              </tr>
+            </tbody>
+          </table>
+          <h2>Операторы управления транзакциями (Transaction Control Language, TCL)</h2>
+          <p>Транзакция - последовательность команд SQL, которые должны быть выполнены полностью или не выполнены вообще.</p>
+          <pre><code>// Например перевод денег со счёта на счёт
+START TRANSACTION;
+UPDATE accounts
+SET balance = balance - 15000
+WHERE account_number = 1234567;
+UPDATE accounts
+SET balance = balance + 15000
+WHERE account_number = 9876543;
+</code></pre>
+          <ul>
+            <li>COMMIT применяет транзакцию, записывает изменения в базу данных.</li>
+            <li>ROLLBACK откатывает все изменения, сделанные в контексте текущей транзакции.</li>
+            <li>В PostgreSQL START TRANSACTION и AUTOCOMMIT включён по умолчанию.</li>
+            <li>SET AUTOCOMMIT = value; value может быть 1 (ON) либо 0 (OFF).</li>
+            <li>SAVEPOINT - делит транзакцию на более мелкие участки.</li>
+          </ul>
         </details>
       </main>
       <menu class="menu">

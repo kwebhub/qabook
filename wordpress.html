@@ -1,0 +1,5186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="robots" content="none">
+    <meta name="robots" content="noimageindex, nofollow">
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+    <link rel="stylesheet" type="text/css" href="./assets/style.css">
+    <title>qabook</title>
+    <script defer type="module" src="./assets/js/main.js"></script>
+  </head>
+  <body>
+    <nav class="dropup"><a href="./process.html">Process</a><a href="./docs.html">Docs</a><a href="./web.html">Web</a><a href="#!">Project</a><a href="./job.html">Job</a>
+    </nav>
+    <div class="search">
+      <form class="search__content">
+        <input type="text" placeholder="search...">
+        <button class="search-btn" type="submit"><img src="./assets/img/search.svg" alt="" loading="lazy"/>
+        </button>
+        <button class="search-reset" type="reset"><img src="./assets/img/close.svg" alt="" loading="lazy"/>
+        </button>
+      </form>
+    </div>
+    <button class="close"><img src="./assets/img/close.svg" alt="" loading="lazy"/>
+    </button>
+    <div class="container">
+      <header><nav class="breadcrumbs" id="breadcrumbs-container"></nav>
+      </header>
+      <main>
+        <h2>Wordpress</h2>
+        <ul>
+          <li><a href="https://developer.wordpress.org/">WordPress</a>
+          </li>
+          <li><a href="https://developer.wordpress.org/block-editor/reference-guides/">Guides</a>
+          </li>
+          <li><a href="https://developer.wordpress.org/reference/functions/">wp core functions</a>
+          </li>
+          <li><a href="https://wordpress.github.io/gutenberg/?path=/docs/docs-introduction--page">storybook</a>
+          </li>
+          <li><a href="https://codex.wordpress.org/">Codex</a>
+          </li>
+          <li><a href="https://codex.wordpress.org/Theme_Unit_Test">Theme_Unit_Test</a>
+          </li>
+          <li><a href="https://wordpress.org/plugins/theme-check/">Theme-check</a>
+          </li>
+          <li><a href="https://wordpress.org/plugins/debug-bar/">Debug-bar</a>
+          </li>
+          <li><a href="https://wordpress.org/plugins/query-monitor/">Query-monitor</a>
+          </li>
+          <li><a href="https://wordpress.org/plugins/cmb2/">custom fields &amp; metaboxes classic theme PHP adding</a>
+          </li>
+          <li><a href="https://gutenberg.10up.com/">custom fields &amp; metaboxes block theme React adding</a>
+          </li>
+          <li><a href="https://happyprime.github.io/wphtml-converter/">Convert WordPress block HTML to its JavaScript object or PHP array forms</a>
+          </li>
+          <li><a href="https://wp-kama.ru">WP-Kama</a>
+          </li>
+          <li><a href="https://developer.woocommerce.com/docs/">Woocommerce</a>
+          </li>
+          <li><a href="https://github.com/ndiego/editor-curation-examples">Отключение и блокировка блоков</a>
+          </li>
+          <li><a href="https://www.briancoords.com/">Brian Coords</a>
+          </li>
+          <li><a href="https://deliciousbrains.com/how-unicode-works/">unicode</a>
+          </li>
+          <li><a href="https://deliciousbrains.com/tour-wordpress-database/">wp-db</a>
+          </li>
+          <li><a href="https://jquery.com">jQuery</a>
+          </li>
+          <li><a href="https://www.w3schools.com/jquery/default.asp">W3schools</a>
+          </li>
+          <li><a href="https://core.trac.wordpress.org/query">Wordpress jQuery</a>
+          </li>
+          <li><a href="https://dbdiagram.io">DB Diagram</a>
+          </li>
+          <li><a href="https://drawsql.app/">Рисовать диаграмму БД онлайн</a>
+          </li>
+          <li><a href="patchstack.com">patchstack</a>
+          </li>
+          <li><a href="wpscan.com">wpscan</a>
+          </li>
+          <li><a href="blog.sucuri.net">sucuri</a>
+          </li>
+          <li><a href="tinypng.com">tinypng</a>
+          </li>
+          <li><a href="squoosh.app">squoosh</a>
+          </li>
+          <li><a href="https://www.youtube.com/watch?v=Q5zcWpRMl9s">ACF</a>
+          </li>
+          <li><a href="https://github.com/WordPress/gutenberg/tree/trunk/docs">docs</a>
+          </li>
+          <li><a href="https://github.com/WordPress/gutenberg/tree/trunk/packages/block-editor/src/components">components</a>
+          </li>
+          <li><a href="https://wordpress.github.io/gutenberg/">Storybook</a>
+          </li>
+          <li><a href="https://github.com/WordPress/block-development-examples/tree/trunk/plugins">Примеры блоков</a>
+          </li>
+          <li><a href="https://wordpress.org/gutenberg/">Тестовый сайт с блоками</a>
+          </li>
+          <li><a href="https://developer.wordpress.org/block-editor/getting-started/fundamentals/registration-of-a-block/">register_block</a>
+          </li>
+          <li><a href="https://github.com/WordPress/gutenberg/tree/HEAD/packages/block-editor/src/components/inner-blocks/README.md#templatelock">template lock</a>
+          </li>
+          <li><a href="https://developer.wordpress.org/block-editor/getting-started/fundamentals/javascript-in-the-block-editor/">javascript in the block editor</a>
+          </li>
+          <li><a href="https://developer.wordpress.org/block-editor/how-to-guides/block-tutorial/extending-the-query-loop-block/">query loop block]</a>
+          </li>
+          <li><a href="https://developer.wordpress.org/block-editor/reference-guides/block-api/block-variations/">Вариации Query Loop block</a>
+          </li>
+          <li><a href="https://developer.wordpress.org/block-editor/reference-guides/block-api/block-patterns/">привязать шаблон</a>
+          </li>
+          <li><a href="https://developer.wordpress.org/block-editor/reference-guides/packages/packages-plugins/">packages plugins</a>
+          </li>
+          <li><a href="https://developer.wordpress.org/block-editor/reference-guides/packages/packages-edit-post/">packages edit post]</a>
+          </li>
+          <li><a href="https://developer.wordpress.org/block-editor/reference-guides/filters/block-filters/">block-filters</a>
+          </li>
+          <li><a href="https://developer.wordpress.org/block-editor/reference-guides/filters/editor-filters/">отфильтровать редактор</a>
+          </li>
+          <li><a href="https://github.com/WordPress/block-development-examples">block development examples</a>
+          </li>
+          <li><a href="https://developer.wordpress.org/block-editor/reference-guides/block-api/block-edit-save/#block-wrapper-props">обёртка блока</a>
+          </li>
+          <li><a href="https://developer.wordpress.org/block-editor/getting-started/fundamentals/block-in-the-editor/">block in the editor</a>
+          </li>
+          <li><a href="https://developer.wordpress.org/block-editor/how-to-guides/platform/custom-block-editor/">Собственный редактор блоков</a>
+          </li>
+        </ul>
+        <p>Plugins:</p>
+        <ul>
+          <li>WooCommerce by Automattic</li>
+          <li>Customer Reviews for WooCommerce by CusRev</li>
+          <li>CURCY - Multi Currency for WooCommerce by VillaTheme</li>
+          <li>Google Analytics для WordPress от MonsterInsights by MonsterInsights</li>
+          <li>JetPack by Automattic</li>
+          <li>Klaviyo by Klaviyo, Inc.</li>
+          <li>Mailchimp for WooCommerce by Mailchimp</li>
+          <li>OptInMonster by OptinMonster Popup Builder Team</li>
+          <li>Pinterest for WooCommerce by WooCommerce</li>
+          <li>Query Monitor by John Blackbourn</li>
+          <li>Redirection by John Godley</li>
+          <li>TikTok by TikTok</li>
+          <li>WPForms by WPForms</li>
+          <li>Yoast SEO by Команда Yoast</li>
+          <li>Markdown Editor (Formerly Dark Mode)</li>
+          <li>Markup Markdown</li>
+          <li>SVG Support</li>
+          <li>Elementor Website Builder</li>
+          <li>Royal Elementor Addons</li>
+          <li>ShopLentor</li>
+        </ul>
+        <h2>jQuery</h2>
+        <pre><code>// проверить версию
+(function( $ ) {alert($.fn.jquery);})
+
+// Подключить
+< script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+</code></pre>
+        <table>
+          <tbody>
+            <tr>
+              <td>compressed</td>
+              <td>сжатая и минифицированная, поключают к готовому сайту</td>
+            </tr>
+            <tr>
+              <td>uncompressed</td>
+              <td>обычная, удобочитаемая, поключают при разработке</td>
+            </tr>
+            <tr>
+              <td>slim</td>
+              <td>без анимации и без Ajax</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>Скрипт</p>
+        <pre><code>// запускать скрипт только после загрузки страницы
+$(document).ready(function() {
+  < span>при нажатии кнопки< /span>
+  $("button").on("click", function() {
+    скрыть заголовок в течении 3-х секунд
+    $("h1").hide(3000);
+  });
+});
+</code></pre>
+        <p>Селекторы - все как в CSS</p>
+        <pre><code>$('a'); = document.querySelectorAll("a");
+$('sel').method();
+
+// выбрать элементы по атрибуту - target
+$('a[target]');
+
+// выбрать элементы с атрибутом target равное _blank
+$('a[target="_blank"]')
+
+// по элементам форм:
+:button
+:password
+:disabled
+:file
+
+// CSS
+$("p").css("background-color", "#2ecc71");</code></pre>
+        <table>
+          <caption>Фильтры $("li:first").css("color", "green");</caption>
+          <tbody>
+            <tr>
+              <td>:first, :last, :even, :odd</td>
+              <td>первый, последний, чётный, нечётный из выборки</td>
+            </tr>
+            <tr>
+              <td>:eq(), :gt(), :lt()</td>
+              <td>индексы элемнтов выборки</td>
+            </tr>
+            <tr>
+              <td>:root, :header, :focus, :lang(), :target</td>
+              <td>HTML-элементы</td>
+            </tr>
+            <tr>
+              <td>:not(), :animated</td>
+              <td>отрицанние и анимирование</td>
+            </tr>
+            <tr>
+              <td>$("li").filter(":first").css("color", "green"); - :first</td>
+              <td>не является частью языка css, поэтому через метод filter()</td>
+            </tr>
+          </tbody>
+        </table>
+        <table>
+          <caption>Выбрать элементы по значению атрибута: < a href="https://ya.ru" target="_blank" title="Переход на Яндекс">Yandex</></caption>
+          <tbody>
+            <tr>
+              <td>$('a[href^="https"]')</td>
+              <td>href начинается с https</td>
+            </tr>
+            <tr>
+              <td>$('a[href$=".ru"]')</td>
+              <td>href заканчивается на .ru</td>
+            </tr>
+            <tr>
+              <td>$('a[title~="Яндекс"]')</td>
+              <td>title содержит слово Яндекс</td>
+            </tr>
+            <tr>
+              <td>$('a[title*="epe"]')</td>
+              <td>title содержит подстроку ере</td>
+            </tr>
+            <tr>
+              <td>$('a[href!="https://www.google.com"]')</td>
+              <td>выберет элементы, у которых либо нет указанного атрибута, либо у атрибута другое значение</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>jQuery в WordPress в режиме «no conflict»:  </p>
+        <pre><code>jQuery(document).ready( function($){
+  $('#element') ...
+});
+
+// без ожидания DOM
+(function($) {
+  // внутри этой функции $ будет работать как jQuery
+})(jQuery);
+</code></pre>
+        <p>События в админке</p>
+        <pre><code>$document = jQuery( document )
+
+// resize с задержкой в 200ms, чтобы событие срабатывало один раз когда ресайз окончен
+$document.trigger( 'wp-window-resized' );
+
+// menuState может быть: open|folded
+// клик по кнопке «Свернуть меню» в админке (левое меню в админке)
+$document.trigger( 'wp-collapse-menu', { state: menuState } );
+
+// меню админки свернуто/развернуто, может меняться при ресайзе экрана
+$document.trigger( 'wp-menu-state-set', { state: menuState } );
+
+$document.on( 'wp-menu-state-set wp-collapse-menu', function( event, eventData ) {
+  if ( 'folded' === eventData.state ) { ... }
+});
+
+// ширина экрана <br 782
+$document.trigger( 'wp-responsive-activate' );
+
+// ширина экрана > 782
+$document.trigger( 'wp-responsive-deactivate' );
+
+$document.on( 'wp-responsive-activate', function(){ console.log( 'responsive active' )});
+
+// панель опций вверху админки
+
+$document.trigger( 'screen:options:open' );
+$document.trigger( 'screen:options:close' );
+$document.on( 'screen:options:open', function(){ console.log( 'options:open' ) });
+</code></pre>
+        <p>User Settings и wpCookies</p>
+        <pre><code>// подключить функции из файла wp-includes/js/utils.js.
+wp_enqueue_script( 'utils' );
+
+// получить cookie-файл и вернуть JS-объект с парами «имя: значение».
+window.wpCookies.getHash( name )
+
+// установить cookie-файл, 'values_obj' — JS-объект.
+window.wpCookies.setHash( name, values_obj, expires, path, domain, secure )
+
+// получить cookie
+window.wpCookies.get( name )
+
+// установить cookie
+window.wpCookies.set( name, value, expires, path, domain, secure )
+
+// 'expires' - либо объект JS Date(), либо дата истечения срока действия, либо количество секунд до истечения срока действия.
+
+// удалить cookie: установить пустое значение и срок действия в прошлом.
+window.wpCookies.remove( name, path, domain, secure )
+
+// вернуть значение в виде строки, либо второй аргумент либо пустую строку.
+window.getUserSetting( name, def )
+
+// установить имя и значение чем короче, тем лучше (максимальный объём файлов cookie — 4 КБ).
+window.setUserSetting( name, value, _del )
+
+// Имя и значение должны состоять только из букв ASCII, цифр или знаков подчёркивания. Значение преобразуется и сохраняется как строка.
+
+// Удаляет указанную опцию.
+window.deleteUserSetting( name )
+
+// Возвращает все настройки как объект JS.
+window.getAllUserSettings()
+
+
+// Пример:
+window.getAllUserSettings()
+
+// вывод:
+{
+  align: "center",
+  ed_size: "391",
+  editor: "tinymce",
+  editor_expand: "off",
+  hidetb: "1",
+  imgsize: "full",
+  libraryContent: "browse",
+  mfold: "o",
+  posts_list_mode: "list",
+  urlbutton: "file",
+  wplink: "1"
+}
+</code></pre>
+        <h2>DB</h2>
+        <ul>
+          <li>InnoDB - движок хранения по умолчанию с версии MySQL 5.5.</li>
+          <li>Рекомендуемый набор символов - utf8mb4, а рекомендуемая коллизия - utf8mb4_unicode_520_ci.</li>
+          <li>MySQL collation (коллизия) - это набор правил, используемых для сравнения символов.</li>
+          <li>Префикс таблиц в файле wp-config.php: $table_prefix = 'wp_';.</li>
+          <li>Названия всех таблиц храняться в объекте wpdb. Таблица wp_posts: $wpdb-&gt;posts.</li>
+          <li>Таксономия - группировка постов: рубрики (category) - древовидные, метки (tags) - линейные (плоские).</li>
+          <li>Элементы таксономии (terms) - названия групп постов.</li>
+          <li>В базе данных мультисайта текущий сайт становится сайтом сети (wp_site) № 1, а каждый подсайт обозначается как блог (wp_blogs).</li>
+        </ul>
+        <table>
+          <thead>
+            <tr>
+              <th>таблица</th>
+              <th>содержание</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>wp_posts</td>
+              <td>посты, страницы, пункты меню, медиа-вложения, пользовательские типы постов, тип контента в столбце post_type</td>
+            </tr>
+            <tr>
+              <td>wp_postmeta</td>
+              <td>мета поля - пары ключ/значение для хранения дополнительных данных таблицы wp_posts</td>
+            </tr>
+            <tr>
+              <td>wp_users</td>
+              <td>данные о зарегистрированных пользователях</td>
+            </tr>
+            <tr>
+              <td>wp_usermeta</td>
+              <td>мета поля для wp_users информация о пользователях: Имя, Ник, права и т.д.</td>
+            </tr>
+            <tr>
+              <td>wp_comments</td>
+              <td>комментарии к постам</td>
+            </tr>
+            <tr>
+              <td>wp_commentmeta</td>
+              <td>мета поля для wp_comments</td>
+            </tr>
+            <tr>
+              <td>wp_terms</td>
+              <td>базовая информация об элементах таксономии</td>
+            </tr>
+            <tr>
+              <td>wp_termmeta</td>
+              <td>мета поля - дополнительная информация для wp_terms</td>
+            </tr>
+            <tr>
+              <td>wp_term_taxonomy</td>
+              <td>описание таксономий, присваивает каждому термину из wp_terms таксономию к которой он относится</td>
+            </tr>
+            <tr>
+              <td>wp_term_relationships</td>
+              <td>связь между постом (объектом) в wp_posts и термином таксономии из таблицы wp_term_taxonomy</td>
+            </tr>
+            <tr>
+              <td>wp_options</td>
+              <td>настройки и опции</td>
+            </tr>
+            <tr>
+              <td>wp_links</td>
+              <td>записи ссылок, давно не используется, функционал включается отдельно</td>
+            </tr>
+            <tr>
+              <td colspan="2">Мультисайт</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>wp_blogs</td>
+              <td>информация о каждом сайте в сети мультисайт: site_id - ID сети мультисайта, blog_id - ID под-сайта в сети</td>
+            </tr>
+            <tr>
+              <td>wp_blogmeta</td>
+              <td>информация о под-сайтах (блогах), до появления таблицы использовали таблицу wp_options и switch_to_blog()</td>
+            </tr>
+            <tr>
+              <td>wp_registration_log</td>
+              <td>логирует регистрации новых под-сайтов (блогов) в сети: время регистрации и данные пользователя</td>
+            </tr>
+            <tr>
+              <td>wp_signups</td>
+              <td>заявки на регистрацию пользователей и под-сайтов (блогов), данные о зарегистрированных, но не активированных</td>
+            </tr>
+            <tr>
+              <td>wp_site</td>
+              <td>информация о сетях (основные сайты сети)</td>
+            </tr>
+            <tr>
+              <td>wp_sitemeta</td>
+              <td>метаданные, связанные с сетями (сайтами) - опции сети и общие опции для всех её сайтов</td>
+            </tr>
+            <tr>
+              <td>wp_users</td>
+              <td>список пользователей всех сайтов сети - общая таблица пользователей для всей сети</td>
+            </tr>
+            <tr>
+              <td>wp_usermeta</td>
+              <td>мета-данные пользователей, настройки пользователя для разных сайтов сети</td>
+            </tr>
+            <tr>
+              <td>wp_blog_versions</td>
+              <td>текущая версия базы данных каждого сайта</td>
+            </tr>
+          </tbody>
+        </table>
+        <h2>Structure</h2>
+        <p>
+          WordPress состоит из 3 папок wp-includes, wp-admin, wp-content и нескольких файлов рядом с ними.</br>
+          Ядро WordPress - это все файлы и папки, кроме wp-content.
+          
+        </p>
+        <h3>/wp-admin</h3>
+        <p>admin.php</p>
+        <pre><code>// admin.php
+
+// Определить константы
+if ( ! defined( 'WP_ADMIN' ) ) { define( 'WP_ADMIN', true ); }
+if ( ! defined( 'WP_NETWORK_ADMIN' ) ) { define( 'WP_NETWORK_ADMIN', false ); }
+if ( ! defined( 'WP_USER_ADMIN' ) ) { define( 'WP_USER_ADMIN', false ); }
+if ( ! WP_NETWORK_ADMIN && ! WP_USER_ADMIN ) { define( 'WP_BLOG_ADMIN', true ); }
+if ( isset( $_GET['import'] ) && ! defined( 'WP_LOAD_IMPORTERS' ) ) { define( 'WP_LOAD_IMPORTERS', true ); }
+
+require_once dirname( __DIR__ ) . '/wp-load.php';  // загрузить ядро
+
+nocache_headers();
+
+if ( get_option( 'db_upgraded' ) ) {
+
+  flush_rewrite_rules();
+  update_option( 'db_upgraded', false, true );
+
+  // Срабатывает при загрузке следующей страницы после успешного обновления БД.
+  do_action( 'after_db_upgrade' );
+
+} elseif ( ! wp_doing_ajax() && empty( $_POST ) && (int) get_option( 'db_version' ) !== $wp_db_version ) {
+
+  if ( ! is_multisite() ) {
+    wp_redirect( admin_url( 'upgrade.php?_wp_http_referer=' . urlencode( wp_unslash( $_SERVER['REQUEST_URI'] ) ) ) );
+    exit;
+  }
+
+  /**
+  * Фильтрует, следует ли пытаться выполнить процедуру обновления многосайтовой базы данных.
+  * На одном сайте пользователь будет перенаправлен на wp-admin/upgrade.php.
+  * В многосайтовой среде процедура обновления БД запускается автоматически, но только в том случае, если этот фильтр возвращает значение true.
+  * Если в сети 50 узлов или меньше, он будет запускаться каждый раз. В противном случае он будет регулировать нагрузку, чтобы снизить её.
+  *
+  * @param bool  $do_mu_upgrade Следует ли выполнять процедуру обновления Multisite. Значение по умолчанию — true.
+  */
+  if ( apply_filters( 'do_mu_upgrade', true ) ) {
+    $c = get_blog_count();
+
+    /**
+      * Если сайтов 50 или меньше, запускайте каждый раз.
+      * В противном случае используйте регулировку для снижения нагрузки:
+      * старайтесь не превышать пороговое значение, с некоторыми отклонениями в сторону увеличения/уменьшения.
+      */
+    if ( $c <= 50 || ( $c > 50 && mt_rand( 0, (int) ( $c / 50 ) ) === 1 ) ) {
+      require_once ABSPATH . WPINC . '/http.php';
+      $response = wp_remote_get(
+        admin_url( 'upgrade.php?step=1' ),
+        array(
+          'timeout'     => 120,
+          'httpversion' => '1.1',
+        )
+      );
+      /** Это действие задокументировано в wp-admin/network/upgrade.php. */
+      do_action( 'after_mu_upgrade', $response );
+      unset( $response );
+    }
+    unset( $c );
+  }
+}
+
+require_once ABSPATH . 'wp-admin/includes/admin.php';
+
+auth_redirect();
+
+// Расписание уборки мусора.
+if ( ! wp_next_scheduled( 'wp_scheduled_delete' ) && ! wp_installing() ) {
+  wp_schedule_event( time(), 'daily', 'wp_scheduled_delete' );
+}
+
+// Запланировать время очистки.
+if ( ! wp_next_scheduled( 'delete_expired_transients' ) && ! wp_installing() ) {
+  wp_schedule_event( time(), 'daily', 'delete_expired_transients' );
+}
+
+set_screen_options();
+
+$date_format = __( 'F j, Y' );
+$time_format = __( 'g:i a' );
+
+wp_enqueue_script( 'common' );
+
+/**
+* $pagenow определено в vars.php.
+* $wp_importers иногда устанавливается в wp-admin/includes/import.php.
+* Остальные переменные импортируются как глобальные в другом месте и объявляются здесь как глобальные.
+*
+* @global string $pagenow      Имя файла текущего экрана.
+* @global array  $wp_importers
+* @global string $hook_suffix
+* @global string $plugin_page
+* @global string $typenow      Тип сообщения текущего экрана.
+* @global string $taxnow       Таксономия текущего экрана.
+*/
+global $pagenow, $wp_importers, $hook_suffix, $plugin_page, $typenow, $taxnow;
+
+$page_hook = null;
+
+$editing = false;
+
+if ( isset( $_GET['page'] ) ) {
+  $plugin_page = wp_unslash( $_GET['page'] );
+  $plugin_page = plugin_basename( $plugin_page );
+}
+
+if ( isset( $_REQUEST['post_type'] ) && post_type_exists( $_REQUEST['post_type'] ) ) {
+  $typenow = $_REQUEST['post_type'];
+} else {
+  $typenow = '';
+}
+
+if ( isset( $_REQUEST['taxonomy'] ) && taxonomy_exists( $_REQUEST['taxonomy'] ) ) {
+  $taxnow = $_REQUEST['taxonomy'];
+} else {
+  $taxnow = '';
+}
+
+if ( WP_NETWORK_ADMIN ) {
+  require ABSPATH . 'wp-admin/network/menu.php';
+} elseif ( WP_USER_ADMIN ) {
+  require ABSPATH . 'wp-admin/user/menu.php';
+} else {
+  require ABSPATH . 'wp-admin/menu.php';
+}
+
+if ( current_user_can( 'manage_options' ) ) {
+  wp_raise_memory_limit( 'admin' );
+}
+
+/**
+* Срабатывает при инициализации экрана администратора или скрипта.
+*
+* Обратите внимание: это срабатывает не только на экранах администратора, доступных пользователю.
+* Также срабатывает на admin-ajax.php и admin-post.php.
+*
+* Это примерно аналогично более общему хуку {@see 'init'}, который срабатывает раньше.
+*
+* @since 2.5.0
+*/
+do_action( 'admin_init' );
+
+if ( isset( $plugin_page ) ) {
+  if ( ! empty( $typenow ) ) {
+    $the_parent = $pagenow . '?post_type=' . $typenow;
+  } else {
+    $the_parent = $pagenow;
+  }
+
+  $page_hook = get_plugin_page_hook( $plugin_page, $the_parent );
+  if ( ! $page_hook ) {
+    $page_hook = get_plugin_page_hook( $plugin_page, $plugin_page );
+
+    // Обратная совместимость для плагинов, использующих add_management_page().
+    if ( empty( $page_hook ) && 'edit.php' === $pagenow && get_plugin_page_hook( $plugin_page, 'tools.php' ) ) {
+
+    // В URL-адресе могут быть параметры, специфичные для плагина, поэтому нам нужна вся строка запроса.
+    if ( ! empty( $_SERVER['QUERY_STRING'] ) ) {
+      $query_string = $_SERVER['QUERY_STRING'];
+    } else {
+      $query_string = 'page=' . $plugin_page;
+    }
+    wp_redirect( admin_url( 'tools.php?' . $query_string ) );
+    exit;
+    }
+  }
+  unset( $the_parent );
+}
+
+$hook_suffix = '';
+if ( isset( $page_hook ) ) {
+  $hook_suffix = $page_hook;
+} elseif ( isset( $plugin_page ) ) {
+  $hook_suffix = $plugin_page;
+} elseif ( isset( $pagenow ) ) {
+  $hook_suffix = $pagenow;
+}
+
+set_current_screen();
+
+// Обработка страниц администрирования плагина.
+if ( isset( $plugin_page ) ) {
+  if ( $page_hook ) {
+    /**
+    * Срабатывает перед загрузкой определённого экрана.
+    *
+    * Хук load-* срабатывает в нескольких контекстах.
+    * Этот хук предназначен для экранов плагинов, где обратный вызов предоставляется при регистрации экрана.
+    *
+    * Динамическая часть имени хука, `$page_hook`, относится к смешанной информации о странице плагина,
+    * включая:
+    * 1. Тип страницы. Если страница плагина зарегистрирована как страница подменю, например, для
+    * настроек, тип страницы будет «settings». В противном случае тип — «toplevel».
+    * 2. Разделитель «_page_».
+    * 3. Базовое имя плагина без расширения файла.
+    *
+    * Вместе эти три части образуют `$page_hook`. Ссылаясь на пример выше,
+    * используемое имя хука будет «load-settings_page_pluginbasename».
+    *
+    * @see get_plugin_page_hook()
+    *
+    * @since 2.1.0
+    */
+    do_action( "load-{$page_hook}" ); // phpcs:ignore WordPress.NamingConventions.ValidHookName.UseUnderscores
+    if ( ! isset( $_GET['noheader'] ) ) {
+      require_once ABSPATH . 'wp-admin/admin-header.php';
+    }
+
+    /**
+    * Используется для вызова зарегистрированного обратного вызова для экрана плагина.
+    *
+    * Этот хук использует динамическое имя хука `$page_hook`, которое представляет собой смесь информации о странице плагина
+    * включая:
+    * 1. Тип страницы. Если страница плагина зарегистрирована как страница подменю, например, для
+    * настроек, тип страницы будет «settings». В противном случае тип — «toplevel».
+    * 2. Разделитель «_page_».
+    * 3. Базовое имя плагина без расширения файла.
+    *
+    * Вместе эти три части образуют `$page_hook`. Ссылаясь на пример выше,
+    * используемое имя хука будет «settings_page_pluginbasename».
+    *
+    * @see get_plugin_page_hook()
+    *
+    * @since 1.5.0
+    */
+    do_action( $page_hook );
+  } else {
+    if ( validate_file( $plugin_page ) ) {
+      wp_die( __( 'Invalid plugin page.' ) );
+    }
+
+    if ( ! ( file_exists( WP_PLUGIN_DIR . "/$plugin_page" ) && is_file( WP_PLUGIN_DIR . "/$plugin_page" ) )
+      && ! ( file_exists( WPMU_PLUGIN_DIR . "/$plugin_page" ) && is_file( WPMU_PLUGIN_DIR . "/$plugin_page" ) )
+    ) {
+      /* переводчики: %s: Страница администратора, сгенерированная плагином. */
+      wp_die( sprintf( __( 'Cannot load %s.' ), htmlentities( $plugin_page ) ) );
+    }
+
+    /**
+    * Срабатывает перед загрузкой определённого экрана.
+    *
+    * Хук load-* срабатывает в нескольких контекстах. Этот хук предназначен для экранов плагинов,
+    * где загружаемый файл подключается напрямую, а не используется функция.
+    *
+    * Динамическая часть имени хука, `$plugin_page`, ссылается на базовое имя плагина.
+    *
+    * @see plugin_basename()
+    *
+    * @since 1.5.0
+    */
+    do_action( "load-{$plugin_page}" ); // phpcs:ignore WordPress.NamingConventions.ValidHookName.UseUnderscores
+
+    if ( ! isset( $_GET['noheader'] ) ) {
+      require_once ABSPATH . 'wp-admin/admin-header.php';
+    }
+
+    if ( file_exists( WPMU_PLUGIN_DIR . "/$plugin_page" ) ) {
+      include WPMU_PLUGIN_DIR . "/$plugin_page";
+    } else {
+      include WP_PLUGIN_DIR . "/$plugin_page";
+    }
+  }
+
+require_once ABSPATH . 'wp-admin/admin-footer.php';
+
+  exit;
+} elseif ( isset( $_GET['import'] ) ) {
+
+  $importer = $_GET['import'];
+
+  if ( ! current_user_can( 'import' ) ) {
+    wp_die( __( 'Sorry, you are not allowed to import content into this site.' ) );
+  }
+
+  if ( validate_file( $importer ) ) {
+    wp_redirect( admin_url( 'import.php?invalid=' . $importer ) );
+    exit;
+  }
+
+  if ( ! isset( $wp_importers[ $importer ] ) || ! is_callable( $wp_importers[ $importer ][2] ) ) {
+    wp_redirect( admin_url( 'import.php?invalid=' . $importer ) );
+    exit;
+  }
+
+  /**
+  * Срабатывает перед загрузкой экрана импортера.
+  *
+  * Динамическая часть имени хука, `$importer`, относится к слагу импортера.
+  *
+  * Возможные имена хуков:
+  *
+  *  - `load-importer-blogger`
+  *  - `load-importer-wpcat2tag`
+  *  - `load-importer-livejournal`
+  *  - `load-importer-mt`
+  *  - `load-importer-rss`
+  *  - `load-importer-tumblr`
+  *  - `load-importer-wordpress`
+  *
+  * @since 3.5.0
+  */
+  do_action( "load-importer-{$importer}" ); // phpcs:ignore WordPress.NamingConventions.ValidHookName.UseUnderscores
+
+  // Used in the HTML title tag.
+  $title        = __( 'Import' );
+  $parent_file  = 'tools.php';
+  $submenu_file = 'import.php';
+
+  if ( ! isset( $_GET['noheader'] ) ) {
+    require_once ABSPATH . 'wp-admin/admin-header.php';
+  }
+
+  require_once ABSPATH . 'wp-admin/includes/upgrade.php';
+
+  define( 'WP_IMPORTING', true );
+
+  /**
+  * Определяет, следует ли фильтровать импортированные данные через KSE при импорте.
+  *
+  * Multisite использует этот хук для фильтрации всех данных через KSE по умолчанию,
+  * поскольку суперадминистратор может помогать недоверенному пользователю.
+  *
+  * @since 3.1.0
+  *
+  * @param bool  $force Нужно ли принудительно фильтровать данные через kses. Значение по умолчанию — false.
+  */
+  if ( apply_filters( 'force_filtered_html_on_import', false ) ) {
+
+    // Всегда фильтруйте импортированные данные с помощью kses на нескольких сайтах.
+    kses_init_filters();
+  }
+
+  call_user_func( $wp_importers[ $importer ][2] );
+
+  require_once ABSPATH . 'wp-admin/admin-footer.php';
+
+  // Убедитесь, что правила очищены.
+  flush_rewrite_rules( false );
+
+  exit;
+} else {
+  /**
+  * Срабатывает перед загрузкой определённого экрана.
+  *
+  * Хук load-* срабатывает в нескольких контекстах. Этот хук предназначен для основных экранов.
+  *
+  * Динамическая часть имени хука, `$pagenow`, — это глобальная переменная,
+  * ссылающаяся на имя файла текущего экрана, например, 'admin.php', 'post-new.php' и т. д.
+  * Полный хук для последнего будет выглядеть так: 'load-post-new.php'.
+  *
+  * @since 2.1.0
+  */
+
+  // phpcs:ignore WordPress.NamingConventions.ValidHookName.UseUnderscores
+  do_action( "load-{$pagenow}" );
+
+  /*
+  * Следующие хуки активируются для обеспечения обратной совместимости.
+  * Во всех остальных случаях следует использовать 'load-' . $pagenow.
+  */
+  if ( 'page' === $typenow ) {
+    if ( 'post-new.php' === $pagenow ) {
+
+      // phpcs:ignore WordPress.NamingConventions.ValidHookName.UseUnderscores
+      do_action( 'load-page-new.php' );
+    } elseif ( 'post.php' === $pagenow ) {
+
+      // phpcs:ignore WordPress.NamingConventions.ValidHookName.UseUnderscores
+      do_action( 'load-page.php' );
+    }
+  } elseif ( 'edit-tags.php' === $pagenow ) {
+    if ( 'category' === $taxnow ) {
+
+      // phpcs:ignore WordPress.NamingConventions.ValidHookName.UseUnderscores
+      do_action( 'load-categories.php' );
+    } elseif ( 'link_category' === $taxnow ) {
+
+      // phpcs:ignore WordPress.NamingConventions.ValidHookName.UseUnderscores
+      do_action( 'load-edit-link-categories.php' );
+    }
+  } elseif ( 'term.php' === $pagenow ) {
+
+    // phpcs:ignore WordPress.NamingConventions.ValidHookName.UseUnderscores
+    do_action( 'load-edit-tags.php' );
+  }
+}
+
+if ( ! empty( $_REQUEST['action'] ) ) {
+  $action = $_REQUEST['action'];
+
+  /**
+  * Срабатывает при отправке переменной запроса `action`.
+  *
+  * Динамическая часть имени хука, `$action`, относится к
+  * действию, полученному из запроса `GET` или `POST`.
+  *
+  * @since 2.6.0
+  */
+  do_action( "admin_action_{$action}" );
+}</code></pre>
+        <p>admin-ajax.php</p>
+        <pre><code>Выполнение процесса WordPress Ajax
+
+define( 'DOING_AJAX', true );
+if ( ! defined( 'WP_ADMIN' ) ) { define( 'WP_ADMIN', true ); }
+
+// загрузить ядро
+require_once dirname( __DIR__ ) . '/wp-load.php';
+
+// Разрешить кросс-доменные запросы (из интерфейса).
+send_origin_headers();
+
+header( 'Content-Type: text/html; charset=' . get_option( 'blog_charset' ) );
+header( 'X-Robots-Tag: noindex' );
+
+// Требуется действительный параметр действия.
+if ( empty( $_REQUEST['action'] ) || ! is_scalar( $_REQUEST['action'] ) ) { wp_die( '0', 400 ); }
+
+// Загрузка API администрирования WordPress
+require_once ABSPATH . 'wp-admin/includes/admin.php';
+
+// Загрузка обработчиков Ajax для ядра WordPress
+require_once ABSPATH . 'wp-admin/includes/ajax-actions.php';
+
+send_nosniff_header();
+nocache_headers();
+
+// Это действие задокументировано в wp-admin/admin.php
+do_action( 'admin_init' );
+
+$core_actions_get = array(
+  'fetch-list',
+  'ajax-tag-search',
+  'wp-compression-test',
+  'imgedit-preview',
+  'oembed-cache',
+  'autocomplete-user',
+  'dashboard-widgets',
+  'logged-in',
+  'rest-nonce',
+);
+
+$core_actions_post = array(
+  'oembed-cache',
+  'image-editor',
+  'delete-comment',
+  'delete-tag',
+  'delete-link',
+  'delete-meta',
+  'delete-post',
+  'trash-post',
+  'untrash-post',
+  'delete-page',
+  'dim-comment',
+  'add-link-category',
+  'add-tag',
+  'get-tagcloud',
+  'get-comments',
+  'replyto-comment',
+  'edit-comment',
+  'add-menu-item',
+  'add-meta',
+  'add-user',
+  'closed-postboxes',
+  'hidden-columns',
+  'update-welcome-panel',
+  'menu-get-metabox',
+  'wp-link-ajax',
+  'menu-locations-save',
+  'menu-quick-search',
+  'meta-box-order',
+  'get-permalink',
+  'sample-permalink',
+  'inline-save',
+  'inline-save-tax',
+  'find_posts',
+  'widgets-order',
+  'save-widget',
+  'delete-inactive-widgets',
+  'set-post-thumbnail',
+  'date_format',
+  'time_format',
+  'wp-remove-post-lock',
+  'dismiss-wp-pointer',
+  'upload-attachment',
+  'get-attachment',
+  'query-attachments',
+  'save-attachment',
+  'save-attachment-compat',
+  'send-link-to-editor',
+  'send-attachment-to-editor',
+  'save-attachment-order',
+  'media-create-image-subsizes',
+  'heartbeat',
+  'get-revision-diffs',
+  'save-user-color-scheme',
+  'update-widget',
+  'query-themes',
+  'parse-embed',
+  'set-attachment-thumbnail',
+  'parse-media-shortcode',
+  'destroy-sessions',
+  'install-plugin',
+  'activate-plugin',
+  'update-plugin',
+  'crop-image',
+  'generate-password',
+  'save-wporg-username',
+  'delete-plugin',
+  'search-plugins',
+  'search-install-plugins',
+  'activate-plugin',
+  'update-theme',
+  'delete-theme',
+  'install-theme',
+  'get-post-thumbnail-html',
+  'get-community-events',
+  'edit-theme-plugin-file',
+  'wp-privacy-export-personal-data',
+  'wp-privacy-erase-personal-data',
+  'health-check-site-status-result',
+  'health-check-dotorg-communication',
+  'health-check-is-in-debug-mode',
+  'health-check-background-updates',
+  'health-check-loopback-requests',
+  'health-check-get-sizes',
+  'toggle-auto-updates',
+  'send-password-reset',
+);
+
+// Устаревший.
+$core_actions_post_deprecated = array(
+  'wp-fullscreen-save-post',
+  'press-this-save-post',
+  'press-this-add-category',
+  'health-check-dotorg-communication',
+  'health-check-is-in-debug-mode',
+  'health-check-background-updates',
+  'health-check-loopback-requests',
+);
+
+$core_actions_post = array_merge( $core_actions_post, $core_actions_post_deprecated );
+
+// Добавить хуки и зарегистрировать основные вызовы Ajax.
+if ( ! empty( $_GET['action'] ) && in_array( $_GET['action'], $core_actions_get, true ) ) {
+  add_action( 'wp_ajax_' . $_GET['action'], 'wp_ajax_' . str_replace( '-', '_', $_GET['action'] ), 1 );
+}
+
+if ( ! empty( $_POST['action'] ) && in_array( $_POST['action'], $core_actions_post, true ) ) {
+  add_action( 'wp_ajax_' . $_POST['action'], 'wp_ajax_' . str_replace( '-', '_', $_POST['action'] ), 1 );
+}
+
+add_action( 'wp_ajax_nopriv_generate-password', 'wp_ajax_nopriv_generate_password' );
+
+add_action( 'wp_ajax_nopriv_heartbeat', 'wp_ajax_nopriv_heartbeat', 1 );
+
+// Добавить хук и зарегистрировать зависимости плагина вызова Ajax.
+add_action( 'wp_ajax_check_plugin_dependencies', array( 'WP_Plugin_Dependencies', 'check_plugin_dependencies_during_ajax' ) );
+
+$action = $_REQUEST['action'];
+
+// проверка прав пользователя и запуск нужного хука
+if ( is_user_logged_in() ) {
+  // Если действие не зарегистрировано, вернуть ответ Bad Request.
+  if ( ! has_action( "wp_ajax_{$action}" ) ) { wp_die( '0', 400 ); }
+
+  /**
+  * Выполняет аутентифицированные действия Ajax для вошедших в систему пользователей.
+  * Динамическая часть имени хука, `$action`, относится к имени вызываемого обратного вызова действия Ajax.
+  */
+  do_action( "wp_ajax_{$action}" );
+} else {
+  // Если действие не зарегистрировано, вернуть ответ Bad Request.
+  if ( ! has_action( "wp_ajax_nopriv_{$action}" ) ) {
+    wp_die( '0', 400 );
+  }
+
+  /**
+  * Выполняет неаутентифицированные действия Ajax для неавторизированных пользователей.
+  * Динамическая часть имени хука, `$action`, относится к имени вызываемого обратного вызова действия Ajax.
+  */
+  do_action( "wp_ajax_nopriv_{$action}" );
+}
+
+wp_die( '0' );  // Ответ AJAX по умолчанию</code></pre>
+        <h3>/wp-content</h3>
+        <p>index.php</p>
+        <pre><code>< ?php // Silence is golden: запрещает видеть список файлов в папке при запросе example.com/wp-content</code></pre>
+        <table>
+          <tbody>
+            <tr>
+              <td>/mu-plugins</td>
+              <td>обязательные плагины, активируются автоматически, удаляются только удалением файлов плагина</td>
+            </tr>
+            <tr>
+              <td>/plugins</td>
+              <td>плагины, появляются автоматически в админ-панели в разделе «Плагины» и готов к активации, удалять в админ-панели</td>
+            </tr>
+            <tr>
+              <td>/themes</td>
+              <td>темы</td>
+            </tr>
+            <tr>
+              <td>/uploads</td>
+              <td>медиафайлы и загрузки</td>
+            </tr>
+            <tr>
+              <td>/upgrade</td>
+              <td>автообновления</td>
+            </tr>
+            <tr>
+              <td>/languages</td>
+              <td>переводы</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>Подключаемые файлы:</p>
+        <ul>
+          <li>advanced-cache.php</li>
+          <li>object-cache.php</li>
+          <li>maintenance.php</li>
+          <li>db-error.php</li>
+          <li>db.php</li>
+          <li>sunrise.php</li>
+          <li>blog-deleted.php</li>
+          <li>blog-inactive.php</li>
+          <li>blog-suspended.php</li>
+          <li>php-error.php</li>
+          <li>fatal-error-handler.php</li>
+        </ul>
+        <table>
+          <caption>/themes</caption>
+          <tbody>
+            <tr>
+              <td>/assets</td>
+              <td>/css, /fonts, /images</td>
+            </tr>
+            <tr>
+              <td>/parts</td>
+              <td>footer.html, header.html, sidebar.html</td>
+            </tr>
+            <tr>
+              <td>/patterns</td>
+              <td>comments.php, footer.php, header.php</td>
+            </tr>
+            <tr>
+              <td>/styles</td>
+              <td>block.json</td>
+            </tr>
+            <tr>
+              <td>/templates</td>
+              <td>404.html, archive.html, home.html, index.html, page.html, search.html, single.html</td>
+            </tr>
+            <tr>
+              <td>functions.php</td>
+              <td>файл функций темы</td>
+            </tr>
+            <tr>
+              <td>readme.txt</td>
+              <td>описание темы и ссылки на источники, шрифты и картинки</td>
+            </tr>
+            <tr>
+              <td>screenshot.png</td>
+              <td>заставка темы для админки</td>
+            </tr>
+            <tr>
+              <td>style.css</td>
+              <td>файл таблицы стилей, регистрация темы</td>
+            </tr>
+            <tr>
+              <td>theme.json</td>
+              <td>глобальные стили блочной темы, общедоступные данные</td>
+            </tr>
+          </tbody>
+        </table>
+        <table>
+          <caption>Классическая тема:</caption>
+          <tbody>
+            <tr>
+              <td>index.php</td>
+              <td>корневой файл</td>
+            </tr>
+            <tr>
+              <td>functions.php</td>
+              <td>файл функций темы</td>
+            </tr>
+            <tr>
+              <td>single.php</td>
+              <td>шаблон поста</td>
+            </tr>
+            <tr>
+              <td>page.php</td>
+              <td>шаблон страницы</td>
+            </tr>
+            <tr>
+              <td>category.php</td>
+              <td>шаблон записей в категориях</td>
+            </tr>
+            <tr>
+              <td>archive.php</td>
+              <td>шаблон архивных записей</td>
+            </tr>
+            <tr>
+              <td>searchform.php</td>
+              <td>шаблон формы поиска</td>
+            </tr>
+            <tr>
+              <td>search.php</td>
+              <td>шаблон результата поиска</td>
+            </tr>
+            <tr>
+              <td>404.php</td>
+              <td>шаблон ошибки</td>
+            </tr>
+            <tr>
+              <td>comments.php</td>
+              <td>шаблон комментариев</td>
+            </tr>
+            <tr>
+              <td>footer.php</td>
+              <td>шаблон подвала</td>
+            </tr>
+            <tr>
+              <td>header.php</td>
+              <td>шаблон шапки</td>
+            </tr>
+            <tr>
+              <td>sidebar.php</td>
+              <td>шаблон боковой панели</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3>/wp-includes</h3>
+        <p>template-loader.php</p>
+        <pre><code>Загрузить правильный шаблон на основе URL-адреса посетителя.
+
+if ( wp_using_themes() ) {
+  do_action( 'template_redirect' );  // Срабатывает перед определением того, какой шаблон загрузить.
+}
+
+Фильтрует, разрешать ли запросам «HEAD» генерировать контент.  
+Обеспечивает значительный прирост производительности за счет выхода до загрузки содержимого страницы для запросов «HEAD».  
+
+/**
+* @param bool  $exit Выходить ли без генерации содержимого для запросов «HEAD». Значение по умолчанию — true.
+*/
+if ( 'HEAD' === $_SERVER['REQUEST_METHOD'] && apply_filters( 'exit_on_http_head', true ) ) {
+  exit;
+}
+
+Обработка лент и трекбеков
+
+// Обрабатывать ленты и трекбэки, даже если не используются темы.
+if ( is_robots() ) {
+
+  // Срабатывает, когда загрузчик шаблонов определяет запрос robots.txt.
+  do_action( 'do_robots' );
+  return;
+} elseif ( is_favicon() ) {
+
+  // Срабатывает, когда загрузчик шаблонов определяет запрос favicon.ico.
+  do_action( 'do_favicon' );
+  return;
+} elseif ( is_feed() ) {
+  do_feed();
+  return;
+} elseif ( is_trackback() ) {
+  require ABSPATH . 'wp-trackback.php';
+  return;
+}
+
+Выбрать шаблон
+
+if ( wp_using_themes() ) {
+
+  $tag_templates = array(
+    'is_embed'             => 'get_embed_template',
+    'is_404'               => 'get_404_template',
+    'is_search'            => 'get_search_template',
+    'is_front_page'        => 'get_front_page_template',
+    'is_home'              => 'get_home_template',
+    'is_privacy_policy'    => 'get_privacy_policy_template',
+    'is_post_type_archive' => 'get_post_type_archive_template',
+    'is_tax'               => 'get_taxonomy_template',
+    'is_attachment'        => 'get_attachment_template',
+    'is_single'            => 'get_single_template',
+    'is_page'              => 'get_page_template',
+    'is_singular'          => 'get_singular_template',
+    'is_category'          => 'get_category_template',
+    'is_tag'               => 'get_tag_template',
+    'is_author'            => 'get_author_template',
+    'is_date'              => 'get_date_template',
+    'is_archive'           => 'get_archive_template',
+  );
+  $template = false;
+
+// Пройти циклом по каждому условию шаблона и найти соответствующий файл шаблона.
+foreach ( $tag_templates as $tag => $template_getter ) {
+  if ( call_user_func( $tag ) ) {
+    $template = call_user_func( $template_getter );
+  }
+
+  if ( $template ) {
+    if ( 'is_attachment' === $tag ) {
+      remove_filter( 'the_content', 'prepend_attachment' );
+    }
+
+    break;
+  }
+}
+
+Выбрать index-шаблон если не найден нужный шаблон
+
+if ( ! $template ) {
+  $template = get_index_template();
+}
+
+Сформировать путь к нужному шаблону
+
+/**
+* Фильтрует путь текущего шаблона перед его включением.
+*
+* @param string  $template Путь к шаблону, который необходимо включить.
+*/
+$template = apply_filters( 'template_include', $template );
+if ( $template ) {
+  include $template;
+  } elseif ( current_user_can( 'switch_themes' ) ) {
+    $theme = wp_get_theme();
+    if ( $theme->errors() ) {
+      wp_die( $theme->errors() );
+    }
+  }
+  return;
+}</code></pre>
+        <p>index.php - принимает все запросы с фронтенда.  </p>
+        <pre><code>/**
+* @var bool
+*/
+// wp нужна тема true/false
+define( 'WP_USE_THEMES', true );
+
+// загружает среду и шаблон WordPress
+require __DIR__ . '/wp-blog-header.php';
+</code></pre>
+        <p>.htaccess</p>
+        <p>license.txt</p>
+        <p>local-xdebuginfo.php</p>
+        <p>readme.html</p>
+        <p>wp-activate.php</p>
+        <p>wp-blog-header.php - загружает среду и шаблон WordPress.</p>
+        <pre><code>if ( ! isset( $wp_did_header ) ) {
+
+  $wp_did_header = true;
+
+  require_once __DIR__ . '/wp-load.php';  // Загрузить библиотеку WordPress, т.е. ядро wp.
+
+  /**
+  * Настроить запрос WordPress:
+  * установить или переопределить глобальные переменные: $wp_query, $wp_the_query;
+  * установить header заголовок (в том числе "ошибка 404");
+  * создать запрос в базу данных;
+  * создать запрос и определить какая страница загружается;
+  * на основе переданных аргументов (параметр $query_vars), результатами запроса заполнить глобальные переменные;
+  * при срабатывания хука `parse_request` (REST-запрос) передать управление функции rest_api_loaded();
+  */
+  wp();
+
+  require_once ABSPATH . WPINC . '/template-loader.php';  // Загрузить шаблон темы.
+}</code></pre>
+        <p>wp-comments-post.php</p>
+        <p>wp-config-sample.php</p>
+        <p>wp-config.php - базовая конфигурация WordPress, используется во время установки.</p>
+        <table>
+          <caption>Настройки базы данных</caption>
+          <tbody>
+            <tr>
+              <td>define( 'DB_NAME', 'local' );</td>
+              <td>Название базы данных</td>
+            </tr>
+            <tr>
+              <td>define( 'DB_USER', 'root' );</td>
+              <td>Пользователь базы данных</td>
+            </tr>
+            <tr>
+              <td>define( 'DB_PASSWORD', 'root' );</td>
+              <td>Пароль пользователя базы данных</td>
+            </tr>
+            <tr>
+              <td>define( 'DB_HOST', 'localhost' );</td>
+              <td>Хост базы данных</td>
+            </tr>
+            <tr>
+              <td>define( 'DB_CHARSET', 'utf8' );</td>
+              <td>Кодировка базы данных</td>
+            </tr>
+            <tr>
+              <td>define( 'DB_COLLATE', '' );</td>
+              <td>Порядок сортировки набора символов. При пустом значении MySQL определит сам.</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>Определить секретные ключи</p>
+        <ul>
+          <li>Уникальные ключи и соли аутентификации.</li>
+          <li>Сгенерировать их можно с помощью https://api.wordpress.org/secret-key/1.1/salt/</li>
+          <li>Можно изменить их в любой момент, чтобы сделать все существующие файлы cookie недействительными.</li>
+          <li>Это заставит всех пользователей повторно войти в систему.</li>
+        </ul>
+        <pre><code>define( 'AUTH_KEY',          'fA9qgHbb$7T)9Ie~:DLhdR2_4=fO>YhG/(<nril*|RSL`^F%eH`SEeP%f0P!LfR7' );
+define( 'SECURE_AUTH_KEY',   'S?y.Hg{jOG(FF`*T>=W:|jr |)Ip=Du[O~(W]qY7{Q}.Pb39vld7583mpU`)dYUV' );
+define( 'LOGGED_IN_KEY',     'c%Z|~9s/_ *5Na(boz<+q l<vy29wwt%Ib*M^!YVyMt5;1866/Mj(4m25rB&j}$!' );
+define( 'NONCE_KEY',         '(a=09H2V%-26tpcj+k;ur_(=#wv||56tp,7Yd_:_}P3Kq:WPN&[p=[dkNLnb72@Y' );
+define( 'AUTH_SALT',         'P]DYJ|+24}^n+x.03v7P<D];0?X;u>_2&SUJ:z@`wz#Xn@Dh?(air$s?BTbrjI-X' );
+define( 'SECURE_AUTH_SALT',  'Dhu3Prn8buz{~RBqWUrDe(U^|wb8i{&^9%Ri!Odrb249JH_iMl@@y+HvdJty<[[^' );
+define( 'LOGGED_IN_SALT',    '^!:N$% ^m%8PM/R^5_8/Zi>7bv-xjdY8ZsAK:b)Ww%iuD*G|?(;svWJIs{SDCkoW' );
+define( 'NONCE_SALT',        '$wc`|7#:TfN uCqD=ZL6OeaU$9@lL]UbRtm/Y4mSBv*cO)tsB5|e,TYI, JeOo(z' );
+define( 'WP_CACHE_KEY_SALT', 'K^3?CWzmq++EY_tw-IrXkB,Z:S(^H^xU%[9fR~S9Uh[fx%7YaF(.Thvx&z92Q>)k' );
+</code></pre>
+        <p>Определить префикс базы данных</p><code>$table_prefix = 'wp_';</code>
+        <ul>
+          <li>Префикс таблицы базы данных WordPress. Только цифры, буквы и символы подчёркивания!</li>
+          <li>Можно создать несколько баз в одной базе данных, если присвоить каждой уникальный префикс.</li>
+          <li>Добавлять пользовательские значения между этой строкой и строкой «хватит редактировать».</li>
+        </ul>
+        <p>Включить или выключить режим отладки</p>
+        <pre><code>if ( ! defined( 'WP_DEBUG' ) ) {
+
+  // Изменить значение на true, чтобы включить отображение уведомлений во время разработки.
+  define( 'WP_DEBUG', false );
+}
+</code></pre>
+        <p>
+          Определить тип окружения для сайта.<br/>
+          Допустимые значения: local, development, staging, production, другие значения.
+        </p>
+        <pre><code>define( 'WP_ENVIRONMENT_TYPE', 'local' );</code></pre>
+        <p>Определить абсолютный путь к директории WordPress в константу ABSPATH если не определён</p>
+        <pre><code>if ( ! defined( 'ABSPATH' ) ) { define( 'ABSPATH', __DIR__ . '/' ); }</code></pre>
+        <p>Настроить переменные WordPress и подключаемые файлы.</p>
+        <pre><code>require_once ABSPATH . 'wp-settings.php';</code></pre>
+        <p>wp-cron.php</p>
+        <pre><code>/**
+* Псевдо-cron-демон для планирования задач WordPress.
+*
+* WP-Cron запускается при посещении сайта.
+* В случае, когда сайт может получать недостаточно посещений для выполнения запланированных задач своевременно,
+* этот файл можно вызвать напрямую или через серверный cron-демон.
+*
+* Определение DISABLE_WP_CRON как true и прямой вызов этого файла являются взаимоисключающими, и последнее не зависит от первого для своей работы.
+*
+* HTTP-запрос к этому файлу не замедлит работу посетителя, который посетил сайт во время выполнения запланированного события cron.
+*
+* @package WordPress
+*/
+
+ignore_user_abort( true );
+
+if ( ! headers_sent() ) {
+  header( 'Expires: Wed, 11 Jan 1984 05:00:00 GMT' );
+  header( 'Cache-Control: no-cache, must-revalidate, max-age=0' );
+}
+
+// Если возможно, не запускать cron, пока запрос не завершится.
+if ( function_exists( 'fastcgi_finish_request' ) ) {
+  fastcgi_finish_request();
+} elseif ( function_exists( 'litespeed_finish_request' ) ) {
+  litespeed_finish_request();
+}
+
+if ( ! empty( $_POST ) || defined( 'DOING_AJAX' ) || defined( 'DOING_CRON' ) ) { die(); }
+
+define( 'DOING_CRON', true );  // Сообщить WordPress о запуске cron-задачи.
+
+if ( ! defined( 'ABSPATH' ) ) { require_once __DIR__ . '/wp-load.php'; }  // Настройка среды WordPress
+
+wp_raise_memory_limit( 'cron' );  // Увеличить лимит памяти PHP для обработки событий cron.
+
+/**
+* Снимает блокировку cron. Возвращает некэшированный транзиент `doing_cron`.
+*
+* @global wpdb  $wpdb Объект абстракции базы данных WordPress.
+*
+* @return string|int|false  Значение переходного процесса `doing_cron`, в противном случае 0|false.
+*/
+function _get_cron_lock() {
+  global $wpdb;
+
+  $value = 0;
+  if ( wp_using_ext_object_cache() ) {
+    // Пропустить локальный кэш и принудительно повторно загрузить транзиент doing_cron в случае, если другой процесс обновил кэш.
+    $value = wp_cache_get( 'doing_cron', 'transient', true );
+  } else {
+    $row = $wpdb->get_row( $wpdb->prepare( "SELECT option_value FROM $wpdb->options WHERE option_name = %s LIMIT 1", '_transient_doing_cron' ) );
+    if ( is_object( $row ) ) { $value = $row->option_value; }
+  }
+
+  return $value;
+}
+
+$crons = wp_get_ready_cron_jobs();
+if ( empty( $crons ) ) { die(); }
+
+$gmt_time = microtime( true );
+
+$doing_cron_transient = get_transient( 'doing_cron' );  // Блокировка cron: временная метка unix с момента создания cron.
+
+// Использовать глобальную блокировку $doing_wp_cron, в противном случае использовать GET-блокировку. Если блокировки нет, установить новую.
+if ( empty( $doing_wp_cron ) ) {
+  if ( empty( $_GET['doing_wp_cron'] ) ) {
+    // Вызывается из внешнего скрипта/задания. Попробуйте установить блокировку.
+    if ( $doing_cron_transient && ( $doing_cron_transient + WP_CRON_LOCK_TIMEOUT > $gmt_time ) ) { return; }
+    $doing_wp_cron        = sprintf( '%.22F', microtime( true ) );
+    $doing_cron_transient = $doing_wp_cron;
+    set_transient( 'doing_cron', $doing_wp_cron );
+  } else {
+    $doing_wp_cron = $_GET['doing_wp_cron'];
+  }
+}
+
+// Блокировка cron (метка времени unix, установленная при запуске cron) должна соответствовать $doing_wp_cron («ключу»).
+if ( $doing_cron_transient !== $doing_wp_cron ) { return; }
+
+foreach ( $crons as $timestamp => $cronhooks ) {
+  if ( $timestamp > $gmt_time ) { break; }
+
+  foreach ( $cronhooks as $hook => $keys ) {
+
+    foreach ( $keys as $k => $v ) {
+
+      $schedule = $v['schedule'];
+
+      if ( $schedule ) {
+        $result = wp_reschedule_event( $timestamp, $schedule, $hook, $v['args'], true );
+
+        if ( is_wp_error( $result ) ) {
+          error_log(
+            sprintf(
+              /* трансляторы: 1: Имя хука, 2: Код ошибки, 3: Сообщение об ошибке, 4: Данные события. */
+              __( 'Cron reschedule event error for hook: %1$s, Error code: %2$s, Error message: %3$s, Data: %4$s' ),
+              $hook,
+              $result->get_error_code(),
+              $result->get_error_message(),
+              wp_json_encode( $v )
+            )
+          );
+
+          /**
+          * Срабатывает, если при перепланировании события cron произошла ошибка.
+          * 
+          * @param WP_Error $result Объект WP_Error.
+          * @param string   $hook   Хук действия, который будет выполнен при запуске события.
+          * @param array    $v      Данные о событиях.
+          */
+          do_action( 'cron_reschedule_event_error', $result, $hook, $v );
+        }
+      }
+
+      $result = wp_unschedule_event( $timestamp, $hook, $v['args'], true );
+
+      if ( is_wp_error( $result ) ) {
+        error_log(
+          sprintf(
+            /* трансляторы: 1: Имя хука, 2: Код ошибки, 3: Сообщение об ошибке, 4: Данные события. */
+            __( 'Cron unschedule event error for hook: %1$s, Error code: %2$s, Error message: %3$s, Data: %4$s' ),
+            $hook,
+            $result->get_error_code(),
+            $result->get_error_message(),
+            wp_json_encode( $v )
+          )
+        );
+
+        /**
+        * Срабатывает, если при отмене планирования события cron произошла ошибка.
+        *
+        * @param WP_Error $result Объект WP_Error.
+        * @param string   $hook   Хук действия, который будет выполнен при запуске события.
+        * @param array    $v      Данные о событиях.
+        */
+        do_action( 'cron_unschedule_event_error', $result, $hook, $v );
+      }
+
+      /**
+      * Расписание срабатывания событий
+      *
+      * @param string   $hook Запланированный к работе хук.
+      * @param array    $args Аргументы, которые необходимо передать в хук.
+      */
+      do_action_ref_array( $hook, $v['args'] );
+
+      // Если хук работал слишком долго и другой процесс cron перехватил блокировку, выходим.
+      if ( _get_cron_lock() !== $doing_wp_cron ) { return; }
+    }
+  }
+}
+
+if ( _get_cron_lock() === $doing_wp_cron ) { delete_transient( 'doing_cron' ); }
+
+die();</code></pre>
+        <p>wp-links-opml.php</p>
+        <p>wp-load.php</p>
+        <pre><code>Определить текущую директорию как ABSPATH
+if ( ! defined( 'ABSPATH' ) ) {
+  define( 'ABSPATH', __DIR__ . '/' );
+}
+
+Подключить сообщения об ошибках.
+
+// На случай отключения error_reporting() в php.ini, лучше всего добавить фиктивную функцию в файл wp-config.php, но поскольку вызов функции выполняется до загрузки wp-config.php, он обёрнут в проверку function_exists().
+if ( function_exists( 'error_reporting' ) ) {
+
+// На основе WP_DEBUG уровень ошибки будет адаптировано в wp_debug_mode() из в wp-includes/load.php.
+// Список известных уровней ошибок: https://www.php.net/manual/en/errorfunc.constants.php
+  error_reporting( E_CORE_ERROR | E_CORE_WARNING | E_COMPILE_ERROR | E_ERROR | E_WARNING | E_PARSE | E_USER_ERROR | E_USER_WARNING | E_RECOVERABLE_ERROR );
+}
+
+Подключение файлов wp-config.php и wp-settings.php.
+
+// Если файл wp-config.php есть в корне WordPress, или если он есть на уровень выше, а wp-settings.php нет, загрузить wp-config.php.
+// Вторичная проверка wp-settings.php имеет дополнительное преимущество:  
+// избегай случаев, когда текущий каталог является вложенной установкой, например, / — это WordPress(a), а /blog/ — это WordPress(b).
+// Если ни один из наборов условий не выполняется, инициировать установку.
+if ( file_exists( ABSPATH . 'wp-config.php' ) ) {
+  require_once ABSPATH . 'wp-config.php';
+
+} elseif ( @file_exists( dirname( ABSPATH ) . '/wp-config.php' ) && ! @file_exists( dirname( ABSPATH ) . '/wp-settings.php' ) ) {
+
+// Файл конфигурации wp-config.php находится на один уровень выше ABSPATH, но не является частью другой установки.
+require_once dirname( ABSPATH ) . '/wp-config.php';
+
+} else {
+
+  // Файл конфигурации wp-config.php отсутствует.
+  define( 'WPINC', 'wp-includes' );
+  require_once ABSPATH . WPINC . '/version.php';
+  require_once ABSPATH . WPINC . '/compat.php';
+  require_once ABSPATH . WPINC . '/load.php';
+
+  // Проверить версию PHP и расширение MySQL или подключаемого модуля базы данных.
+  wp_check_php_mysql_versions();
+
+  // Стандартизировать переменные $_SERVER во всех настройках.
+  wp_fix_server_vars();
+
+  define( 'WP_CONTENT_DIR', ABSPATH . 'wp-content' );
+  require_once ABSPATH . WPINC . '/functions.php';
+
+  // Удалить из ссылки wp-admin, чтобы получить только URL-адрес сайта.
+  $path = wp_guess_url() . '/wp-admin/setup-config.php';
+
+  // Перенаправление на setup-config.php.
+  if ( ! str_contains( $_SERVER['REQUEST_URI'], 'setup-config' ) ) {
+    header( 'Location: ' . $path );
+    exit;
+  }
+
+  Выполнить загрузку переводов, до определения и загрузки локали.
+  wp_load_translations_early();
+
+  // Сообщения об ошибке.
+  $die = '< p>' . sprintf(
+  /* translators: %s: wp-config.php */
+  __( "There doesn't seem to be a %s file. It is needed before the installation can continue." ), '< code>wp-config.php</ code>') . '</ p>';
+  $die .= '< p>' . sprintf(
+  /* translators: 1: Documentation URL, 2: wp-config.php */
+  __( 'Need more help? < a href="%1$s">Read the support article on %2$s</ a>.' ),
+  __( 'https://developer.wordpress.org/advanced-administration/wordpress/wp-config/' ), '< code>wp-config.php</ code>') . '</ p>';
+  $die .= '< p>' . sprintf(
+  /* translators: %s: wp-config.php */
+  __( "You can create a %s file through a web interface, but this doesn't work for all server setups. The safest way is to manually create the file." ), '< code>wp-config.php</ code>') . '</ p>';
+  $die .= '< p>< a href="' . $path . '" class="button button-large">' . __( 'Create a Configuration File' ) . '</ a></ p>';
+
+  Остановить выполнение PHP скрипта и вывести ошибку.
+  wp_die( $die, __( 'WordPress &rsaquo; Error' ) );
+}</code></pre>
+        <p>wp-login.php</p>
+        <p>wp-mail.php</p>
+        <p>wp-settings.php - Настройка и исправления общих переменных, подключение процедурной библиотеки и библиотеки классов WordPress.</p>
+        <pre><code>define( 'WPINC', 'wp-includes' ); // Расположение директории функций, классов и основного контента WordPress.
+
+// Эти данные нельзя напрямую глобализировать в файле version.php.
+// При обновлении включить файл version.php из другой установки и не переопределять эти значения, если они уже установлены.
+
+/**
+* @global string   $wp_version              Версия WordPress.
+* @global int      $wp_db_version           Версия базы данных WordPress.
+* @global string   $tinymce_version         Версия визуального редактора TinyMCE.
+* @global string   $required_php_version    Необходимая версия PHP.
+* @global string[] $required_php_extensions Названия необходимых расширений PHP.
+* @global string   $required_mysql_version  Необходимая версия MySQL.
+* @global string   $wp_local_package        Локальный код пакета.
+*/
+global $wp_version, $wp_db_version, $tinymce_version, $required_php_version, $required_php_extensions, $required_mysql_version, $wp_local_package;
+require ABSPATH . WPINC . '/version.php';
+require ABSPATH . WPINC . '/compat.php';
+require ABSPATH . WPINC . '/load.php';
+
+// Проверить необходимую версию PHP и наличие расширения MySQL или подключаемого модуля базы данных.
+wp_check_php_mysql_versions();
+
+// Подключить файлы для инициализации.
+require ABSPATH . WPINC . '/class-wp-paused-extensions-storage.php';
+require ABSPATH . WPINC . '/class-wp-exception.php';
+require ABSPATH . WPINC . '/class-wp-fatal-error-handler.php';
+require ABSPATH . WPINC . '/class-wp-recovery-mode-cookie-service.php';
+require ABSPATH . WPINC . '/class-wp-recovery-mode-key-service.php';
+require ABSPATH . WPINC . '/class-wp-recovery-mode-link-service.php';
+require ABSPATH . WPINC . '/class-wp-recovery-mode-email-service.php';
+require ABSPATH . WPINC . '/class-wp-recovery-mode.php';
+require ABSPATH . WPINC . '/error-protection.php';
+require ABSPATH . WPINC . '/default-constants.php';
+require_once ABSPATH . WPINC . '/plugin.php';
+
+/**
+* @global int $blog_id
+*/
+global $blog_id;  // Если параметр `$blog_id` ещё не настроен, в конфигурации с одним сайтом он будет по умолчанию равен 1.
+
+// В конфигурации с несколькими сайтами он будет переопределен по умолчанию в файле ms-settings.php.
+
+// Установить начальные константы по умолчанию, включая WP_MEMORY_LIMIT, WP_MAX_MEMORY_LIMIT, WP_DEBUG, SCRIPT_DEBUG, WP_CONTENT_DIR и WP_CACHE.
+wp_initial_constants();
+
+// Регистрация обработчика завершения работы для фатальных ошибок.
+wp_register_fatal_error_handler();
+
+date_default_timezone_set( 'UTC' ); // WordPress рассчитывает смещения относительно UTC.
+// phpcs:ignore WordPress.DateTime.RestrictedFunctions.timezone_change_date_default_timezone_set
+
+wp_fix_server_vars(); // Стандартизировать переменные $_SERVER во всех настройках.
+
+wp_maintenance(); // Проверить, не находится ли сайт в режиме обслуживания.
+
+timer_start();  // Запустить таймер загрузки.
+
+wp_debug_mode();  // Проверьте, включен ли режим WP_DEBUG.
+
+
+/**
+* Фильтрует, следует ли включить загрузку модуля advanced-cache.php. Этот фильтр срабатывает до того, как его смогут использовать плагины.
+* Он предназначен для работы вне веб-среды. Если возвращается значение false, advanced-cache.php никогда не будет загружен.
+* 
+* @param bool $enable_advanced_cache Включить ли загрузку advanced-cache.php (если присутствует). По умолчанию true.
+*/
+if ( WP_CACHE && apply_filters( 'enable_loading_advanced_cache_dropin', true ) && file_exists( WP_CONTENT_DIR . '/advanced-cache.php' ) ) {
+
+  // Для использования расширенного плагина кэширования. Использует статический дроп-ин, потому что вам нужен только один.
+  include WP_CONTENT_DIR . '/advanced-cache.php';
+
+  // Повторно инициализировать все хуки, добавленные вручную с помощью advanced-cache.php.
+  if ( $wp_filter ) {
+    $wp_filter = WP_Hook::build_preinitialized_hooks( $wp_filter );
+  }
+}
+
+wp_set_lang_dir();  // Определить WP_LANG_DIR, если не установлено.
+
+// Load early WordPress files.
+require ABSPATH . WPINC . '/class-wp-list-util.php';
+require ABSPATH . WPINC . '/class-wp-token-map.php';
+require ABSPATH . WPINC . '/formatting.php';
+require ABSPATH . WPINC . '/meta.php';
+require ABSPATH . WPINC . '/functions.php';
+require ABSPATH . WPINC . '/class-wp-meta-query.php';
+require ABSPATH . WPINC . '/class-wp-matchesmapregex.php';
+require ABSPATH . WPINC . '/class-wp.php';
+require ABSPATH . WPINC . '/class-wp-error.php';
+require ABSPATH . WPINC . '/pomo/mo.php';
+require ABSPATH . WPINC . '/l10n/class-wp-translation-controller.php';
+require ABSPATH . WPINC . '/l10n/class-wp-translations.php';
+require ABSPATH . WPINC . '/l10n/class-wp-translation-file.php';
+require ABSPATH . WPINC . '/l10n/class-wp-translation-file-mo.php';
+require ABSPATH . WPINC . '/l10n/class-wp-translation-file-php.php';
+
+/**
+* @global wpdb   $wpdb Абстрактный объект базы данных WordPress.
+*/
+global $wpdb;
+
+require_wp_db();  // Подключить класс wpdb и, если есть, базу данных db.php.
+
+/**
+* @global string   $table_prefix Префикс таблицы базы данных.
+*/
+$GLOBALS['table_prefix'] = $table_prefix;
+
+wp_set_wpdb_vars();   // Задать префикс таблицы базы данных и спецификаторы формата для столбцов таблицы базы данных.
+
+wp_start_object_cache();  // Запустить кэш объектов WordPress или внешний кэш объектов, если присутствует соответствующий объект.
+
+require ABSPATH . WPINC . '/default-filters.php';   // Прикрепить фильтры по умолчанию.
+
+// Инициализировать многосайтовый режим, если включено.
+if ( is_multisite() ) {
+  require ABSPATH . WPINC . '/class-wp-site-query.php';
+  require ABSPATH . WPINC . '/class-wp-network-query.php';
+  require ABSPATH . WPINC . '/ms-blogs.php';
+  require ABSPATH . WPINC . '/ms-settings.php';
+} elseif ( ! defined( 'MULTISITE' ) ) {
+  define( 'MULTISITE', false );
+}
+
+register_shutdown_function( 'shutdown_action_hook' );
+
+
+if ( SHORTINIT ) { return false; }  // Остановить загрузку всего WordPress, если включен SHORTINIT.
+
+// Загрузить библиотеку L10n.
+require_once ABSPATH . WPINC . '/l10n.php';
+require_once ABSPATH . WPINC . '/class-wp-textdomain-registry.php';
+require_once ABSPATH . WPINC . '/class-wp-locale.php';
+require_once ABSPATH . WPINC . '/class-wp-locale-switcher.php';
+
+wp_not_installed(); // Запустить установщик, если WordPress не установлен.
+
+// Загрузить весь WordPress.
+require ABSPATH . WPINC . '/class-wp-walker.php';
+require ABSPATH . WPINC . '/class-wp-ajax-response.php';
+require ABSPATH . WPINC . '/capabilities.php';
+require ABSPATH . WPINC . '/class-wp-roles.php';
+require ABSPATH . WPINC . '/class-wp-role.php';
+require ABSPATH . WPINC . '/class-wp-user.php';
+require ABSPATH . WPINC . '/class-wp-query.php';
+require ABSPATH . WPINC . '/query.php';
+require ABSPATH . WPINC . '/class-wp-date-query.php';
+require ABSPATH . WPINC . '/theme.php';
+require ABSPATH . WPINC . '/class-wp-theme.php';
+require ABSPATH . WPINC . '/class-wp-theme-json-schema.php';
+require ABSPATH . WPINC . '/class-wp-theme-json-data.php';
+require ABSPATH . WPINC . '/class-wp-theme-json.php';
+require ABSPATH . WPINC . '/class-wp-theme-json-resolver.php';
+require ABSPATH . WPINC . '/class-wp-duotone.php';
+require ABSPATH . WPINC . '/global-styles-and-settings.php';
+require ABSPATH . WPINC . '/class-wp-block-template.php';
+require ABSPATH . WPINC . '/class-wp-block-templates-registry.php';
+require ABSPATH . WPINC . '/block-template-utils.php';
+require ABSPATH . WPINC . '/block-template.php';
+require ABSPATH . WPINC . '/theme-templates.php';
+require ABSPATH . WPINC . '/theme-previews.php';
+require ABSPATH . WPINC . '/template.php';
+require ABSPATH . WPINC . '/https-detection.php';
+require ABSPATH . WPINC . '/https-migration.php';
+require ABSPATH . WPINC . '/class-wp-user-request.php';
+require ABSPATH . WPINC . '/user.php';
+require ABSPATH . WPINC . '/class-wp-user-query.php';
+require ABSPATH . WPINC . '/class-wp-session-tokens.php';
+require ABSPATH . WPINC . '/class-wp-user-meta-session-tokens.php';
+require ABSPATH . WPINC . '/general-template.php';
+require ABSPATH . WPINC . '/link-template.php';
+require ABSPATH . WPINC . '/author-template.php';
+require ABSPATH . WPINC . '/robots-template.php';
+require ABSPATH . WPINC . '/post.php';
+require ABSPATH . WPINC . '/class-walker-page.php';
+require ABSPATH . WPINC . '/class-walker-page-dropdown.php';
+require ABSPATH . WPINC . '/class-wp-post-type.php';
+require ABSPATH . WPINC . '/class-wp-post.php';
+require ABSPATH . WPINC . '/post-template.php';
+require ABSPATH . WPINC . '/revision.php';
+require ABSPATH . WPINC . '/post-formats.php';
+require ABSPATH . WPINC . '/post-thumbnail-template.php';
+require ABSPATH . WPINC . '/category.php';
+require ABSPATH . WPINC . '/class-walker-category.php';
+require ABSPATH . WPINC . '/class-walker-category-dropdown.php';
+require ABSPATH . WPINC . '/category-template.php';
+require ABSPATH . WPINC . '/comment.php';
+require ABSPATH . WPINC . '/class-wp-comment.php';
+require ABSPATH . WPINC . '/class-wp-comment-query.php';
+require ABSPATH . WPINC . '/class-walker-comment.php';
+require ABSPATH . WPINC . '/comment-template.php';
+require ABSPATH . WPINC . '/rewrite.php';
+require ABSPATH . WPINC . '/class-wp-rewrite.php';
+require ABSPATH . WPINC . '/feed.php';
+require ABSPATH . WPINC . '/bookmark.php';
+require ABSPATH . WPINC . '/bookmark-template.php';
+require ABSPATH . WPINC . '/kses.php';
+require ABSPATH . WPINC . '/cron.php';
+require ABSPATH . WPINC . '/deprecated.php';
+require ABSPATH . WPINC . '/script-loader.php';
+require ABSPATH . WPINC . '/taxonomy.php';
+require ABSPATH . WPINC . '/class-wp-taxonomy.php';
+require ABSPATH . WPINC . '/class-wp-term.php';
+require ABSPATH . WPINC . '/class-wp-term-query.php';
+require ABSPATH . WPINC . '/class-wp-tax-query.php';
+require ABSPATH . WPINC . '/update.php';
+require ABSPATH . WPINC . '/canonical.php';
+require ABSPATH . WPINC . '/shortcodes.php';
+require ABSPATH . WPINC . '/embed.php';
+require ABSPATH . WPINC . '/class-wp-embed.php';
+require ABSPATH . WPINC . '/class-wp-oembed.php';
+require ABSPATH . WPINC . '/class-wp-oembed-controller.php';
+require ABSPATH . WPINC . '/media.php';
+require ABSPATH . WPINC . '/http.php';
+require ABSPATH . WPINC . '/html-api/html5-named-character-references.php';
+require ABSPATH . WPINC . '/html-api/class-wp-html-attribute-token.php';
+require ABSPATH . WPINC . '/html-api/class-wp-html-span.php';
+require ABSPATH . WPINC . '/html-api/class-wp-html-doctype-info.php';
+require ABSPATH . WPINC . '/html-api/class-wp-html-text-replacement.php';
+require ABSPATH . WPINC . '/html-api/class-wp-html-decoder.php';
+require ABSPATH . WPINC . '/html-api/class-wp-html-tag-processor.php';
+require ABSPATH . WPINC . '/html-api/class-wp-html-unsupported-exception.php';
+require ABSPATH . WPINC . '/html-api/class-wp-html-active-formatting-elements.php';
+require ABSPATH . WPINC . '/html-api/class-wp-html-open-elements.php';
+require ABSPATH . WPINC . '/html-api/class-wp-html-token.php';
+require ABSPATH . WPINC . '/html-api/class-wp-html-stack-event.php';
+require ABSPATH . WPINC . '/html-api/class-wp-html-processor-state.php';
+require ABSPATH . WPINC . '/html-api/class-wp-html-processor.php';
+require ABSPATH . WPINC . '/class-wp-http.php';
+require ABSPATH . WPINC . '/class-wp-http-streams.php';
+require ABSPATH . WPINC . '/class-wp-http-curl.php';
+require ABSPATH . WPINC . '/class-wp-http-proxy.php';
+require ABSPATH . WPINC . '/class-wp-http-cookie.php';
+require ABSPATH . WPINC . '/class-wp-http-encoding.php';
+require ABSPATH . WPINC . '/class-wp-http-response.php';
+require ABSPATH . WPINC . '/class-wp-http-requests-response.php';
+require ABSPATH . WPINC . '/class-wp-http-requests-hooks.php';
+require ABSPATH . WPINC . '/widgets.php';
+require ABSPATH . WPINC . '/class-wp-widget.php';
+require ABSPATH . WPINC . '/class-wp-widget-factory.php';
+require ABSPATH . WPINC . '/nav-menu-template.php';
+require ABSPATH . WPINC . '/nav-menu.php';
+require ABSPATH . WPINC . '/admin-bar.php';
+require ABSPATH . WPINC . '/class-wp-application-passwords.php';
+require ABSPATH . WPINC . '/rest-api.php';
+require ABSPATH . WPINC . '/rest-api/class-wp-rest-server.php';
+require ABSPATH . WPINC . '/rest-api/class-wp-rest-response.php';
+require ABSPATH . WPINC . '/rest-api/class-wp-rest-request.php';
+require ABSPATH . WPINC . '/rest-api/endpoints/class-wp-rest-controller.php';
+require ABSPATH . WPINC . '/rest-api/endpoints/class-wp-rest-posts-controller.php';
+require ABSPATH . WPINC . '/rest-api/endpoints/class-wp-rest-attachments-controller.php';
+require ABSPATH . WPINC . '/rest-api/endpoints/class-wp-rest-global-styles-controller.php';
+require ABSPATH . WPINC . '/rest-api/endpoints/class-wp-rest-post-types-controller.php';
+require ABSPATH . WPINC . '/rest-api/endpoints/class-wp-rest-post-statuses-controller.php';
+require ABSPATH . WPINC . '/rest-api/endpoints/class-wp-rest-revisions-controller.php';
+require ABSPATH . WPINC . '/rest-api/endpoints/class-wp-rest-global-styles-revisions-controller.php';
+require ABSPATH . WPINC . '/rest-api/endpoints/class-wp-rest-template-revisions-controller.php';
+require ABSPATH . WPINC . '/rest-api/endpoints/class-wp-rest-autosaves-controller.php';
+require ABSPATH . WPINC . '/rest-api/endpoints/class-wp-rest-template-autosaves-controller.php';
+require ABSPATH . WPINC . '/rest-api/endpoints/class-wp-rest-taxonomies-controller.php';
+require ABSPATH . WPINC . '/rest-api/endpoints/class-wp-rest-terms-controller.php';
+require ABSPATH . WPINC . '/rest-api/endpoints/class-wp-rest-menu-items-controller.php';
+require ABSPATH . WPINC . '/rest-api/endpoints/class-wp-rest-menus-controller.php';
+require ABSPATH . WPINC . '/rest-api/endpoints/class-wp-rest-menu-locations-controller.php';
+require ABSPATH . WPINC . '/rest-api/endpoints/class-wp-rest-users-controller.php';
+require ABSPATH . WPINC . '/rest-api/endpoints/class-wp-rest-comments-controller.php';
+require ABSPATH . WPINC . '/rest-api/endpoints/class-wp-rest-search-controller.php';
+require ABSPATH . WPINC . '/rest-api/endpoints/class-wp-rest-blocks-controller.php';
+require ABSPATH . WPINC . '/rest-api/endpoints/class-wp-rest-block-types-controller.php';
+require ABSPATH . WPINC . '/rest-api/endpoints/class-wp-rest-block-renderer-controller.php';
+require ABSPATH . WPINC . '/rest-api/endpoints/class-wp-rest-settings-controller.php';
+require ABSPATH . WPINC . '/rest-api/endpoints/class-wp-rest-themes-controller.php';
+require ABSPATH . WPINC . '/rest-api/endpoints/class-wp-rest-plugins-controller.php';
+require ABSPATH . WPINC . '/rest-api/endpoints/class-wp-rest-block-directory-controller.php';
+require ABSPATH . WPINC . '/rest-api/endpoints/class-wp-rest-edit-site-export-controller.php';
+require ABSPATH . WPINC . '/rest-api/endpoints/class-wp-rest-pattern-directory-controller.php';
+require ABSPATH . WPINC . '/rest-api/endpoints/class-wp-rest-block-patterns-controller.php';
+require ABSPATH . WPINC . '/rest-api/endpoints/class-wp-rest-block-pattern-categories-controller.php';
+require ABSPATH . WPINC . '/rest-api/endpoints/class-wp-rest-application-passwords-controller.php';
+require ABSPATH . WPINC . '/rest-api/endpoints/class-wp-rest-site-health-controller.php';
+require ABSPATH . WPINC . '/rest-api/endpoints/class-wp-rest-sidebars-controller.php';
+require ABSPATH . WPINC . '/rest-api/endpoints/class-wp-rest-widget-types-controller.php';
+require ABSPATH . WPINC . '/rest-api/endpoints/class-wp-rest-widgets-controller.php';
+require ABSPATH . WPINC . '/rest-api/endpoints/class-wp-rest-templates-controller.php';
+require ABSPATH . WPINC . '/rest-api/endpoints/class-wp-rest-url-details-controller.php';
+require ABSPATH . WPINC . '/rest-api/endpoints/class-wp-rest-navigation-fallback-controller.php';
+require ABSPATH . WPINC . '/rest-api/endpoints/class-wp-rest-font-families-controller.php';
+require ABSPATH . WPINC . '/rest-api/endpoints/class-wp-rest-font-faces-controller.php';
+require ABSPATH . WPINC . '/rest-api/endpoints/class-wp-rest-font-collections-controller.php';
+require ABSPATH . WPINC . '/rest-api/fields/class-wp-rest-meta-fields.php';
+require ABSPATH . WPINC . '/rest-api/fields/class-wp-rest-comment-meta-fields.php';
+require ABSPATH . WPINC . '/rest-api/fields/class-wp-rest-post-meta-fields.php';
+require ABSPATH . WPINC . '/rest-api/fields/class-wp-rest-term-meta-fields.php';
+require ABSPATH . WPINC . '/rest-api/fields/class-wp-rest-user-meta-fields.php';
+require ABSPATH . WPINC . '/rest-api/search/class-wp-rest-search-handler.php';
+require ABSPATH . WPINC . '/rest-api/search/class-wp-rest-post-search-handler.php';
+require ABSPATH . WPINC . '/rest-api/search/class-wp-rest-term-search-handler.php';
+require ABSPATH . WPINC . '/rest-api/search/class-wp-rest-post-format-search-handler.php';
+require ABSPATH . WPINC . '/sitemaps.php';
+require ABSPATH . WPINC . '/sitemaps/class-wp-sitemaps.php';
+require ABSPATH . WPINC . '/sitemaps/class-wp-sitemaps-index.php';
+require ABSPATH . WPINC . '/sitemaps/class-wp-sitemaps-provider.php';
+require ABSPATH . WPINC . '/sitemaps/class-wp-sitemaps-registry.php';
+require ABSPATH . WPINC . '/sitemaps/class-wp-sitemaps-renderer.php';
+require ABSPATH . WPINC . '/sitemaps/class-wp-sitemaps-stylesheet.php';
+require ABSPATH . WPINC . '/sitemaps/providers/class-wp-sitemaps-posts.php';
+require ABSPATH . WPINC . '/sitemaps/providers/class-wp-sitemaps-taxonomies.php';
+require ABSPATH . WPINC . '/sitemaps/providers/class-wp-sitemaps-users.php';
+require ABSPATH . WPINC . '/class-wp-block-bindings-source.php';
+require ABSPATH . WPINC . '/class-wp-block-bindings-registry.php';
+require ABSPATH . WPINC . '/class-wp-block-editor-context.php';
+require ABSPATH . WPINC . '/class-wp-block-type.php';
+require ABSPATH . WPINC . '/class-wp-block-pattern-categories-registry.php';
+require ABSPATH . WPINC . '/class-wp-block-patterns-registry.php';
+require ABSPATH . WPINC . '/class-wp-block-styles-registry.php';
+require ABSPATH . WPINC . '/class-wp-block-type-registry.php';
+require ABSPATH . WPINC . '/class-wp-block.php';
+require ABSPATH . WPINC . '/class-wp-block-list.php';
+require ABSPATH . WPINC . '/class-wp-block-metadata-registry.php';
+require ABSPATH . WPINC . '/class-wp-block-parser-block.php';
+require ABSPATH . WPINC . '/class-wp-block-parser-frame.php';
+require ABSPATH . WPINC . '/class-wp-block-parser.php';
+require ABSPATH . WPINC . '/class-wp-classic-to-block-menu-converter.php';
+require ABSPATH . WPINC . '/class-wp-navigation-fallback.php';
+require ABSPATH . WPINC . '/block-bindings.php';
+require ABSPATH . WPINC . '/block-bindings/pattern-overrides.php';
+require ABSPATH . WPINC . '/block-bindings/post-meta.php';
+require ABSPATH . WPINC . '/blocks.php';
+require ABSPATH . WPINC . '/blocks/index.php';
+require ABSPATH . WPINC . '/block-editor.php';
+require ABSPATH . WPINC . '/block-patterns.php';
+require ABSPATH . WPINC . '/class-wp-block-supports.php';
+require ABSPATH . WPINC . '/block-supports/utils.php';
+require ABSPATH . WPINC . '/block-supports/align.php';
+require ABSPATH . WPINC . '/block-supports/custom-classname.php';
+require ABSPATH . WPINC . '/block-supports/generated-classname.php';
+require ABSPATH . WPINC . '/block-supports/settings.php';
+require ABSPATH . WPINC . '/block-supports/elements.php';
+require ABSPATH . WPINC . '/block-supports/colors.php';
+require ABSPATH . WPINC . '/block-supports/typography.php';
+require ABSPATH . WPINC . '/block-supports/border.php';
+require ABSPATH . WPINC . '/block-supports/layout.php';
+require ABSPATH . WPINC . '/block-supports/position.php';
+require ABSPATH . WPINC . '/block-supports/spacing.php';
+require ABSPATH . WPINC . '/block-supports/dimensions.php';
+require ABSPATH . WPINC . '/block-supports/duotone.php';
+require ABSPATH . WPINC . '/block-supports/shadow.php';
+require ABSPATH . WPINC . '/block-supports/background.php';
+require ABSPATH . WPINC . '/block-supports/block-style-variations.php';
+require ABSPATH . WPINC . '/block-supports/aria-label.php';
+require ABSPATH . WPINC . '/style-engine.php';
+require ABSPATH . WPINC . '/style-engine/class-wp-style-engine.php';
+require ABSPATH . WPINC . '/style-engine/class-wp-style-engine-css-declarations.php';
+require ABSPATH . WPINC . '/style-engine/class-wp-style-engine-css-rule.php';
+require ABSPATH . WPINC . '/style-engine/class-wp-style-engine-css-rules-store.php';
+require ABSPATH . WPINC . '/style-engine/class-wp-style-engine-processor.php';
+require ABSPATH . WPINC . '/fonts/class-wp-font-face-resolver.php';
+require ABSPATH . WPINC . '/fonts/class-wp-font-collection.php';
+require ABSPATH . WPINC . '/fonts/class-wp-font-face.php';
+require ABSPATH . WPINC . '/fonts/class-wp-font-library.php';
+require ABSPATH . WPINC . '/fonts/class-wp-font-utils.php';
+require ABSPATH . WPINC . '/fonts.php';
+require ABSPATH . WPINC . '/class-wp-script-modules.php';
+require ABSPATH . WPINC . '/script-modules.php';
+require ABSPATH . WPINC . '/interactivity-api/class-wp-interactivity-api.php';
+require ABSPATH . WPINC . '/interactivity-api/class-wp-interactivity-api-directives-processor.php';
+require ABSPATH . WPINC . '/interactivity-api/interactivity-api.php';
+require ABSPATH . WPINC . '/class-wp-plugin-dependencies.php';
+require ABSPATH . WPINC . '/class-wp-url-pattern-prefixer.php';
+require ABSPATH . WPINC . '/class-wp-speculation-rules.php';
+require ABSPATH . WPINC . '/speculative-loading.php';
+
+// Возвращает доступ к экземпляру WP_Script_Modules и создаёт его, если он ещё не существует.
+add_action( 'after_setup_theme', array( wp_script_modules(), 'add_hooks' ) );
+
+// Предоставляет доступ к экземпляру WP_Interactivity_API и создаёт его, если он ещё не существует.
+add_action( 'after_setup_theme', array( wp_interactivity(), 'add_hooks' ) );
+
+/**
+* @global WP_Embed   $wp_embed Объект WordPress Embed.
+*/
+$GLOBALS['wp_embed'] = new WP_Embed();
+
+/**
+* Объект реестра текстовых доменов WordPress.
+* Используется для поддержки оперативных переводов для загруженных вручную текстовых доменов.
+* 
+* @global WP_Textdomain_Registry   $wp_textdomain_registry Реестр текстовых доменов WordPress.
+*/
+$GLOBALS['wp_textdomain_registry'] = new WP_Textdomain_Registry();
+$GLOBALS['wp_textdomain_registry']->init();
+
+// Загрузить файлы, специфичные для нескольких сайтов.
+if ( is_multisite() ) {
+require ABSPATH . WPINC . '/ms-functions.php';
+require ABSPATH . WPINC . '/ms-default-filters.php';
+require ABSPATH . WPINC . '/ms-deprecated.php';
+}
+
+// Определить константы, которые используют API для получения значения по умолчанию.
+// Определить обязательные константы каталога плагинов, которые можно переопределить в подключаемом файле sunrise.php.
+wp_plugin_directory_constants();
+
+/**
+* @global array $wp_plugin_paths
+*/
+$GLOBALS['wp_plugin_paths'] = array();
+
+// Загрузить обязательные плагины.
+foreach ( wp_get_mu_plugins() as $mu_plugin ) {
+  $_wp_plugin_file = $mu_plugin;
+  include_once $mu_plugin;
+  $mu_plugin = $_wp_plugin_file; // Не использовать имя переменной $mu_plugin в плагине.
+
+  /**
+  * Срабатывает после загрузки одного обязательного плагина.
+  *
+  * @param string   $mu_plugin Полный путь к основному файлу плагина.
+  */
+  do_action( 'mu_plugin_loaded', $mu_plugin );
+}
+unset( $mu_plugin, $_wp_plugin_file );  // Удалить переменные $mu_plugin и $_wp_plugin_file
+
+// Загрузить активируемые сетью плагины.
+if ( is_multisite() ) {
+  foreach ( wp_get_active_network_plugins() as $network_plugin ) {
+    wp_register_plugin_realpath( $network_plugin );
+
+    $_wp_plugin_file = $network_plugin;
+    include_once $network_plugin;
+    $network_plugin = $_wp_plugin_file; // Не использовать имя переменной $network_plugin в плагине.
+
+    /**
+    * Срабатывает после загрузки одного сетевого плагина.
+    *
+    * @param string $network_plugin Full path to the plugin's main file.
+    */
+    do_action( 'network_plugin_loaded', $network_plugin );
+  }
+  unset( $network_plugin, $_wp_plugin_file );  // Удалить переменные $network_plugin и $_wp_plugin_file
+}
+
+/**
+* Срабатывает после загрузки всех обязательных и активируемых сетью плагинов.
+*/
+do_action( 'muplugins_loaded' );
+
+if ( is_multisite() ) { ms_cookie_constants(); }  // Определяет константы cookie-файлов Multisite.
+
+wp_cookie_constants();  // Определить константы после загрузки мультисайта.
+
+wp_ssl_constants();   // Определить и применить константы SSL.
+
+require ABSPATH . WPINC . '/vars.php';  // Создать общие глобальные переменные.
+
+// Сделать таксономии и записи доступными для плагинов и тем. Они снова регистрируются в хуке init.
+create_initial_taxonomies();
+create_initial_post_types();
+
+wp_start_scraping_edited_file_errors(); // Очищать отредактированные файлы от ошибок.
+
+register_theme_directory( get_theme_root() ); // Регистрировать корневой каталог темы по умолчанию.
+
+if ( ! is_multisite() && wp_is_fatal_error_handler_enabled() ) {
+  // Обрабатывать запросы пользователей на ссылку режима восстановления и запускать режим восстановления.
+  wp_recovery_mode()->initialize();
+}
+
+// Чтобы сделать get_plugin_data() доступным способом, совместимым с плагинами, также загружающими этот файл, см. #62244.
+require_once ABSPATH . 'wp-admin/includes/plugin.php';
+
+// Загрузить активные плагины.
+foreach ( wp_get_active_and_valid_plugins() as $plugin ) {
+  wp_register_plugin_realpath( $plugin );
+
+  $plugin_data = get_plugin_data( $plugin, false, false );
+
+  $textdomain = $plugin_data['TextDomain'];
+  if ( $textdomain ) {
+    if ( $plugin_data['DomainPath'] ) {
+      $GLOBALS['wp_textdomain_registry']->set_custom_path( $textdomain, dirname( $plugin ) . $plugin_data['DomainPath'] );
+    } else {
+      $GLOBALS['wp_textdomain_registry']->set_custom_path( $textdomain, dirname( $plugin ) );
+    }
+  }
+
+  $_wp_plugin_file = $plugin;
+  include_once $plugin;
+  $plugin = $_wp_plugin_file; // Не использовать имя переменной $plugin в плагине.
+
+  /**
+  * Срабатывает после загрузки одного активированного плагина.
+  *
+  * @param string $plugin Полный путь к основному файлу плагина.
+  */
+  do_action( 'plugin_loaded', $plugin );
+}
+unset( $plugin, $_wp_plugin_file, $plugin_data, $textdomain );
+
+// Загрузить подключаемые функции.
+require ABSPATH . WPINC . '/pluggable.php';
+require ABSPATH . WPINC . '/pluggable-deprecated.php';
+
+wp_set_internal_encoding();  // Установить внутреннюю кодировку.
+
+// Запустить wp_cache_postload(), если кэш объектов включен и функция существует.
+if ( WP_CACHE && function_exists( 'wp_cache_postload' ) ) { wp_cache_postload(); }
+
+/**
+* Срабатывает после загрузки всех активированный плагина.
+*
+* На этом этапе загрузки также доступны подключаемые функции.
+*/
+do_action( 'plugins_loaded' );
+
+// Определить константы, которые влияют на функциональность, если они еще не определены.
+wp_functionality_constants();
+
+// Добавить магические кавычки и настроить $_REQUEST ( $_GET + $_POST ).
+wp_magic_quotes();
+
+/**
+* Срабатывает при очистке файлов cookie комментариев.
+*/
+do_action( 'sanitize_comment_cookies' );
+
+/**
+* @global WP_Query $wp_the_query Объект запроса WordPress
+*/
+$GLOBALS['wp_the_query'] = new WP_Query();
+
+/**
+* Содержит ссылку на {@see $wp_the_query}.
+* Используйте этот глобальный параметр для запросов WordPress
+* 
+* @global WP_Query $wp_query Объект запроса WordPress
+*/
+$GLOBALS['wp_query'] = $GLOBALS['wp_the_query'];
+
+/**
+* Содержит объект WordPress Rewrite для создания красивых URL-адресов.
+*
+* @global WP_Rewrite $wp_rewrite Компонент перезаписи WordPress.
+*/
+$GLOBALS['wp_rewrite'] = new WP_Rewrite();
+
+/**
+* @global WP  $wp Текущий экземпляр среды WordPress.
+*/
+$GLOBALS['wp'] = new WP();
+
+/**
+* Объект WordPress Widget Factory
+*
+* @global WP_Widget_Factory $wp_widget_factory
+*/
+$GLOBALS['wp_widget_factory'] = new WP_Widget_Factory();
+
+/**
+* Роли пользователей WordPress
+*
+* @global WP_Roles $wp_roles WordPress role management object.
+*/
+$GLOBALS['wp_roles'] = new WP_Roles();
+
+/**
+* Срабатывает до загрузки темы.
+*/
+do_action( 'setup_theme' );
+
+// Определить константы и глобальные переменные, связанные с шаблоном.
+wp_templating_constants();
+wp_set_template_globals();
+
+// Загрузить домен локализации текста по умолчанию.
+load_default_textdomain();
+
+$locale      = get_locale();
+$locale_file = WP_LANG_DIR . "/$locale.php";
+if ( ( 0 === validate_file( $locale ) ) && is_readable( $locale_file ) ) {
+  require $locale_file;
+}
+unset( $locale_file );
+
+/**
+* 
+* @global WP_Locale  $wp_locale Объект локали даты и времени WordPress.
+*/
+$GLOBALS['wp_locale'] = new WP_Locale();
+
+/**
+* @global WP_Locale_Switcher   $wp_locale_switcher Объект переключателя локали WordPress.
+*/
+$GLOBALS['wp_locale_switcher'] = new WP_Locale_Switcher();
+$GLOBALS['wp_locale_switcher']->init();
+
+// Загрузить функции для активной темы, как для родительской, так и для дочерней темы, если применимо.
+foreach ( wp_get_active_and_valid_themes() as $theme ) {
+  $wp_theme = wp_get_theme( basename( $theme ) );
+
+  $wp_theme->load_textdomain();
+
+  if ( file_exists( $theme . '/functions.php' ) ) {
+    include $theme . '/functions.php';
+  }
+}
+unset( $theme, $wp_theme );
+
+/**
+* Срабатывает после загрузки темы.
+*/
+do_action( 'after_setup_theme' );
+
+// Создайть экземпляр WP_Site_Health, чтобы могли срабатывать события Cron.
+if ( ! class_exists( 'WP_Site_Health' ) ) {
+  require_once ABSPATH . 'wp-admin/includes/class-wp-site-health.php';
+}
+WP_Site_Health::get_instance();
+
+$GLOBALS['wp']->init();  // Настроить текущего пользователя.
+
+/**
+* Срабатывает после завершения загрузки WordPress, но до отправки каких-либо заголовков.
+*
+* На этом этапе загружается большая часть WP, и пользователь проходит аутентификацию.
+* WP продолжает загружаться в следующем хуке 'init' (например, виджеты).
+* Многие плагины создают себя на нём по разным причинам (например, им нужен пользователь, таксономия и т. д.).
+*
+* Если вы хотите подключить действие после загрузки WP, используйте хук 'wp_loaded' ниже.
+*/
+do_action( 'init' );
+
+// Проверить статус сайта.
+if ( is_multisite() ) {
+  $file = ms_site_check();
+  if ( true !== $file ) {
+    require $file;
+    die();
+  }
+  unset( $file );
+}
+
+/**
+* Этот хук срабатывает после полной загрузки и создания экземпляра WP, всех плагинов и темы.
+*
+* Ajax-запросы должны использовать wp-admin/admin-ajax.php.
+* admin-ajax.php может обрабатывать запросы для пользователей, не вошедших в систему.
+*/
+do_action( 'wp_loaded' );</code></pre>
+        <p>wp-signup.php</p>
+        <p>wp-trackback.php - Обработка трекбэков и пингбэков, отправленных в WordPress</p>
+        <pre><code>if ( empty( $wp ) ) {
+  require_once __DIR__ . '/wp-load.php';
+  wp( array( 'tb' => '1' ) );
+}
+
+wp_set_current_user( 0 );  // Всегда запускать как неаутентифицированный пользователь.
+
+/**
+* Ответ на трекбек. Возвращает XML-сообщение об ошибке или успешном выполнении.
+* @param int|bool   $error         Была ли ошибка? Значение по умолчанию: «0». Принимает значения «0» или «1», «истина» или «ложь».
+* @param string     $error_message Сообщение об ошибке, если произошла ошибка. По умолчанию — пустая строка.
+*/
+function trackback_response( $error = 0, $error_message = '' ) {
+  header( 'Content-Type: text/xml; charset=' . get_option( 'blog_charset' ) );
+
+  if ( $error ) {
+    echo '< ?xml version="1.0" encoding="utf-8"?' . ">\n";
+    echo "< response>\n";
+    echo "< error>1< /error>\n";
+    echo "< message>$error_message< /message>\n";
+    echo '< /response>';
+    die();
+  } else {
+    echo '< ?xml version="1.0" encoding="utf-8"?' . ">\n";
+    echo "< response>\n";
+    echo "< error>0< /error>\n";
+    echo '< /response>';
+  }
+}
+
+if ( ! isset( $_GET['tb_id'] ) || ! $_GET['tb_id'] ) {
+  $post_id = explode( '/', $_SERVER['REQUEST_URI'] );
+  $post_id = (int) $post_id[ count( $post_id ) - 1 ];
+}
+
+$trackback_url = isset( $_POST['url'] ) ? $_POST['url'] : '';
+$charset       = isset( $_POST['charset'] ) ? $_POST['charset'] : '';
+$title     = isset( $_POST['title'] ) ? wp_unslash( $_POST['title'] ) : '';
+$excerpt   = isset( $_POST['excerpt'] ) ? wp_unslash( $_POST['excerpt'] ) : '';
+$blog_name = isset( $_POST['blog_name'] ) ? wp_unslash( $_POST['blog_name'] ) : '';
+
+if ( $charset ) {
+  $charset = str_replace( array( ',', ' ' ), '', strtoupper( trim( $charset ) ) );
+
+  // Проверить, что указанная кодировка «отправителя» доступна на принимающем сайте.
+  if ( function_exists( 'mb_list_encodings' ) && ! in_array( $charset, mb_list_encodings(), true ) ) {
+    $charset = '';
+  }
+}
+
+if ( ! $charset ) {
+  $charset = 'ASCII, UTF-8, ISO-8859-1, JIS, EUC-JP, SJIS';
+}
+
+// Допустимых вариантов использования UTF-7 нет.
+if ( str_contains( $charset, 'UTF-7' ) ) { die; }
+
+// Для международных трекбэков.
+if ( function_exists( 'mb_convert_encoding' ) ) {
+  $title     = mb_convert_encoding( $title, get_option( 'blog_charset' ), $charset );
+  $excerpt   = mb_convert_encoding( $excerpt, get_option( 'blog_charset' ), $charset );
+  $blog_name = mb_convert_encoding( $blog_name, get_option( 'blog_charset' ), $charset );
+}
+
+// Значения экранирования для использования в трекбеке.
+$title     = wp_slash( $title );
+$excerpt   = wp_slash( $excerpt );
+$blog_name = wp_slash( $blog_name );
+
+if ( is_single() || is_page() ) {
+  $post_id = $posts[0]->ID;
+}
+
+if ( ! isset( $post_id ) || ! (int) $post_id ) {
+  trackback_response( 1, __( 'I really need an ID for this to work.' ) );
+}
+
+if ( empty( $title ) && empty( $trackback_url ) && empty( $blog_name ) ) {
+  // Если это совсем не похоже на трекбек.
+  wp_redirect( get_permalink( $post_id ) );
+  exit;
+}
+
+if ( ! empty( $trackback_url ) && ! empty( $title ) ) {
+  /**
+  * Срабатывает перед добавлением трекбека к посту.
+  *
+  * @param int      $post_id       Идентификатор записи, относящийся к трекбеку.
+  * @param string   $trackback_url URL-адрес обратной ссылки.
+  * @param string   $charset       Кодировка.
+  * @param string   $title         Название трекбека.
+  * @param string   $excerpt       Фрагмент трекбека.
+  * @param string   $blog_name     Название сайта.
+  */
+  do_action( 'pre_trackback_post', $post_id, $trackback_url, $charset, $title, $excerpt, $blog_name );
+
+  header( 'Content-Type: text/xml; charset=' . get_option( 'blog_charset' ) );
+
+  if ( ! pings_open( $post_id ) ) {
+    trackback_response( 1, __( 'Sorry, trackbacks are closed for this item.' ) );
+  }
+
+  $title   = wp_html_excerpt( $title, 250, '&#8230;' );
+  $excerpt = wp_html_excerpt( $excerpt, 252, '&#8230;' );
+
+  $comment_post_id      = (int) $post_id;
+  $comment_author       = $blog_name;
+  $comment_author_email = '';
+  $comment_author_url   = $trackback_url;
+  $comment_content      = "< strong>$title< /strong>\n\n$excerpt";
+  $comment_type         = 'trackback';
+
+  $dupe = $wpdb->get_results(
+    $wpdb->prepare(
+      "SELECT * FROM $wpdb->comments WHERE comment_post_ID = %d AND comment_author_url = %s",
+      $comment_post_id,
+      $comment_author_url
+    )
+  );
+
+  if ( $dupe ) {
+    trackback_response( 1, __( 'There is already a ping from that URL for this post.' ) );
+  }
+
+  $commentdata = array( 'comment_post_ID' => $comment_post_id );
+
+$commentdata += compact(
+  'comment_author',
+  'comment_author_email',
+  'comment_author_url',
+  'comment_content',
+  'comment_type'
+);
+
+  $result = wp_new_comment( $commentdata );
+
+  if ( is_wp_error( $result ) ) {
+  trackback_response( 1, $result->get_error_message() );
+  }
+
+  $trackback_id = $wpdb->insert_id;
+
+  /**
+  * @param int $trackback_id Trackback ID.
+  */
+  // Срабатывает после добавления трекбека к посту.
+  do_action( 'trackback_post', $trackback_id );
+
+  trackback_response( 0 );
+}</code></pre>
+        <p>xmlrpc.php</p>
+        <h2>Processes</h2>
+        <ul>
+          <li>Ядро WP загружается при любом запросе: фронт, REST, админка, аякс.</li>
+          <li>При загрузке ядра всегда подключатся файл темы functions.php, даже в админке.</li>
+          <li>Ядро находится в файле wp-settings.php.</li>
+          <li>Задача wp-load.php отыскать файл конфигурации wp-config.php в этой же папке или на уровень выше и подключить его.</li>
+          <li>Если wp-config.php нигде нет, то WP предложит его создать.</li>
+          <li>Функция wp() из wp-blog-header.php устанавливает основной запрос WordPress (theme или REST) и устанавливает текущего пользователя.</li>
+          <li>Заголовки REST ответа ставит REST сервер, также он делает соответствующий запрос в БД.</li>
+          <li>Когда ядро загружено (событие init), подключаются функции админ-панели и запускается хук AJAX: wp_ajax_(action) или wp_ajax_nopriv_(action).</li>
+          <li>При любом запросе к сайту, в том числе при AJAX, REST запросах, т.е. всегда на событии init срабатывает функция wp_cron() из wp-cron.php.</li>
+        </ul>
+        <h3>Загрузка wp</h3>
+        <h4>Ядро: wp-load.php -> wp-config.php -> wp-settings.php</h4>
+        <p>wp-load.php - файл начальной загрузки:</p>
+        <ul>
+          <li>определить константу ABSPATH: абсолютный путь к директории WordPress</li>
+          <li>подключить сообщения об ошибках</li>
+          <li>подключить файлы wp-config.php и wp-settings.php, поиск файла wp-config.php в текущей директории и на уровень выше.</li>
+          <li>если файл wp-config.php не найден остановить выполнение скрипта и вывести ошибку</li>
+        </ul>
+        <p>wp-config.php - базовая конфигурация WordPress</p>
+        <ul>
+          <li>настройки базы данных</li>
+          <li>определить секретные ключи</li>
+          <li>определить префикс базы данных</li>
+          <li>включить или выключить режим отладки</li>
+          <li>определить тип окружения</li>
+          <li>определить абсолютный путь к директории WordPress в константу ABSPATH если не определён</li>
+        </ul>
+        <p>wp-settings.php - настройка переменных и подключение библиотек</p>
+        <ul>
+          <li>определить глобальные переменные</li>
+          <li>подключить файлы version.php, compat.php и load.php из wp-include</li>
+          <li>проверить необходимую версию PHP и наличие расширения MySQL или подключаемого модуля базы данных</li>
+          <li>подключить классы из wp-include</li>
+          <li>установить начальные константы по умолчанию</li>
+          <li>заегистрировать обработчика завершения работы для фатальных ошибок</li>
+          <li>рассчитать смещение локального времени относительно UTC</li>
+          <li>стандартизировать переменные сервера $_SERVER во всех настройках</li>
+          <li>проверить, не находится ли сайт в режиме обслуживания</li>
+          <li>включить таймер</li>
+          <li>проверить, включен ли режим WP_DEBUG</li>
+          <li>подключить, если он есть и включено WP_CACHE, 'wp-content/advanced-cache.php', предназначеный для работы вне веб-среды.</li>
+          <li>повторно инициализировать все хуки</li>
+          <li>определить WP_LANG_DIR, если не установлено.</li>
+          <li>подключить класс wpdb и, если есть, базу данных db.php</li>
+          <li>задать префикс таблицы базы данных и спецификаторы формата для столбцов таблицы базы данных</li>
+          <li>запустить кэш объектов WordPress или внешний кэш объектов, 'wp-content/object-cache.php' если есть, или 'wp-include/cache.php'.</li>
+          <li>подключить хуки по умолчанию из 'wp-include/default-filters.php'</li>
+          <li>остановить загрузку всего WordPress, если включен SHORTINIT</li>
+          <li>подключить функции локализации из библиотеки L10n</li>
+          <li>запустить установщик, если WordPress не установлен</li>
+          <li>инициализировать Multisite (если включён). Грузится 'wp-content/sunrise.php' если есть (только для multisite).</li>
+          <li>доступ к экземпляру WP_Script_Modules и создаёт его, если он ещё не существует</li>
+          <li>доступ к экземпляру WP_Interactivity_API и создаёт его, если он ещё не существует</li>
+          <li>определить объект реестра текстовых доменов WordPress</li>
+          <li>загрузить файлы и плагины специфичные для мультисайта</li>
+          <li>определить константы, которые используют API для получения значениий по умолчанию</li>
+          <li>сделать таксономии и записи доступными для плагинов и тем. Они снова регистрируются в хуке init.</li>
+          <li>очистить отредактированные файлы от ошибок</li>
+          <li>зарегистрировать корневой каталог темы по умолчанию</li>
+          <li>подключить активные плагины</li>
+          <li>подключить pluggable функции: pluggable.php</li>
+          <li>установить внутреннюю кодировку</li>
+          <li>определить константы, которые влияют на функциональность, если они еще не определены</li>
+          <li>принудительное экранирование значений в $_REQUEST ( $_GET + $_POST )</li>
+          <li>определить константы и глобальные переменные, связанные с шаблоном</li>
+          <li>загрузить функции для активной темы, functions.php дочерней темы, затем подключается functions.php основной темы</li>
+          <li>создать экземпляр WP_Site_Health, чтобы могли срабатывать события Cron</li>
+          <li>запустить обработку запросов пользователей на ссылку режима восстановления и запустить режим восстановления</li>
+        </ul>
+        <h4>Тема и REST: index.php -> wp-blog-header.php -> wp-load.php</h4>
+        <ul>
+          <li>получить все запросы с фронтенда в index.php корневой папки домена</li>
+          <li>определить константу WP_USE_THEMES, которая указывает, что WordPress загружается с темой</li>
+          <li>подключить wp-blog-header.php</li>
+          <li>загрузить ядро WordPress wp-load.php</li>
+          <li>установить или переопределить глобальные переменные: $wp_query, $wp_the_query</li>
+          <li>установить header заголовок (в том числе 'ошибка 404')</li>
+          <li>создать запрос в базу данных</li>
+          <li>создать запрос и определить какая страница загружается</li>
+          <li>на основе переданных аргументов (параметр $query_vars), результатами запроса заполнить глобальные переменные</li>
+          <li>при срабатывания хука 'parse_request' (REST-запрос) передать управление функции rest_api_loaded()</li>
+          <li>загрузить шаблон темы template-loader.php из wp-include, хук template_redirect будет работать только если определена константа WP_USE_THEMES</li>
+          <li>определить поведение при HEAD-запросах</li>
+          <li>определить какой запрос: robots.txt, favicon.ico, feed или trackback</li>
+          <li>определить шаблон для загрузки либо загрузить index-шаблон</li>
+          <li>сформировать путь к выбранному шаблону и загрузить</li>
+          <li>подключить wp-trackback.php</li>
+          <li>сделать пользователя неаутентифицированным</li>
+          <li>вернуть XML-сообщение об ошибке или успешном выполнении</li>
+          <li>добавить трекбэк к посту</li>
+        </ul>
+        <h4>Админка: wp-admin/admin.php -> wp-admin/includes/admin.php, wp-admin/admin-header.php, wp-admin/admin-footer.php</h4>
+        <ul>
+          <li>определить константы админки</li>
+          <li>загрузить ядро</li>
+          <li>проверить необходимость обновления WordPress</li>
+          <li>определить расписание уборки мусора</li>
+          <li>подключить админку wp-admin/includes/admin.php</li>
+          <li>запланировать время очистки</li>
+          <li>проверить авторизован ли пользователь для допуска на страницу, если нет, то на страницу авторизации auth_redirect()</li>
+          <li>хук админки: admin_init</li>
+          <li>установить данные текущей страницы set_current_screen()</li>
+          <li>подключить шапку админки wp-admin/admin-header.php</li>
+          <li>подключить контент админки: плагин, запрос на импорт, файл админки</li>
+          <li>подключить подвал админки wp-admin/admin-footer.php</li>
+        </ul>
+        <h4>AJAX: wp-admin/admin-ajax.php -> wp-load.php, wp-admin/includes/admin.php, wp-admin/includes/ajax-actions.php</h4>
+        <ul>
+          <li>загрузить ядро wp-load.php</li>
+          <li>разрешить кросс-доменные запросы из интерфейса</li>
+          <li>загрузка API администрирования WordPress wp-admin/includes/admin.php</li>
+          <li>загрузка обработчиков Ajax для ядра WordPress wp-admin/includes/ajax-actions.php</li>
+          <li>добавить хуки и зарегистрировать основные вызовы Ajax</li>
+          <li>добавить хук и зарегистрировать зависимости плагина вызова Ajax</li>
+          <li>проверка прав пользователя и запуск нужного хука</li>
+          <li>Запуск AJAX хука означает, что AJAX операция выполнена и она должна прервать работу PHP и вывести либо простую строку, либо строку в json формате.</li>
+        </ul>
+        <h4>CRON: wp-cron.php</h4>
+        <ul>
+          <li>определить константу DOING_CRON</li>
+          <li>загрузить ядро wp-load.php</li>
+          <li>выполнить задачи CRON</li>
+        </ul>
+        <table>
+          <caption>Функции wp</caption>
+          <thead>
+            <tr>
+              <th>name</th>
+              <th>mission</th>
+              <th>define & init</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>timer_start()</td>
+              <td>включить таймер</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>wp_initial_constants()</td>
+              <td>установить начальные константы по умолчанию</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>wp_cookie_constants()</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>do_action()</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>register_theme_directory( get_theme_root() )</td>
+              <td>регистрировать корневой каталог темы по умолчанию</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>wp_get_theme()</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>wp_get_active_and_valid_themes()</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>wp_functionality_constants()</td>
+              <td>определить константы, которые влияют на функциональность</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>wp_script_modules()</td>
+              <td>доступ к экземпляру WP_Script_Modules и создаёт его, если он ещё не существует</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>plugin_dir_url()</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>wp_templating_constants()</td>
+              <td>определить константы, связанные с шаблоном</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>wp_set_template_globals()</td>
+              <td>определить глобальные переменные, связанные с шаблоном</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>wp_set_lang_dir()</td>
+              <td>определить WP_LANG_DIR</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>register_activation_hook()</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>date_default_timezone_set( 'UTC' )</td>
+              <td>рассчитать смещение локального времени относительно UTC</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>wp_register_fatal_error_handler()</td>
+              <td>зарегистрировать обработчика завершения работы для фатальных ошибок</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>wp_check_php_mysql_versions()</td>
+              <td>проверить необходимую версию PHP и наличие расширения MySQL или подключаемого модуля базы данных.</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>wp_fix_server_vars()</td>
+              <td>стандартизировать переменные сервера</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>wp_maintenance()</td>
+              <td>проверить режим обслуживания</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>wp_debug_mode()</td>
+              <td>включить дебаг режим</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>require_wp_db()</td>
+              <td>подключить базу данных в $wpdb, создать соединение и все связанные переменные. Загрузить 'wp-content/db.php' если есть.</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>register_shutdown_function( )</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>wp_not_installed()</td>
+              <td>проверить установлен ли WP</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>wp_magic_quotes()</td>
+              <td>принудительное экранирование значений в $_POST, $_REQUEST</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>load_default_textdomain()</td>
+              <td>файл перевода WordPress</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>wp_get_current_user()</td>
+              <td>создать объект текущего пользователя</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>init()</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>isset()</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>wp()</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>wp_recovery_mode()</td>
+              <td>запустить обработку запросов пользователей на ссылку режима восстановления и запустить режим восстановления</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>initialize()</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>wp_start_scraping_edited_file_errors()</td>
+              <td>очистить отредактированные файлы от ошибок</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>create_initial_taxonomies()</td>
+              <td>сделать таксономии доступными для плагинов и тем</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>create_initial_post_types()</td>
+              <td>сделать записи доступными для плагинов и тем</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>wp_cache_postload()</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>wp_set_internal_encoding()</td>
+              <td>установить внутреннюю кодировку</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>wp_plugin_directory_constants()</td>
+              <td>определить обязательные константы каталога плагинов</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>wp_interactivity()</td>
+              <td>доступ к экземпляру WP_Interactivity_API и создаёт его, если он ещё не существует</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>wp_not_installed()</td>
+              <td>запустить установщик, если WordPress не установлен</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>wp_start_object_cache()</td>
+              <td>запустить кэш объектов WordPress или внешний кэш объектов, если присутствует соответствующий объект</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>wp_set_wpdb_vars()</td>
+              <td>задать префикс таблицы базы данных и спецификаторы формата для столбцов таблицы базы данных</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>ms_site_check()</td>
+              <td>проверка статуса мультисайта. Если удален, неактивен, в архиве, то вызывается drop файл и PHP прерывается через die()</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>wp_using_themes()</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>is_robots()</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>is_favicon()</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>do_feed()</td>
+              <td>при запросе feed</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>is_trackback()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>call_user_func()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>apply_filters()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>remove_filter()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>get_index_template()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>current_user_can()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>wp_get_theme()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>errors()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>wp_die()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>empty()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>array()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>wp_set_current_user()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>trackback_response()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>get_option()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>header()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>explode()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>count()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>wp_slash()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>wp_unslash()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>str_replace()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>strtoupper()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>trim()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>function_exists()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>in_array()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>mb_list_encodings()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>mb_convert_encoding()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>is_single()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>is_page()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>wp_redirect()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>get_permalink()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>pings_open()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>str_contains()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>wp_html_excerpt()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>get_results()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>prepare()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>compact()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>wp_new_comment()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>is_wp_error()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>get_error_message()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>rest_api_loaded()</td>
+              <td>запустить логику REST-запроса если $GLOBALS['wp']->query_vars['rest_route'] содержит маршрут</td>
+              <td>wp-includes/rest-api.php</td>
+            </tr>
+            <tr>
+              <td>rest_cookie_check_errors()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>rest_application_password_check_errors()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>parse_request()</td>
+              <td>устанавливает параметры текущего запроса $wp->query_vars</td>
+              <td>wp-includes/class-wp.php</td>
+            </tr>
+            <tr>
+              <td>rest_get_server()</td>
+              <td>запустить REST сервер</td>
+              <td>wp-includes/class-wp.php</td>
+            </tr>
+            <tr>
+              <td>dirname()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>defined()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>nocache_headers()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>flush_rewrite_rules()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>update_option()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>wp_doing_ajax()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>is_multisite()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>admin_url()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>urlencode()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>get_blog_count()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>mt_rand()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>wp_remote_get()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>auth_redirect()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>wp_next_scheduled()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>wp_installing()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>wp_schedule_event()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>time()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>set_screen_options()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>wp_enqueue_script()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>plugin_basename()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>post_type_exists()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>taxonomy_exists()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>wp_raise_memory_limit()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>get_plugin_page_hook()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>set_current_screen()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>validate_file()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>file_exists()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>is_file()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>sprintf()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>htmlentities()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>is_callable()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>kses_init_filters()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>send_origin_headers()</td>
+              <td>разрешить кросс-доменные запросы из интерфейса</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>is_scalar()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>send_nosniff_header()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>array_merge()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>is_user_logged_in()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>has_action()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>wp_json_encode()</td>
+              <td>json ответ при AJAX запросах</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>wp_send_json_error()</td>
+              <td>json ответ при AJAX запросах для ответов-ошибок</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>wp_send_json_success()</td>
+              <td>json ответ при AJAX запросах для успешных ответов</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>ignore_user_abort()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>headers_sent()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>fastcgi_finish_request()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>litespeed_finish_request()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>wp_raise_memory_limit()</td>
+              <td>увеличить лимит памяти PHP</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>_get_cron_lock()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>wp_using_ext_object_cache()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>wp_cache_get()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>get_row()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>is_object()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>wp_get_ready_cron_jobs()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>microtime()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>get_transient()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>set_transient()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>wp_reschedule_event()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>error_log()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>get_error_code()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>do_action_ref_array()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>delete_transient()</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+          </tbody>
+        </table>
+        <table>
+          <caption>Константы и глобальные переменные WP</caption>
+          <thead>
+            <tr>
+              <th>name</th>
+              <th>mission</th>
+              <th>define & init</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>WP_ADMIN</td>
+              <td>определяет, что мы находимся в админке</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>WP_NETWORK_ADMIN</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>WP_USER_ADMIN</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>WP_BLOG_ADMIN</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>WP_LOAD_IMPORTERS</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>WP_PLUGIN_DIR</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>WPMU_PLUGIN_DIR</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>WP_IMPORTING</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>DOING_AJAX</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>DOING_CRON</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>$GLOBALS</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>$_POST</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>$_GET</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>$_REQUEST</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>$_SERVER </td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>REST_REQUEST</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>$GLOBALS </td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>ABSPATH </td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>WP_START_TIMESTAMP</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>WP_MEMORY_LIMIT</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>WP_MAX_MEMORY_LIMIT</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>WP_DEBUG</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>SCRIPT_DEBUG</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>WP_CONTENT_DIR</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>WP_CACHE</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>SHORTINIT</td>
+              <td>минимальная загрузка</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>COOKIEPATH</td>
+              <td>cookie, ssl</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>COOKIE_DOMAIN</td>
+              <td>cookie, ssl</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>WPINC</td>
+              <td>директория wp-includes</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>WP_LANG_DIR</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>WP_Site_Health</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>$pagenow</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>$blog_id</td>
+              <td>id сайта, если сайт один, то 1</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>$table_prefix</td>
+              <td>префикс базы данных</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>$wp_locale</td>
+              <td>объект локали даты и времени WordPress</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>$wp_locale_switcher</td>
+              <td>объект переключателя локали WordPress</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>$wp_the_query</td>
+              <td>new WP_Query()</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>$wp_query</td>
+              <td>$wp_the_query</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>$wp_rewrite</td>
+              <td>new WP_Rewrite() — константы, функции и правила ЧПУ.</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>$wp</td>
+              <td>new WP() — запрос WP (запускается позже).</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>$wp_widget_factory</td>
+              <td>new WP_Widget_Factory()</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>$wp_roles</td>
+              <td>new WP_Roles()</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>$wp_version</td>
+              <td>версия WordPress.</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>$wp_db_version</td>
+              <td>версия базы данных WordPress.</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>$tinymce_version</td>
+              <td>версия визуального редактора TinyMCE.</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>$required_php_version</td>
+              <td>необходимая версия PHP.</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>$required_php_extensions</td>
+              <td>названия необходимых расширений PHP.</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>$required_mysql_version</td>
+              <td>необходимая версия MySQL.</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>$wp_local_package</td>
+              <td>локальный код пакета</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>$wp_theme</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>$is_opera</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>$is_NS4</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>$is_safari</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>$is_chrome</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>$is_iphone</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>$is_IE</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>$is_edge</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>$is_apache</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>$is_nginx</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>$is_lynx</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>WP_USE_THEMES</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>$wp_importers</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>$hook_suffix</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>$plugin_page</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>$typenow</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>$taxnow</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+          </tbody>
+        </table>
+        <table>
+          <caption>События WP</caption>
+          <thead>
+            <tr>
+              <th>name</th>
+              <th>mission</th>
+              <th>define & init</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>mu_plugin_loaded</td>
+              <td>подключился Must-use (обязательный) плагин</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>network_plugin_loaded</td>
+              <td>подключился плагины сети</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>muplugins_loaded</td>
+              <td>подключились все Must-use и сетевые плагины</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>plugin_loaded</td>
+              <td>подключился активный плагин</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>plugins_loaded</td>
+              <td>подключились все активные плагины</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>setup_theme</td>
+              <td>подключение текущей темы</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>after_setup_theme</td>
+              <td>первый хук доступный в теме</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>init</td>
+              <td>среда WP, плагины и тема активированы, но на экран еще ничего не выведено</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>widget_init</td>
+              <td>регистрация виджетов</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>wp_loaded</td>
+              <td>тоже самое что `init` только после проверки статуса мультисайта. При REST запросе до этой строки PHP может не дойти</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>sanitize_comment_cookies</td>
+              <td>срабатывает при очистке файлов cookie комментариев</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>template_redirect</td>
+              <td>при определении шаблона для загрузки</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>do_robots</td>
+              <td>при запросе robots.txt</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>do_favicon</td>
+              <td>при запросе favicon.ico</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>pre_trackback_post</td>
+              <td>перед добавлением трекбека к посту</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>trackback_post</td>
+              <td>после добавления трекбека к посту</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>parse_request</td>
+              <td>запустить rest_api_loaded() при REST-запросе</td>
+              <td>WP::parse_request()</td>
+            </tr>
+            <tr>
+              <td>rest_authentication_errors</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>rest_api_init</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>rest_jsonp_enabled</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>rest_authentication_errors</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>rest_pre_dispatch</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>after_db_upgrade</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>admin_init</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>load-{$page_hook}</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>load-{$plugin_page}</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>load-importer-{$importer}</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>load-{$pagenow}</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>load-page-new.php</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>load-page.php</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>edit-tags.php</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>load-categories.php</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>link_category</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>load-edit-link-categories.php</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>load-edit-tags.php</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>admin_action_{$action}</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>wp_ajax_{$action}</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>wp_ajax_nopriv_{$action}</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>cron_reschedule_event_error</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>cron_unschedule_event_error</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+          </tbody>
+        </table>
+        <h2>Multisite</h2>
+        <h2>Defence</h2>
+        <p>Защита авторизации</p>
+        <ul>
+          <li>защита от брутфорса: плагином защиты установить количество попыток ввода до 5. Бан и чёрный список.</li>
+          <li>двухфакторная авторизация: плагин</li>
+          <li>использовать email вместо логина</li>
+          <li>изменить ссылку на форму авторизации</li>
+          <li>сложный пароль</li>
+        </ul>
+        <p>Защита админки</p>
+        <ul>
+          <li>защита паролем директории wp-admin: плагин</li>
+          <li>SSL сертификат</li>
+          <li>изменить логин администратора admin</li>
+          <li>отслеживать изменения в исходных файлах: плагин</li>
+          <li>удалять ненужных пользователей</li>
+          <li>проверять защищённость администраторов</li>
+        </ul>
+        <p>Защита БД</p>
+        <ul>
+          <li>изменить префикс wp_ к таблицам БД</li>
+          <li>постоянный backup сайта</li>
+          <li>сильный пароль на базу данных</li>
+        </ul>
+        <p>Хостинг</p>
+        <ul>
+          <li>спрятать wp-config.php</li>
+          <li>отключить редактирование файлов в админке: define('DISALLOW_FILE_EDIT', true) в wp-config.php</li>
+          <li>не использовать FTP, использовать SFTP или SSH</li>
+          <li>установить права доступа на каталоги</li>
+          <li>отключить свои директории в .htaccess (Options All -Indexes), т.к. содержание директории без index.php можно просмотреть в браузере</li>
+          <li>использовать спам детектор: плагин</li>
+        </ul>
+        <p>Шаблоны и плагины</p>
+        <ul>
+          <li>обновляться всегда, но с предварительным backup'ом</li>
+          <li>прятать весрсию вордпресса</li>
+          <li>плагины и темы только из проверенных источников</li>
+          <li>удалять неиспользуемые плагины и темы</li>
+        </ul>
+        <h2>Functions</h2>
+        <table>
+          <tbody>
+            <tr>
+              <td>include(TEMPLATEPATH.'/file');</td>
+              <td>подключить любой файл</td>
+            </tr>
+            <tr>
+              <td>_e('message');</td>
+              <td>вывести сообщение</td>
+            </tr>
+            <tr>
+              <td>wp_meta();</td>
+              <td>мета данные администраторов</td>
+            </tr>
+            <tr>
+              <td>echo get_num_queries();</td>
+              <td>запросы к загрузке страницы</td>
+            </tr>
+            <tr>
+              <td>get_links_list();</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>get_theme_root();</td>
+              <td>Возвращает системный путь директории, в которой расположены все темы. Слэш на конце отсутствует.</td>
+            </tr>
+            <tr>
+              <td>wp_get_environment_type();</td>
+              <td>проверить текущую среду разработки</td>
+            </tr>
+          </tbody>
+        </table>
+        <table>
+          <caption>Информация о сайте</caption>
+          <tbody>
+            <tr>
+              <td>bloginfo('name');</td>
+              <td>название сайта</td>
+            </tr>
+            <tr>
+              <td>bloginfo('charset');</td>
+              <td>кодировка сайта</td>
+            </tr>
+            <tr>
+              <td>bloginfo('description');</td>
+              <td>описание сайта</td>
+            </tr>
+            <tr>
+              <td>bloginfo('url');</td>
+              <td>url сайта</td>
+            </tr>
+            <tr>
+              <td>bloginfo('rss2_url');</td>
+              <td>url rss-канала</td>
+            </tr>
+            <tr>
+              <td>bloginfo('template_url');</td>
+              <td>url папки активной темы</td>
+            </tr>
+            <tr>
+              <td>bloginfo('pingback_url');</td>
+              <td>url для уведомлений на XML-RPC файл</td>
+            </tr>
+            <tr>
+              <td>bloginfo('stylesheet_url');</td>
+              <td>url на style.css активной темы</td>
+            </tr>
+            <tr>
+              <td>bloginfo('wpurl');</td>
+              <td>url на главную страницу</td>
+            </tr>
+            <tr>
+              <td>bloginfo('version');</td>
+              <td>версия вордпресс</td>
+            </tr>
+            <tr>
+              <td>bloginfo('language');</td>
+              <td>язык сайта</td>
+            </tr>
+            <tr>
+              <td>bloginfo('atom_url');</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>bloginfo('html_type');</td>
+              <td>версия html сайта</td>
+            </tr>
+          </tbody>
+        </table>
+        <table>
+          <caption>Вывод постов в цикле</caption>
+          <tbody>
+            <tr>
+              <td>if(have_posts());</td>
+              <td>проверка существует ли пост</td>
+            </tr>
+            <tr>
+              <td>endif;</td>
+              <td>закрыть if</td>
+            </tr>
+            <tr>
+              <td>while(have_posts()) : the_post();</td>
+              <td>показывать посты пока они есть</td>
+            </tr>
+            <tr>
+              <td>endwhile;</td>
+              <td>закрыть while</td>
+            </tr>
+          </tbody>
+        </table>
+        <pre><code>< ?php if(have_posts()) : while(have_posts()) : the_post(); ?>
+  // вывод постов
+<?php endwhile; else: ?>
+  < p><?php _e('Публикации не найдены.') ?>< /p>
+<?php endif; ?>
+</code></pre>
+        <table>
+          <caption>В файлах-шаблонах</caption>
+          <tbody>
+            <tr>
+              <td>get_calendar();</td>
+              <td>встроенный календарь с выделенными датами постов</td>
+            </tr>
+            <tr>
+              <td>next_post_link();</td>
+              <td>ссылка к следующему по дате посту</td>
+            </tr>
+            <tr>
+              <td>posts_nav_link();</td>
+              <td>ссылки на следующую и предыдущую страницы</td>
+            </tr>
+            <tr>
+              <td>previous_post_link();</td>
+              <td>ссылка к предыдущему по дате посту</td>
+            </tr>
+            <tr>
+              <td>the_author();</td>
+              <td>автор поста или страницы</td>
+            </tr>
+            <tr>
+              <td>the_category();</td>
+              <td>ссылки на категории, к которым принадлежит пост</td>
+            </tr>
+            <tr>
+              <td>the_content();</td>
+              <td>контент поста</td>
+            </tr>
+            <tr>
+              <td>the_date();</td>
+              <td>дата публикации поста</td>
+            </tr>
+            <tr>
+              <td>the_excerpt();</td>
+              <td>отрывок поста</td>
+            </tr>
+            <tr>
+              <td>the_ID();</td>
+              <td>id поста или страницы</td>
+            </tr>
+            <tr>
+              <td>the_permalink();</td>
+              <td>ссылка на пост или страницу</td>
+            </tr>
+            <tr>
+              <td>the_search_query();</td>
+              <td>текущий поисковый запрос</td>
+            </tr>
+            <tr>
+              <td>the_time('m-d-y');</td>
+              <td>дата публикации поста в формате месяц-день-год</td>
+            </tr>
+            <tr>
+              <td>wp_title();</td>
+              <td>название поста или страницы</td>
+            </tr>
+            <tr>
+              <td>the_title();</td>
+              <td>название поста или страницы</td>
+            </tr>
+            <tr>
+              <td>wp_get_archives();</td>
+              <td>список ссылок на страницы архивов</td>
+            </tr>
+            <tr>
+              <td>wp_list_pages();</td>
+              <td>список ссылок на страницы</td>
+            </tr>
+            <tr>
+              <td>wp_list_cats();</td>
+              <td>список категорий</td>
+            </tr>
+            <tr>
+              <td>wp_list_categories();</td>
+              <td>список ссылок на категории</td>
+            </tr>
+            <tr>
+              <td>wp_register();</td>
+              <td>показать ссылку на админ-панель или на регистрацию</td>
+            </tr>
+            <tr>
+              <td>wp_loginout();</td>
+              <td>показать ссылку входа и выхода</td>
+            </tr>
+            <tr>
+              <td>wp_tag_cloud();</td>
+              <td>показать облако тегов</td>
+            </tr>
+            <tr>
+              <td>edit_post_link(__('Edit Post'));</td>
+              <td>ссылка для редактирования поста или страницы</td>
+            </tr>
+          </tbody>
+        </table>
+        <table>
+          <caption>Шаблоны</caption>
+          <tbody>
+            <tr>
+              <td>is_home();</td>
+              <td>проверят что это страница с шаблоном home</td>
+            </tr>
+            <tr>
+              <td>is_front_page();</td>
+              <td>проверяет что это страница с шаблоном front_page</td>
+            </tr>
+            <tr>
+              <td>is_single();</td>
+              <td>проверяет что это страница любого типа записей кроме attachment и page</td>
+            </tr>
+            <tr>
+              <td>is_sticky();</td>
+              <td>проверяет прикреплён ли пост к главной странице сайта</td>
+            </tr>
+            <tr>
+              <td>is_page();</td>
+              <td>проверяет что это страница с шаблоном page</td>
+            </tr>
+            <tr>
+              <td>is_category();</td>
+              <td>проверяет что это страница с шаблоном category</td>
+            </tr>
+            <tr>
+              <td>timer_stop(1);</td>
+              <td>выводит время загрузки страницы</td>
+            </tr>
+            <tr>
+              <td>comments_template();</td>
+              <td>контент файла Comment.php</td>
+            </tr>
+            <tr>
+              <td>get_header();</td>
+              <td>контент файла Header.php</td>
+            </tr>
+            <tr>
+              <td>get_sidebar();</td>
+              <td>контент файла Sidebar.php</td>
+            </tr>
+            <tr>
+              <td>get_footer();</td>
+              <td>контент файла Footer.php</td>
+            </tr>
+            <tr>
+              <td>comments_popup_link();</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>wp_user_settings()</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>get_user_setting( $name, $default = false )</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>set_user_setting( $name, $value )</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>delete_user_setting( $names )</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>get_all_user_settings()</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>wp_set_all_user_settings( $user_settings )</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>delete_all_user_settings()</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>/%postname%/</td>
+              <td>пользовательские ссылки</td>
+            </tr>
+            <tr>
+              <td>< !--next page--></td>
+              <td>разделить контент на страницы</td>
+            </tr>
+            <tr>
+              <td>< !--more--></td>
+              <td>обрезать контент</td>
+            </tr>
+          </tbody>
+        </table>
+        <h2>ACF</h2>
+        <pre><code>// Стандартный вывод информации из ACF (текст, ссылка на картинку и т.п.):
+< ?php the_field('имя_поля'); ?>
+
+// Вывод повторителя:
+< ?php if(get_field('имя_повторителя')): ?>
+  < ?php while(has_sub_field('имя_повторителя')) : ?>
+    < div>
+      < img(src="<?php the_sub_field('имя_поля'); ?>">
+    < /div>
+  < ?php endwhile; ?>
+< ?php endif; ?>
+
+// Повторитель в повторителе:
+< ?php if(get_field('имя_повторителя_1')): ?>
+  < ?php while(has_sub_field('имя_повторителя_1')) : ?>
+    < div>
+      < img(src="< ?php the_sub_field('имя_поля_повторителя_1'); ?>">
+      < ul>
+        < ?php if(get_sub_field('имя_повторителя_2')): ?>
+          < ?php while(has_sub_field('имя_повторителя_2')) : ?>
+            < ?php the_sub_field('имя_поля_повторителя_2'); ?>
+          < ?php endwhile; ?>
+        < ?php endif; ?>
+      < ul>
+    < /div>
+  < ?php endwhile; ?>
+< ?php endif; ?>
+
+// Вывод группы
+< ?php if( have_rows('имя_группы') ): ?>
+  < ?php while( have_rows('имя_группы') ): the_row(); ?>
+    < a href="< ?php the_sub_field('имя_поля_группы'); ?>">
+      < i class="fa fa-vk" aria-hidden="true">< /i>< /a>
+    < a href="< ?php the_sub_field('имя_поля_группы'); ?>">
+      < i class="fa fa-facebook" aria-hidden="true">< /i>< /a>
+  < ?php endwhile; ?>
+< ?php endif; ?>
+
+// Тип поля "Галерея"
+< ?php if ($img_gallery = get_field("имя_галереи")) : ?>
+  < ?php foreach ($img_gallery as $img) : ?>
+    < ?php if ($img) : ?>
+      < ?= "<img
+        src="< ?= esc_url($img['sizes']['thumbnail']) ?>"
+        alt="< ?= esc_attr($img['alt']) ?>"
+        loading="lazy"
+        width="< ?= esc_attr($image_array['width']) ?>"
+        height="< ?= esc_attr($image_array['height']) ?>"
+      >" ?>
+    < ?php endif; ?>
+  < ?php endforeach; ?>
+< ?php endif; ?>
+
+// Тип поля "Объект записи"
+< ?php if ($post_objects = get_field("имя_объекта_записи")) : ?>
+  < ?php
+    foreach ($post_objects as $post) : setup_postdata($post); ?>
+      < ?php if ($post) : ?>
+        < ?php the_title(); ?>
+        < ?php the_excerpt(); ?>
+        < ?php the_field("имя_поля_объекта_записи"); ?>
+        < ?php the_permalink(); ?>
+      < ?php endif; ?>
+    < ?php endforeach; ?>
+  < ?php wp_reset_postdata(); ?>
+< ?php endif; ?>
+
+// Тип поля "Гибкое содержание"
+< ?php if (have_rows('имя_гибкого_содержания')) : ?>
+  < ?php while (have_rows('имя_гибкого_содержания')) : the_row(); ?>
+    < ?php if (get_row_layout() == 'hero') : ?>
+      < ?php get_template_part("template-parts/hero-section") ?>
+    < ?php elseif (get_row_layout() == 'about') : ?>
+      < ?php get_template_part("template-parts/about-section") ?>
+    < ?php elseif (get_row_layout() == 'contacts') : ?>
+      < ?php get_template_part("template-parts/contacts-section") ?>
+    < ?php endif; ?>
+  < ?php endwhile; ?>
+< ?php endif; ?>
+
+// Тип поля "Ссылка"
+< ?php if (get_field('имя_ссылки')) : ?>
+  < a
+    href="< ?= get_field('имя_ссылки')['url'] ?>"
+    target="< ?= get_field('имя_ссылки')['target'] ?>">
+    < ?= get_field('имя_ссылки')['title'] ?>
+  < /a>
+< ?php endif; ?>
+
+// Вывод поля ACF только если оно заполнено
+< ?php if (get_field("имя_поля")) { ?>
+  < ?php the_field("имя_поля"); ?>
+< ?php } ?>
+
+// Страница опций ACF
+if (function_exists("acf_add_options_page")) {
+  acf_add_options_page(array(
+    "page_title" => "Опции темы",
+    "menu_title" => "Опции темы",
+    "menu_slug"  => "theme_settings",
+  ));
+}
+
+// Вывод полей из страницы с опций
+< ?php the_field("имя_поля", "option"); ?>
+
+Для нумерации строк в плагине Advanced Custom Fields (ACF) необходимо использовать функцию get_field(), которая позволяет извлечь данные из поля.
+
+// В примере ниже строки будут нумероваться с помощью цикла for
+< ?php if( have_rows('service') ): $i = 0; ?>
+< ?php while ( have_rows('service') ) : the_row(); $i++; ?>
+  < ?php echo $i; ?>
+< ? endwhile; endif; ?>
+</code></pre>
+        <h2>functions.php</h2>
+        <p>
+          Есть несколько причин, по которым вы можете увидеть сломанный сайт с белым экраном.
+          Одна из таких причин — когда файл functions.php (или любой файл PHP) имеет пробел после закрывающего ?>
+        </p>
+        <pre><code>< ?php
+add_action( 'after_setup_theme', function () {
+  add_theme_support( 'wp-block-styles' );
+});
+
+// подключить файл из родительской темы
+include get_parent_theme_file_path( 'inc/helpers.php' );
+
+// подключить файл из дочерней темы
+include get_theme_file_path( 'inc/helpers.php' );
+
+// функция загрузки таблиц стилей для каждого блока в редакторе и на фронте wp_enqueue_block_style()
+add_action( 'wp_enqueue_scripts', function () {
+
+  // ставлю в очередь navigation.js
+  wp_enqueue_script( 'theme-slug-navigation',
+    get_parent_theme_file_uri( 'assets/js/navigation.js' ),
+    array(),
+    wp_get_theme()->get( 'Version' ),
+    true
+  );
+
+  // добавляю JS в head область на фронте
+  wp_add_inline_script( 'theme-slug-navigation',
+    'console.log( "Testing" );'
+  );
+});
+
+// JS для редактора блоков
+add_action( 'enqueue_block_editor_assets',
+  'theme_slug_enqueue_editor_scripts', function () {
+
+    // ставлю в очередь editor.js для редактора
+    wp_enqueue_script('theme-slug-editor',
+      get_parent_theme_file_uri( 'assets/js/editor.js' ),
+      array(),
+      wp_get_theme()->get( 'Version' ),
+      true
+    );
+  });
+
+// Обращение к файлу изображения
+< img(src="< ?php echo esc_url( get_theme_file_uri( 'assets/img/example.webp' ) ); ?>" alt="" />
+</code></pre>
+        <p>
+          Список включенных скриптов - wp-includes/script-loader.php<br/>
+          Шрифты подключать через theme.json
+          
+        </p>
+        <p>wp-config.php</p>
+        <pre><code>if ( ! defined( 'WP_DEBAG' ) ) {
+  define('WP_DEBAG', true);
+}
+
+if ( ! defined( 'SCRIPT_DEBUG' ) ) {
+  define('SCRIPT_DEBUG', true);
+}
+
+if ( ! defined( 'WP_DEBUG_DISPLAY' ) ) {
+  define('WP_DEBUG_DISPLAY', false);
+}
+
+if ( ! defined( 'WP_DEBUG_LOG' ) ) {
+  define('WP_DEBUG_LOG', ABSPATH . '/wp-content/' . date('Y-m-d', strtotime('now')) . '-debug.log');
+}
+
+if ( ! defined( 'WP_DEVELOPMENT_MODE' ) ) {
+  define('WP_DEVELOPMENT_MODE', 'all');
+}
+</code></pre>
+        <h2>block</h2>
+        <p>
+          Блоки — это отдельные элементы (текст, заголовки, изображения и др.), каждый с собственными настройками.<br/>
+          Контент собирается из этих блоков и сохраняется в базу данных.  
+          
+        </p>
+        <h3>block.json</h3>
+        <p>
+          Описывает блок в формате JSON, используется на сервере (php) и в редакторе блоков (js).<br/>
+          Всё в одном файле: регистрация, стили, структура и т.д.  
+        </p>
+        <pre><code>// создаст блок и установит @wordpress/scripts для разработки и сборки
+npx @wordpress/create-block
+</code></pre>
+        <p>Чтобы добавить ещё блок добавить --no-plugin, для автоформатирования добавить в package.json: "prettier": "@wordpress/prettier-config".  </p>
+        <pre><code>// региистрация блока
+register_block_type_from_metadata()
+</code></pre>
+        <p>register_block_type() - регистрация нового блока php, возвращает WP_Block_Type, с данными:</p>
+        <ul>
+          <li>$attributes: Массив атрибутов блока.</li>
+          <li>$content: разметка блока, хранящаяся в базе данных, если таковая имеется.</li>
+          <li>$block: Экземпляр класса WP_Block, который представляет отображаемый блок (метаданные блока).</li>
+          <li>генерит разметку на фронте либо render_block и render_callback() указывают что отобразить</li>
+        </ul>
+        <table>
+          <tbody>
+            <tr>
+              <td>registerBlockType()</td>
+              <td>регистрация нового блока index.js (@wordpress/blocks), возвращает WPBlock и регистрирует edit.js в редакторе</td>
+            </tr>
+            <tr>
+              <td>wp_register_script()</td>
+              <td>регистрация скрипта, пакет @wordpress/scripts</td>
+            </tr>
+            <tr>
+              <td>wp_register_style()</td>
+              <td>регистрация стиля</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>параметры блока</p>
+        <table>
+          <caption>$schema - JSON-схема</caption>
+          <tbody>
+            <tr>
+              <td>apiVersion</td>
+              <td>версия API для работы блока, обязательно</td>
+            </tr>
+            <tr>
+              <td>name</td>
+              <td>имя блока с пространством имён: spacename/blockname, обязательно</td>
+            </tr>
+            <tr>
+              <td>title</td>
+              <td>название блока для редактора, обязательно</td>
+            </tr>
+            <tr>
+              <td>category</td>
+              <td>категории редактора: text, media, design, widgets, theme</td>
+            </tr>
+            <tr>
+              <td>icon</td>
+              <td>иконка в редакторе: dashicons или SVG</td>
+            </tr>
+            <tr>
+              <td>description</td>
+              <td>описание блока для редактора</td>
+            </tr>
+            <tr>
+              <td>keywords</td>
+              <td>ключевые слова для поиска в редакторе</td>
+            </tr>
+            <tr>
+              <td>textdomain</td>
+              <td>текстовый домен для перевода</td>
+            </tr>
+            <tr>
+              <td>parent</td>
+              <td>доступен только как InnerBlocks в указанных блоках: "parent": [ "core/columns", "core/group" ]</td>
+            </tr>
+            <tr>
+              <td>ancestor</td>
+              <td>предки в древе блоков</td>
+            </tr>
+            <tr>
+              <td>allowedBlocks</td>
+              <td>разрешённые дочерние блоки</td>
+            </tr>
+            <tr>
+              <td>providesContext</td>
+              <td>передаваемый контекст</td>
+            </tr>
+            <tr>
+              <td>usesContext</td>
+              <td>полученный от предков контекст</td>
+            </tr>
+            <tr>
+              <td>version</td>
+              <td>версия блока, если не указана вручную, то добавится автоматически</td>
+            </tr>
+            <tr>
+              <td>__experimental</td>
+              <td>true либо название в каком эксперименте создан блок</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>Необходимые блоку пользовательские данные для компонента и функции attributes(). Указываются в обёртке блока в виде комментария HTML.</p>
+        <table>
+          <caption>атрибуты блока</caption>
+          <tbody>
+            <tr>
+              <td>type</td>
+              <td>тип данных (null|boolean|object|array|string|rich-text|integer|number)</td>
+            </tr>
+            <tr>
+              <td>enum</td>
+              <td>фиксированный набор значений</td>
+            </tr>
+            <tr>
+              <td>source</td>
+              <td>источник (attribute|text|rich-text|html|raw|query|meta).</td>
+            </tr>
+            <tr>
+              <td>selector</td>
+              <td>селектор css</td>
+            </tr>
+            <tr>
+              <td>attribute</td>
+              <td>атрибут HTML при source=attribute</td>
+            </tr>
+            <tr>
+              <td>query</td>
+              <td>выборка из разметки</td>
+            </tr>
+            <tr>
+              <td>meta</td>
+              <td>ключ меты поста</td>
+            </tr>
+            <tr>
+              <td>role</td>
+              <td>content или local</td>
+            </tr>
+            <tr>
+              <td>default</td>
+              <td>по умолчанию</td>
+            </tr>
+            <tr>
+              <td>blockHooks</td>
+              <td>вставить рядом с блоком (ключ: значение): namespace/block: before|after|firstChild|lastChild</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>редактор стилей</p>
+        <table>
+          <caption>подключить файлы file:./</caption>
+          <tbody>
+            <tr>
+              <td>script</td>
+              <td>js фронта и редактора</td>
+            </tr>
+            <tr>
+              <td>style</td>
+              <td>css фронта и редактора</td>
+            </tr>
+            <tr>
+              <td>editorScript</td>
+              <td>js редактора</td>
+            </tr>
+            <tr>
+              <td>editorStyle</td>
+              <td>css редактора</td>
+            </tr>
+            <tr>
+              <td>viewScript</td>
+              <td>js фронта</td>
+            </tr>
+            <tr>
+              <td>viewStyle</td>
+              <td>css фронта</td>
+            </tr>
+            <tr>
+              <td>viewScriptModule</td>
+              <td>es-модуль фронта</td>
+            </tr>
+            <tr>
+              <td>render</td>
+              <td>php динамическмй рендеринг фронта (wp 6.1), если при регистрации блока в register_block_type() нет $render_callback</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3>dynamic & static blocks</h3>
+        <ul>
+          <li>регистрирую блок в index.js</li>
+          <li>переопределять реализацию save() не нужно</li>
+          <li>edit() отображает блок в редакторе</li>
+        </ul>
+        <pre><code>import { registerBlockType } from '@wordpress/blocks';
+import { useSelect } from '@wordpress/data';
+import { useBlockProps } from '@wordpress/block-editor';
+
+registerBlockType( 'gutenberg-examples/example-dynamic', {
+  apiVersion: 3,
+  title: 'Example: last post',
+  icon: 'megaphone',
+  category: 'widgets',
+
+  edit: () => {
+    const blockProps = useBlockProps();
+    const posts = useSelect( ( select ) => {
+      return select( 'core' ).getEntityRecords( 'postType', 'post' );
+    }, [] );
+
+    return (
+      < div { ...blockProps }>
+        { ! posts && 'Loading' }
+        { posts && posts.length === 0 && 'No Posts' }
+        { posts && posts.length > 0 && (
+          < a href={ posts[ 0 ].link }>
+            { posts[ 0 ].title.rendered }
+          < /a>
+        ) }
+      < /div>
+    );
+  },
+});</code></pre>
+        <p>
+          регистрирую блок в plugin.php<br/>
+          разметку возвращаю из gutenberg_examples_dynamic_render_callback()
+        </p>
+        <pre><code>< ?php
+/**
+* Plugin Name: Gutenberg examples dynamic
+*/
+function gutenberg_examples_dynamic_render_callback( $block_attributes, $content ) {
+  $recent_posts = wp_get_recent_posts( array(
+    'numberposts' => 1,
+    'post_status' => 'publish',
+  ) );
+  if ( count( $recent_posts ) === 0 ) {
+    return 'No posts';
+  }
+  $post = $recent_posts[ 0 ];
+  $post_id = $post['ID'];
+  return sprintf(
+    '< a class="wp-block-my-plugin-latest-post" href="%1$s">%2$s< /a>',
+    esc_url( get_permalink( $post_id ) ),
+    esc_html( get_the_title( $post_id ) )
+  );
+}
+
+function gutenberg_examples_dynamic() {
+  automatically load dependencies and version
+  $asset_file = include( plugin_dir_path( __FILE__ ) . 'build/index.asset.php');
+  wp_register_script(
+    'gutenberg-examples-dynamic',
+    plugins_url( 'build/block.js', __FILE__ ),
+    $asset_file['dependencies'],
+    $asset_file['version']
+  );
+  register_block_type( 'gutenberg-examples/example-dynamic', array(
+    'api_version' => 3,
+    'editor_script' => 'gutenberg-examples-dynamic',
+    'render_callback' => 'gutenberg_examples_dynamic_render_callback'
+  ) );
+}
+add_action( 'init', 'gutenberg_examples_dynamic' );</code></pre>
+        <ul>
+          <li>Рендеринг на стороне сервера рассматривается как запасной вариант;</li>
+          <li>рендеринг на стороне клиента в JavaScript всегда предпочтительнее;</li>
+          <li>использует пакет wp-server-side-render</li>
+        </ul>
+        <pre><code>import { registerBlockType } from '@wordpress/blocks';
+import ServerSideRender from '@wordpress/server-side-render';
+import { useBlockProps } from '@wordpress/block-editor';
+registerBlockType( 'gutenberg-examples/example-dynamic', {
+  apiVersion: 3,
+  title: 'Example: last post',
+  icon: 'megaphone',
+  category: 'widgets',
+  edit: function ( props ) {
+    const blockProps = useBlockProps();
+    return (
+      < div { ...blockProps }>
+        <ServerSideRender
+          block="gutenberg-examples/example-dynamic"
+          attributes={ props.attributes }
+        />
+      < /div>
+    );
+  },
+} );
+</code></pre>
+        <h3>InnerBlocks</h3>
+        <p>один блок может содержать только один InnerBlocks компонент.</p>
+        <pre><code>import { registerBlockType } from '@wordpress/blocks';
+import { InnerBlocks, useBlockProps } from '@wordpress/block-editor';
+registerBlockType( 'gutenberg-examples/example-06', {
+  // ...
+  edit: () => {
+    const blockProps = useBlockProps();
+    return (
+      < div { ...blockProps }>
+        < InnerBlocks />
+      < /div>
+    );
+  },
+  save: () => {
+    const blockProps = useBlockProps.save();
+    return (
+      < div { ...blockProps }>
+        < InnerBlocks.Content />
+      < /div>
+    );
+  },
+} );
+</code></pre>
+        <p>ограничитель какие блоки могут быть прямыми потомками</p>
+        <pre><code>const { allowedBlocks } = attributes;
+//...
+< InnerBlocks allowedBlocks={ allowedBlocks } />;
+</code></pre>
+        <ul>
+          <li>allowedBlocks - указывает какие потомки могут быть прямыми потомками</li>
+          <li>parent - для вложенного блока, может быть только прямым потомком</li>
+          <li>ancestor - для вложенного блока, может быть только потомком</li>
+        </ul>
+        <pre><code>{
+  "title": "Column",
+  "name": "core/column",
+  "parent": [ "core/columns" ],
+}
+//...
+{
+  "title": "Comment Author Name",
+  "name": "core/comment-author-name",
+  "ancestor": [ "core/comment-template" ],
+}
+//...
+{
+  "title": "Navigation",
+  "name": "core/navigation",
+  "allowedBlocks": [ "core/navigation-link", "core/search", "core/social-links", "core/page-list", "core/spacer" ],
+}
+</code></pre>
+        <p>useInnerBlocksProps - хук для большего контроля над разметкой внутренних областей блоков</p>
+        <pre><code>import { registerBlockType } from '@wordpress/blocks';
+import { useBlockProps, useInnerBlocksProps } from '@wordpress/block-editor';
+registerBlockType( 'gutenberg-examples/example-06', {
+  edit: () => {
+    const blockProps = useBlockProps();
+    const { children, ...innerBlocksProps } = useInnerBlocksProps( blockProps );
+    return (
+      < div {...innerBlocksProps}>
+        { children }
+        <!-- Insert any arbitrary html here at the same level as the children -->
+      < /div>
+    );
+  },
+} );</code></pre>
+        <p>
+          по умолчанию блоки в InnerBlocks отображаются вертикально<br/>
+          горизонтально их ориентировать с помощью css
+        </p>
+        <pre><code>< InnerBlocks orientation="horizontal" /></code></pre>
+        <p>отображает значки перемещения блоков в дочерних блоках горизонтально и обеспечивает правильную работу перетаскивания</p>
+        <pre><code>// блок по умолчанию из списка дозволенных
+< InnerBlocks defaultBlock={['core/paragraph', {placeholder: "Lorem ipsum..."}]} directInsert />
+</code></pre>
+        <p>набор блоков, которые предварительно заполняют компонент InnerBlocks, пока нет своего содержимого</p>
+        <pre><code>const MY_TEMPLATE = [
+  [ 'core/image', {} ],
+  [ 'core/heading', { placeholder: 'Book Title' } ],
+  [ 'core/paragraph', { placeholder: 'Summary' } ],
+];
+//...
+edit: () => {
+  return (
+    <InnerBlocks
+      template={ MY_TEMPLATE }
+      templateLock="all"
+    />
+  )
+}
+</code></pre>
+        <p>templateLock - свойство, чтобы заблокировать шаблон</p>
+        <h3>Edit block</h3>
+        <p>Создать файл webpack.config.js и добавить свой код для выполнения webpack</p>
+        <pre><code>const defaultConfig = require("@wordpress/scripts/config/webpack.config");
+var config = {
+  ...defaultConfig,
+  entry: {
+    ...defaultConfig.entry(),
+    "custom/index": "./src/custom/index.js",
+  },
+};
+</code></pre>
+        <p>Внутри папки src создать папку custom и в ней файл index.js</p>
+        <pre><code>import { unregisterBlockType } from "@wordpress/blocks";
+import domReady from "@wordpress/dom-ready";
+const unregisterBlocks = ["core/verse"];
+domReady(function () {
+  unregisterBlocks.forEach(block) => {
+    unregisterBlockType(block);
+  });
+});
+</code></pre>
+        <p>В файле kweblock.php добавить код для подключения функционала из custom/index.js</p>
+        <pre><code>function kweblock_enqueue_editor_modifications() {
+  $asset_file = include plugin_dir_path( __FILE__ ) . 'build/custom/index.assets.php';
+  wp_enqueue_script(
+    'kweblock_enqueue_editor_modifications',
+    plugins_url( '/build/custom/index.js', __FILE__ ),
+    $asset_file['dependencies'],
+    $asset_file['version'],
+    true
+  );
+}
+add_action( 'enqueue_block_editor_assets', 'kweblock_enqueue_editor_modifications' );
+
+// new variation for the Media & Text block
+function example_enqueue_block_variations() {
+  wp_enqueue_script(
+    'example-enqueue-block-variations',
+    get_template_directory_uri() . '/assets/js/variations.js',
+    array( 'wp-blocks' ),
+    wp_get_theme()->get( 'Version' ),
+    false
+  );
+}
+add_action( 'enqueue_block_editor_assets', 'example_enqueue_block_variations' );
+
+// in variations.js file:
+wp.blocks.registerBlockVariation(
+  'core/media-text',
+  {
+    name: 'media-text-custom',
+    title: 'Media & Text Custom',
+    attributes: {
+      align: 'wide',
+      backgroundColor: 'tertiary'
+    },
+  }
+);
+</code></pre>
+        <p>создать шаблон блока типа post сразу с подгрузкой других блоков</p>
+        <pre><code>add_action( 'init', function() {
+  $post_type_object = get_post_type_object( 'post' );
+  $post_type_object->template = array(
+    array( 'core/image' ),
+    array( 'core/heading' )
+  );
+} );
+</code></pre>
+        <p>Для того чтобы вариация цикла запросов работала правильно, нам необходимо:</p>
+        <ul>
+          <li>Зарегистрировать вариацию блока для core/query блока с некоторыми значениями по умолчанию</li>
+          <li>Определить макет для вариации блока</li>
+          <li>Использовать namespace атрибут в isActive свойстве вариации блока</li>
+        </ul>
+        <pre><code>const MY_VARIATION_NAME = 'my-plugin/books-list';
+registerBlockVariation( 'core/query', {
+  name: MY_VARIATION_NAME,
+  title: 'Books List',
+  description: 'Displays a list of books',
+
+  // указываю активную вариацию, можно итак: isActive: [ 'namespace' ]
+  isActive: ( { namespace, query } ) => {
+    return (
+      namespace === MY_VARIATION_NAME
+      && query.postType === 'book'
+    );
+  },
+
+  // icon: An SVG icon can go here,
+  attributes: {
+    namespace: MY_VARIATION_NAME,
+    query: {
+      perPage: 6,
+      pages: 0,
+      offset: 0,
+      предопределил тип записи для цикла запросов
+      postType: 'book',
+      order: 'desc',
+      orderBy: 'date',
+      author: '',
+      search: '',
+      exclude: [],
+      sticky: '',
+      inherit: false,
+    },
+  },
+
+  // включил отображение блока в редакторе
+  scope: [ 'inserter' ],
+});</code></pre>
+        <p>
+          Блок Query Loop определяет, есть ли активная вариация и есть ли для неё шаблоны.</br>
+          Если есть, то эти шаблоны будут единственными, если нет - шаблоны по умолчанию.
+        </p>
+        <table>
+          <caption>отключить элементы управления запросами allowedControls</caption>
+          <tbody>
+            <tr>
+              <td>inherit</td>
+              <td>переключатель наследования запроса непосредственно из шаблона.</td>
+            </tr>
+            <tr>
+              <td>postType</td>
+              <td>список доступных типов сообщений.</td>
+            </tr>
+            <tr>
+              <td>order</td>
+              <td>список для выбора порядка запроса.</td>
+            </tr>
+            <tr>
+              <td>sticky</td>
+              <td>список для выбора способа обработки прикрепленных сообщений.</td>
+            </tr>
+            <tr>
+              <td>taxQuery</td>
+              <td>фильтры таксономий для текущего выбранного типа записи.</td>
+            </tr>
+            <tr>
+              <td>author</td>
+              <td>Показывает поле ввода для фильтрации запроса по автору.</td>
+            </tr>
+            <tr>
+              <td>search</td>
+              <td>Показывает поле ввода для фильтрации запроса по ключевым словам.</td>
+            </tr>
+            <tr>
+              <td>format</td>
+              <td>Показывает поле ввода для фильтрации запроса по массиву/коллекции форматов.</td>
+            </tr>
+            <tr>
+              <td>parents</td>
+              <td>Показывает поле ввода для фильтрации запроса с использованием родительской(их) сущности(ей).</td>
+            </tr>
+          </tbody>
+        </table>
+        <pre><code>// variation properties
+// пустой массив скроет все элементы управления
+allowedControls: [ 'inherit', 'order', 'taxQuery', 'search' ]
+
+// Подключить пользовательские элементы управления через хук React подключенный к фильтру блока
+
+import { InspectorControls } from '@wordpress/block-editor';
+export const withBookQueryControls = ( BlockEdit ) => ( props ) => {
+
+/**
+*We only want to add these controls if it is our variation, so here we can implement a custom logic to check for that, similar to the `isActive` function described above.
+*The following assumes that you wrote a custom `isMyBooksVariation` function to handle that.
+*/
+  return isMyBooksVariation( props ) ? (
+    <>
+      < BlockEdit key="edit" { ...props } />
+      < InspectorControls>
+        < BookAuthorSelector /> { /** Our custom component */ }
+      < /InspectorControls>
+    </>
+  ) : (
+    < BlockEdit key="edit" { ...props } />
+  );
+};
+addFilter( 'editor.BlockEdit', 'core/query', withBookQueryControls );
+
+
+// Подключить пользовательские элементы управления через фильтр query_loop_block_query_vars
+{
+  
+  // variation properties
+  attributes: {
+    
+    // variation attributes
+    query: {
+      
+      // more query settings if needed
+      postType: 'book',
+      
+      // Our custom query parameter
+      bookAuthor: 'J. R. R. Tolkien'
+    }
+  }
+}
+
+// подключаюсь к фильтру на фронте (когда есть доступ к блоку)
+if( 'my-plugin/books-list' === $block[ 'attrs' ][ 'namespace' ] ) {
+  add_filter(
+    'query_loop_block_query_vars',
+    function( $query ) {
+
+      // You can read your block custom query parameters here and build your query
+    },
+  );
+}
+
+// подключаюсь к запросу API записи в редакторе через фильтр rest_{$this->post_type}_query
+add_filter(
+  'rest_book_query',
+  function( $args, $request ) {
+
+    // We can access our custom parameters from here
+    $book_author = $request->get_param( 'bookAuthor' );
+
+    // your custom query logic
+  }
+);
+</code></pre>
+        <p>
+          registerPlugin - определить все элементы пользовательского интерфейса плагина в одном месте
+          изменить поведение или отключить блок
+          
+        </p>
+        <h3>CSS</h3>
+        <p>Inline style - передаю стили в хук React useBlockProps</p>
+        <pre><code>import { registerBlockType } from '@wordpress/blocks';
+import { useBlockProps } from '@wordpress/block-editor';
+registerBlockType( 'gutenberg-examples/example-02-stylesheets', {
+  edit() {
+    const greenBackground = {
+      backgroundColor: '#090',
+      color: '#fff',
+      padding: '20px',
+    };
+    const blockProps = useBlockProps( { style: greenBackground } );
+    return (
+      < p { ...blockProps }>Hello World (from the editor, in green).< /p>
+    );
+  },
+  save() {
+    const redBackground = {
+      backgroundColor: '#900',
+      color: '#fff',
+      padding: '20px',
+    };
+
+    // useBlockProps - обёртка блока
+    const blockProps = useBlockProps.save( { style: redBackground } );
+    return (
+      < p { ...blockProps }>Hello World (from the frontend, in red).< /p>
+    );
+  },
+} );</code></pre>
+        <p>Хук useBlockProps автоматически включает имя класса для блока, генерирует имя для каждого блока, используя имя блока с префиксом wp-block-, заменяет / разделитель пространства имен символом -.</p>
+        <table>
+          <tbody>
+            <tr>
+              <td>useBlockProps()</td>
+              <td>позволяет изменить аттрибуты в оболочке блока, определяет внешнюю разметку блока в редакторе (это хук из @wordpress/block-editor)</td>
+            </tr>
+            <tr>
+              <td>useBlockProps.save()</td>
+              <td>добавляет классы и атрибуты при сохранении в базу</td>
+            </tr>
+            <tr>
+              <td>get_block_wrapper_attributes()</td>
+              <td>добавляет классы и атрибуты при динамическом рендере</td>
+            </tr>
+            <tr>
+              <td>wp-block</td>
+              <td>класс с общими для блоков настройками</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>то же самое, но через отдельные файлы</p>
+        <pre><code>// block.json
+{
+  "apiVersion": 3,
+  "name": "gutenberg-examples/example-02-stylesheets",
+  "title": "Example: Stylesheets",
+  "icon": "universal-access-alt",
+  "category": "layout",
+  "editorScript": "file:./block.js",
+  "editorStyle": "file:./editor.css",
+  "style": "file:./style.css"
+}
+
+// editor.css - green background
+.wp-block-gutenberg-examples-example-02-stylesheets {
+  background: #090;
+  color: white;
+  padding: 20px;
+}
+
+// style.css - red background
+.wp-block-gutenberg-examples-example-02-stylesheets {
+  background: #900;
+  color: white;
+  padding: 20px;
+}
+</code></pre>
+        <table>
+          <caption>Если использовать `@wordpress/scripts`, то необходимо импортировать таблицу стилей в соответствующий файл JavaScript</caption>
+          <tbody>
+            <tr> 
+              <td>в `edit.js`</td>
+              <td>`import './editor.scss';`</td>
+            </tr>
+            <tr> 
+              <td>в `index.js`</td>
+              <td>`import './style.scss';`</td>
+            </tr>
+            <tr> 
+              <td>в `view.js`</td>
+              <td>`import './view.scss';`</td>
+            </tr>
+            <tr>
+              <td colspan="2">для включения нескольких файлов использовать wp_enqueue_style на хуках:</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>enqueue_block_editor_assets</td>
+              <td>загружать только в режиме редактора</td>
+            </tr>
+            <tr>
+              <td>enqueue_block_assets</td>
+              <td>загружается как в интерфейсе, так и в редакторе</td>
+            </tr>
+          </tbody>
+        </table>
+        <pre><code>// переменная стиля из theme.json в style.scss
+var(--wp--preset--color--contrast)
+
+// переменная стиля из theme.json в json файле
+var:preset|color|contrast
+</code></pre>
+        <h3>Editor</h3>
+        <p>
+          @wordpress/block-editor - пакет позволяет создавать автономные редакторы блоков, библиотека JavaScript, которая обеспечивает основную функциональность редактора.<br/>
+          @wordpress/components and @wordpress/block-editor - пакеты для редактора
+        </p><code>npm install --save @wordpress/components</code>
+        <table>
+          <tbody>
+            <tr>
+              <td>Block Toolbar</td>
+              <td>компонент BlockControls (@wordpress/block-editor)</td>
+            </tr>
+            <tr>
+              <td>Settings Sidebar</td>
+              <td>компонент InspectorControls (@wordpress/block-editor)</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>CSS компонентов находится по адресу node_modules/@wordpress/components/build-style/style.css</p>
+        <pre><code>// если ввести в консоле браузера, то вернет все доступные блоки
+wp.data.select('core/editor').getBlocks()
+</code></pre>
+        <h3>Работа с данными</h3>
+        <p>@wordpress/core-data - предоставляет resolvers, selectors и actions для работы с API ядра WordPress</p>
+      </main>
+      <menu class="menu">
+        <button id="search"><img src="./assets/img/search.svg" alt="search" loading="lazy"/></button>
+        <button id="home"><img src="./assets/img/q.svg" alt="home" loading="lazy"/></button>
+        <button id="dropup"><img src="./assets/img/menu.svg" alt="menu" loading="lazy"/></button>
+      </menu>
+    </div>
+  </body>
+</html>

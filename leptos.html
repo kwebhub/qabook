@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="robots" content="none">
+    <meta name="robots" content="noimageindex, nofollow">
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+    <link rel="stylesheet" type="text/css" href="./assets/style.css">
+    <title>qabook</title>
+    <script defer type="module" src="./assets/js/main.js"></script>
+  </head>
+  <body>
+    <nav class="dropup"><a href="./process.html">Process</a><a href="./docs.html">Docs</a><a href="./web.html">Web</a><a href="#!">Project</a><a href="./job.html">Job</a>
+    </nav>
+    <div class="search">
+      <form class="search__content">
+        <input type="text" placeholder="search...">
+        <button class="search-btn" type="submit"><img src="./assets/img/search.svg" alt="" loading="lazy"/>
+        </button>
+        <button class="search-reset" type="reset"><img src="./assets/img/close.svg" alt="" loading="lazy"/>
+        </button>
+      </form>
+    </div>
+    <button class="close"><img src="./assets/img/close.svg" alt="" loading="lazy"/>
+    </button>
+    <div class="container">
+      <header><nav class="breadcrumbs" id="breadcrumbs-container"></nav>
+      </header>
+      <main>
+        <pre><code>// создать контейнер rust
+docker run -it rust
+
+// создать образ из контейнера
+docker commit -m "Сообщение" -a "Автор" < ID контейнера> < имя_образа:тег>
+
+// привязать локальную папку PWD к рабочей папке в контейнере и пробросить порт
+docker run -it -w /< рабочая папка> -v ${PWD}:/< рабочая папка> -p 3000:3000 rust:тег
+
+// создать образ по Dockerfile
+docker build -t getting-started .
+
+docker volume create rsvol
+
+docker run -dp 3000:3000 -v todo-db:/etc/todos getting-started
+
+// указать имя и email в настройках git в контейнере
+git config --global user.name "Твоё имя в GitHub"
+git config --global user.email "Твой email в GitHub"
+
+// cargo-leptos (SSR)
+cargo install --locked cargo-leptos
+
+// создать новый проект (SSR) с фреймворком axum
+cargo leptos new --git https://github.com/leptos-rs/start-axum
+
+// добавить цель для компиляции в WebAssembly
+rustup target add wasm32-unknown-unknown
+
+// компиляция и запуск локального сервера на порту 3000
+cargo leptos watch
+
+http://localhost:3000
+</code></pre>
+        <table>
+          <caption>trunk </caption>
+          <tbody>
+            <tr>
+              <td>cargo install trunk</td>
+              <td>разработка в CSR</td>
+            </tr>
+            <tr>
+              <td>cargo init leptos-tutorial</td>
+              <td>базовый проект</td>
+            </tr>
+            <tr>
+              <td>cargo add leptos --features=csr</td>
+              <td>добавить зависимость для CSR</td>
+            </tr>
+            <tr>
+              <td>rustup target add wasm32-unknown-unknown</td>
+              <td>добавить цель для компиляции в WebAssembly</td>
+            </tr>
+          </tbody>
+        </table>
+        <table>
+          <caption>использовать более функциональный шаблон (CSR)</caption>
+          <tbody>
+            <tr>
+              <td>cargo install cargo-generate</td>
+              <td>генератор шаблонов</td>
+            </tr>
+            <tr>
+              <td>cargo install cargo-generate trunk leptosfmt</td>
+              <td>leptos formatter</td>
+            </tr>
+            <tr>
+              <td>cargo generate --git https://github.com/leptos-rs/start-trunk</td>
+              <td>использовать шаблон для проекта</td>
+            </tr>
+            <tr>
+              <td>trunk serve --port 3000 --open</td>
+              <td>запустить сервер разработки</td>
+            </tr>
+            <tr>
+              <td>trunk build --release</td>
+              <td>build CSR app for release</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>Dockerfile</p>
+        <ul>
+          <li>Replace your_rust_app_name with the actual name of your Rust executable.</li>
+          <li>Ensure your Rust project has a Cargo.toml and src directory containing your application code.</li>
+          <li>Build the Docker image: docker build -t my-rust-app .</li>
+          <li>Run the container: docker run -p 8000:8000 my-rust-app (adjust port mapping as needed).</li>
+        </ul>
+        <pre><code>--- Build Stage ---
+FROM rust:1.75 as builder
+
+// Install sccache for faster builds (optional but recommended)
+RUN cargo install sccache cargo-chef
+
+// Set environment variables for sccache
+ENV SCCACHE_DIR=/sccache \
+    RUSTC_WRAPPER=sccache
+
+WORKDIR /app
+
+// Copy Cargo.toml and Cargo.lock to leverage Docker's layer caching for dependencies
+COPY Cargo.toml Cargo.lock ./
+
+// Create a dummy src directory and main.rs to build dependencies
+// This ensures that dependency compilation is cached if only source code changes
+RUN mkdir src && echo "fn main() {}" > src/main.rs
+RUN cargo build --release
+
+// Remove the dummy src directory
+RUN rm -rf src
+
+// Copy the actual source code
+COPY src ./src
+
+// Build the application
+RUN cargo build --release
+
+--- Final Stage ---
+FROM debian:bookworm-slim as final # Or a scratch image if the binary is fully static
+
+// Set a non-root user for security (optional but recommended)
+RUN useradd -ms /bin/bash appuser
+USER appuser
+
+WORKDIR /app
+
+// Copy the compiled binary from the builder stage
+COPY --from=builder /app/target/release/your_rust_app_name ./your_rust_app_name
+
+// Expose the port your application listens on (if it's a network service)
+EXPOSE 8000
+
+// Command to run the application
+CMD ["./your_rust_app_name"]
+</code></pre>
+        <p>trunk</p>
+        <pre><code>// Install Tailwind CLI
+FROM node:latest AS node_builder
+RUN npm i -g --prefix /usr/node_builder tailwindcss
+
+// Install Rust and its WASM toolchain
+FROM rust:latest AS rust_builder
+WORKDIR /usr/local/bin
+RUN rustup target add wasm32-unknown-unknown
+RUN wget -qO- https://github.com/thedodd/trunk/releases/download/v0.16.0/trunk-x86_64-unknown-linux-gnu.tar.gz | tar -xzf-
+
+// Copy Tailwind CLI executable from node_builder stage
+WORKDIR /myapp
+COPY --from=node_builder /usr/node_builder/bin/tailwindcss /usr/local/bin/tailwindcss
+
+// Build the application using Trunk
+COPY ./Cargo.toml .
+COPY ./build.rs .
+COPY ./index.html .
+COPY ./src src
+COPY ./public public
+COPY ./style style
+RUN trunk build --release
+
+// Copy compiled files from rust_builder stage and serve them using Nginx
+FROM nginx:latest
+COPY --from=rust_builder /myapp/dist /dist
+RUN mkdir -p /etc/nginx/html
+RUN cp /dist/index.html /etc/nginx/html/
+COPY ./nginx.conf /etc/nginx/conf.d/default.conf</code></pre>
+      </main>
+      <menu class="menu">
+        <button id="search"><img src="./assets/img/search.svg" alt="search" loading="lazy"/></button>
+        <button id="home"><img src="./assets/img/q.svg" alt="home" loading="lazy"/></button>
+        <button id="dropup"><img src="./assets/img/menu.svg" alt="menu" loading="lazy"/></button>
+      </menu>
+    </div>
+  </body>
+</html>
